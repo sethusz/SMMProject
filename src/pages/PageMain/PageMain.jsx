@@ -1,0 +1,70 @@
+import React, { useRef  } from 'react';
+
+import './PageMain.scss';
+import img_main from '../../assets/img_main.jpg';
+
+const PageMain = () => {
+  
+  const mainContentRef = useRef(null);
+
+  const scrollToMainContent = () => {
+    mainContentRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+
+  return (
+    <>
+      <div className='image__container image'>
+        <div className='image__content'>
+          <img src={img_main} alt="" className='image__main' />
+          <div className='image__text'>КУРС ПО ВИЗУАЛУ АДИНЫ АКПАЕВОЙ.</div>
+          <div className='image__arrow' onClick={scrollToMainContent}></div>
+          <div className='image__avatar'></div>
+        </div>
+      </div>
+
+      <div className='main__content main' ref={mainContentRef}>
+        <div className='main__title'>VISUAL&STORIES</div>
+
+        <hr />
+
+        <button className="main__button">
+          <div className='button__text'>Позицирование</div>
+          <div className='button__text-two'>Модуль один</div>
+        </button>
+
+        <button className="main__button">
+          <div className='button__text'>Позицирование</div>
+          <div className='button__text-two'>Модуль один</div>
+        </button>
+
+        <button className="main__button">
+          <div className='button__text'>Позицирование</div>
+          <div className='button__text-two'>Модуль один</div>
+        </button>
+
+        <button className="main__button">
+          <div className='button__text'>Позицирование</div>
+          <div className='button__text-two'>Модуль один</div>
+        </button>
+      </div>
+
+      <div className='footer'>
+        <div className="footer__section">
+          <div className='footer__about-title'>О нас</div>
+          <div className='footer__about'> Здесь можно написать о вашей компании или о ваших услугах.</div>
+        </div>
+        <div className="footer__section">
+          <div className='footer__contact-title'>Контакты</div>
+          <ul className='footer__contacts'>
+            <li className='footer__contact'>Email: example@example.com</li>
+            <li className='footer__contact'>Телефон: 123-456-789</li>
+            <li className='footer__contact'>Адрес: Город, Улица, Дом</li>
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default PageMain;
