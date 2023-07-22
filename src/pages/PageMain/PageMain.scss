@@ -10,10 +10,12 @@ hr {
     opacity: 0.5;
     transform: translateX(-50%) translateY(0);
   }
+
   50% {
     opacity: 1;
     transform: translateX(-50%) translateY(-10px);
   }
+
   100% {
     opacity: 0.5;
     transform: translateX(-50%) translateY(0);
@@ -91,35 +93,8 @@ hr {
     font-weight: bold;
 
   }
-
-  &__button {
-    margin: 20px;
-    padding: 20px 20px;
-    background-color: #706f95;
-    width: 70%;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-
-    &:hover {
-      background-color: #454179;
-    }
-  }
-
-  .button__text {
-    font-size: 20px;
-
-  }
-
-  .button__text-two {
-    font-size: 16px;
-    margin-top: 10px;
-  }
 }
+
 
 .footer {
   display: flex;

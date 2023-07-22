@@ -1,10 +1,10 @@
-import React, { useRef  } from 'react';
+import React, { useRef, useState } from 'react';
 
 import './PageMain.scss';
 import img_main from '../../assets/img_main.jpg';
+import SmmModules from './MainContent'
 
 const PageMain = () => {
-  
   const mainContentRef = useRef(null);
 
   const scrollToMainContent = () => {
@@ -28,26 +28,10 @@ const PageMain = () => {
 
         <hr />
 
-        <button className="main__button">
-          <div className='button__text'>Позицирование</div>
-          <div className='button__text-two'>Модуль один</div>
-        </button>
+        <SmmModules />
 
-        <button className="main__button">
-          <div className='button__text'>Позицирование</div>
-          <div className='button__text-two'>Модуль один</div>
-        </button>
-
-        <button className="main__button">
-          <div className='button__text'>Позицирование</div>
-          <div className='button__text-two'>Модуль один</div>
-        </button>
-
-        <button className="main__button">
-          <div className='button__text'>Позицирование</div>
-          <div className='button__text-two'>Модуль один</div>
-        </button>
       </div>
+
 
       <div className='footer'>
         <div className="footer__section">

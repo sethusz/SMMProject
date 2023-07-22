@@ -1,17 +1,19 @@
-// import { useState } from 'react'
-// import reactLogo from '../assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.scss'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Обратите внимание на BrowserRouter
 
-import PageMain from '../pages/PageMain/PageMain'
+import './App.scss';
+import PageMain from '../pages/PageMain/PageMain';
+import ModuleOne from '../pages/PageModules/ModuleOne/ModuleOne';
 
 function App() {
-
   return (
-    <>
-       <PageMain/>
-    </>
-  )
+    <Router> {/* Замените на <Router> вместо <> */}
+      <Routes>
+        <Route exact path="/" element={<PageMain />} /> {/* Используйте element вместо component */}
+        <Route path="/ModuleOne" element={<ModuleOne />} /> {/* Используйте element вместо component */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
