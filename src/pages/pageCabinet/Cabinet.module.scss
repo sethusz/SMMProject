@@ -1,0 +1,66 @@
+.hr {
+  border: none;
+  border-top: 1px solid rgb(189, 176, 176);
+  width: 97%;
+
+}
+
+.image__avatar {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url('../../assets/userIcon.svg');
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.dropdown {
+  &__content {
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    height: 280px;
+    top: 90px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 3px;
+    z-index: 100;
+    color: black;
+  }
+
+  &__admin {
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  &__logout {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    max-width: fit-content;
+  }
+
+  &__email {
+    font-size: 12px;
+  }
+
+}
+
+.module {
+  &__title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__number {
+    color: #a7a5a5;
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+}

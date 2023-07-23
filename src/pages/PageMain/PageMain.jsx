@@ -2,7 +2,11 @@ import React, { useRef, useState } from 'react';
 
 import './PageMain.scss';
 import img_main from '../../assets/img_main.jpg';
+import checkMark from '../../assets/checkMark.svg';
 import SmmModules from './MainContent'
+import Cabinet from '../pageCabinet/Cabinet';
+
+import useNoAuth from '../../hooks/useNoAuth';
 
 const PageMain = () => {
   const mainContentRef = useRef(null);
@@ -11,21 +15,39 @@ const PageMain = () => {
     mainContentRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-
+  useNoAuth()
   return (
     <>
+      <Cabinet />
       <div className='image__container image'>
         <div className='image__content'>
           <img src={img_main} alt="" className='image__main' />
           <div className='image__text'>КУРС ПО ВИЗУАЛУ АДИНЫ АКПАЕВОЙ.</div>
           <div className='image__arrow' onClick={scrollToMainContent}></div>
-          <div className='image__avatar'></div>
+
         </div>
       </div>
 
       <div className='main__content main' ref={mainContentRef}>
-        <div className='main__title'>VISUAL&STORIES</div>
+        <div className='main__title'>Какие знания получите после прохождения курса</div>
 
+        <div className='main__knowledges knowledges'>
+
+          <div className='knowledges__block'>
+            <img src={checkMark} alt="checkMark" />
+            <div className='knowledges__text'>Делать все что хочешь</div>
+          </div>
+
+          <div className='knowledges__block'>
+            <img src={checkMark} alt="checkMark" />
+            <div className='knowledges__text'>Делать все что хочешь</div>
+          </div>
+
+          <div className='knowledges__block'>
+            <img src={checkMark} alt="checkMark" />
+            <div className='knowledges__text'>Делать все что хочешь</div>
+          </div>
+        </div>
         <hr />
 
         <SmmModules />

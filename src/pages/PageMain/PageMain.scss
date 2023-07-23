@@ -159,3 +159,19 @@ hr {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.knowledges {
+  display: flex;
+  margin-top: 20px;
+  gap: 200px;
+  color: black;
+
+  &__block{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(215, 210, 210);
+  border-radius: 3px;
+  }
+}

@@ -1,0 +1,116 @@
+.admin {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+
+  &__title {
+    font-size: 24px;
+    color: #a5a4a4;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__panel {
+    table {
+      width: 100%;
+      border-radius: 5px;
+      background-color: #908d8d;
+      border-collapse: collapse;
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        font-weight: bold;
+      }
+
+      tr:hover {
+        background-color: rgb(174, 172, 172);
+      }
+
+      button {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #d32f2f;
+        }
+      }
+    }
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  &__registration {
+    font-size: 24px;
+    color: #a5a4a4;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.signup-form {
+  display: flex;
+  background-color: #908d8d;
+  flex-direction: column;
+  max-width: 400px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input {
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid rgb(125, 121, 121);
+    border-radius: 5px;
+  }
+
+  p {
+    color: red;
+    margin: 5px 0;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+
+    margin: 20px auto 0 auto;
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken(red, 10%);
+    }
+  }
+}
