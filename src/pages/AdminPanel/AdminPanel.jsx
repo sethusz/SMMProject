@@ -1,37 +1,33 @@
 import React from 'react';
 import './AdminPanel.scss';
+import { useQuery } from '@apollo/client'
 import { Link } from 'react-router-dom';
+import ALL_USER from '../../server/allUsers';
 
 import arrowLeft from '../../assets/arrowLeft.svg';
 
 import SignUp from './SignUp';
 
-import useNoAuth from '../../hooks/useNoAuth';
+import useNoAdmin from '../../hooks/useNoAuth';
 
 const AdminPanel = () => {
 
-  useNoAuth()
-  // Sample data for accounts
-  const accounts = [
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-    { email: 'user1@example.com', date: '2023-14-02' },
-  ];
+  useNoAdmin()
+
+
+  const { loading, error, data } = useQuery(ALL_USER);
+
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+
+  const accounts = data.getAllUsers.items;
+
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+  };
 
   return (
     <>
@@ -50,10 +46,10 @@ const AdminPanel = () => {
               </tr>
             </thead>
             <tbody>
-              {accounts.map((account, index) => (
-                <tr key={index}>
+              {accounts.map((account) => (
+                <tr key={account.id}>
                   <td>{account.email}</td>
-                  <td>{account.date}</td>
+                  <td>{formatDate(account.createdAt)}</td>
                   <td>
                     <button onClick={() => handleDeleteAccount(account.email)}>
                       Delete Account
@@ -66,7 +62,7 @@ const AdminPanel = () => {
         </div>
         <div className='admin__registration'>Регистрация</div>
 
-        <SignUp/>
+        <SignUp />
       </div>
     </>
   );

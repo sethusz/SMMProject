@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import scss from './Cabinet.module.scss';
 import { useMutation } from '@apollo/client'
 import { useNavigate } from 'react-router-dom';
+import jwt from 'jwt-decode'
 
 import LOGOUT_MUTATION from '../../server/logout'
 
@@ -9,9 +10,18 @@ import LOGOUT_MUTATION from '../../server/logout'
 import { Link } from 'react-router-dom';
 
 const Cabinet = () => {
+
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const [logout] = useMutation(LOGOUT_MUTATION);
+
+  const accessToken = localStorage.getItem('accesstoken');
+
+  const payLoad = jwt(accessToken)
+
+  const roleUser = payLoad && payLoad.role ? payLoad.role : null;
+
 
   const handleAvatarClick = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -60,9 +70,11 @@ const Cabinet = () => {
 
           {/* <div className='dropdown__actions'> */}
 
-          <Link to='/AdminPanel'>
-            <div className={scss.dropdown__admin}>Admin Panel</div>
-          </Link>
+          {roleUser === 'ADMIN' ? (
+  <Link to='/AdminPanel'>
+    <div className={scss.dropdown__admin}>Admin Panel</div>
+  </Link>
+) : null}
 
           <div className={scss.dropdown__logout} onClick={handleLogout}>Выйти</div>
           {/* </div> */}
