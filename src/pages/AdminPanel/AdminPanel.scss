@@ -66,10 +66,19 @@
   display: flex;
   background-color: #908d8d;
   flex-direction: column;
-  max-width: 400px;
+  width: 400px;
   border-radius: 5px;
   margin: 0 auto;
   padding: 20px;
+
+  @media screen and (max-width: 500px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 200px;
+  }
+
 
   &__title {
     text-align: center;
@@ -92,10 +101,9 @@
 
     input {
       background-color: transparent;
-      width: 90%;
+      width: 93%;
       border: none;
       outline: none;
-      border-bottom: 1px solid rgb(125, 121, 121);
     }
   
     input:focus {
@@ -103,26 +111,6 @@
     }
   }
 
-  &__password {
-    padding: 10px;
-    width: 90%;
-    margin-bottom: 15px;
-    background-color: #676463;
-    border: 1px solid rgb(125, 121, 121);
-    border-radius: 5px;
-
-    input {
-      background-color: transparent;
-      width: 90%;
-      border: none;
-      outline: none;
-      border-bottom: 1px solid rgb(125, 121, 121);
-    }
-  
-    input:focus {
-      outline: none;
-    }
-  }
 
   &__input {
     padding: 10px;

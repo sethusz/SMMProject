@@ -31,6 +31,10 @@
     border-radius: 3px;
     z-index: 100;
     color: black;
+
+    @media screen and (max-width: 500px) {
+      width: 120px;
+    }
   }
 
   &__admin {

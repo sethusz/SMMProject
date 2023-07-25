@@ -44,19 +44,23 @@ const Cabinet = () => {
     }
   };
 
-  // const handleClickOutside = (event) => {
-  //   if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-  //     setIsDropdownOpen(false); 
-  //   }
-  // };
+  const handleClickOutside = (event) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target) &&
+      !event.target.classList.contains(scss.image__avatar)
+    ) {
+      setIsDropdownOpen(false);
+    }
+  };
 
-  // useEffect(() => {
-  //   document.addEventListener('click', handleClickOutside, true);
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside, true);
 
-  //   return () => {
-  //     document.removeEventListener('click', handleClickOutside, true);
-  //   };
-  // }, []);
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true);
+    };
+  }, []);
 
   return (
     <>

@@ -127,24 +127,135 @@
 // }
 
 
-.page__accordion-title {
-  padding: 1rem;
-  box-shadow: var(--box-shadow);
-  font-weight: 500;
+.accordion {
+
+  margin: 20px;
+  padding: 20px 20px;
+  background-color: #ffffff;
+  width: 70%;
+  // height: 30px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  // overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+
+  &__title {
+    padding: 1rem;
+    // box-shadow: var(--box-shadow);
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__module {
+    color: rgb(166, 166, 5);
+    font-weight: bold;
+
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+
+  &__topic {
+    color: rgb(15, 15, 14);
+    font-size: 22px;
+    font-weight: bold;
+
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    color: rgb(166, 166, 5);
+    padding: 0;
+    margin: 0;
+
+    span {
+      color: black;
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    li {
+      padding: 10px 0;
+
+      :last-child {
+        border-bottom: none;
+      }
+    }
+
+
+  }
+
+  &__arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/arrowDown.svg);
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__button {
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: #84864d;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (max-width: 600px) {
+      font-size: 12px;
+    }
+
+    &:hover {
+      background-color: #abab61;
+    }
+  }
+
+  &__content {
+    // opacity: 0;
+    padding: 0 1rem;
+    max-height: 0;
+    will-change: max-height;
+    transition: all 1.5s;
+    overflow: hidden;
+  }
+
+  &.active &__content {
+    // opacity: 1;
+    max-height: 350px;
+  }
 }
 
-.page__accordion-content {
-  opacity: 0;
-  padding: 0 1rem;
-  max-height: 0;
-  will-change: max-height;
-  transition: all 1s;
-  overflow: hidden;
-  background: #efcfe4;
+.no-pointer {
+  cursor: default;
 }
 
-.page__accordion.active .page__accordion-content {
-  opacity: 1;
-  max-height: 300px;
+@media screen and (max-width: 768px) {
+  .module__topic {
+    display: flex;
+    flex-direction: column;
+  }
 }

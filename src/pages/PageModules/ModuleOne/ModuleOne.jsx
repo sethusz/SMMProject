@@ -53,14 +53,10 @@ const ModuleOne = () => {
             </div>
 
           </div>
-        </div>
 
-        <hr />
+          {/* <hr className='hr__black' /> */}
 
-        <div className='lesson__content'>
-          <div className='module__lesson'>Урок 2</div>
-          <div className='module__content-lesson'>
-
+          {/* <div className='lesson__content-two'>
             <div className='lesson__video'>
               <iframe
                 style={{ width: '100%' }}
@@ -72,54 +68,89 @@ const ModuleOne = () => {
                 allowFullScreen
               ></iframe>
 
-              <div className='lesson__summary'>Конспект</div>
+              <div className='lesson__two--text'>
+              Цель курса - научить вас составлять грамотный Визуал ✔️ Делать самые трендовые обработки✔️
+Делать эстетичные кадры в любой обстановке ✔️ Рассказать как достичь успеха в Инстаграмм ✔️
+Научить выделяться среди других ✔️
+Выстроить свой личный бренд✔️
 
-            </div>
-            <div className='lesson__content'>
-              <div className='lesson__descr'>Здесь будет описание урока, то есть вы описываете что будет в уроке , почему его
-                важно посмотреть и тому подобное , то есть то есть то есть то есть то есть то естьто есть то естьто естьто есть
-                то естьто естьто естьто естьто естьто естьто есть
+Будем творить красоту вместе!
+
+И самое важное: Пожалуйста выполняйте домашние задания, они помогут вам улучшить навыки и закрепить теорию!
               </div>
+            </div>*/}
+          </div> 
 
-              <div className='lesson__skills'>Здесь вы напиши какие навыки пользовательно получил то есть: русский, анг, казах,
-                пользоватся компом, это все просто набор слов что бы увидели как это виглядит </div>
+          <hr />
 
-              <div className='lesson__homework'>Домашние задание</div>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <div className='module__lesson'>Урок 3</div>
-        <div className='module__content-lesson'>
-          <div className='lesson__video'>
-            <iframe
-              width="650"
-              height="315"
-              src={`https://www.youtube.com/embed/${videoId}?showinfo=0`}
-              title="YouTube Video"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
-          </div>
           <div className='lesson__content'>
-            <div className='lesson__descr'>Здесь будет описание урока, то есть вы описываете что будет в уроке , почему его
-              важно посмотреть и тому подобное , то есть то есть то есть то есть то есть то естьто есть то естьто естьто есть
-              то естьто естьто естьто естьто естьто естьто есть
+            <div className='module__lesson'>Урок 2</div>
+            <div className='module__content-lesson'>
+
+              <div className='lesson__video'>
+                <iframe
+                  style={{ width: '100%' }}
+                  height="315"
+                  src={`https://www.youtube.com/embed/${videoId}?showinfo=0`}
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                ></iframe>
+
+                <div className='lesson__summary'>Конспект</div>
+
+              </div>
+              <div className='lesson__content'>
+                <div className='lesson__descr'>Здесь будет описание урока, то есть вы описываете что будет в уроке , почему его
+                  важно посмотреть и тому подобное , то есть то есть то есть то есть то есть то естьто есть то естьто естьто есть
+                  то естьто естьто естьто естьто естьто естьто есть
+                </div>
+
+                <div className='lesson__skills'>Здесь вы напиши какие навыки пользовательно получил то есть: русский, анг, казах,
+                  пользоватся компом, это все просто набор слов что бы увидели как это виглядит </div>
+
+                <div className='lesson__homework'>Домашние задание</div>
+              </div>
             </div>
+          </div>
 
-            <div className='lesson__skills'>Здесь вы напиши какие навыки пользовательно получил то есть: русский, анг, казах,
-              пользоватся компом, это все просто набор слов что бы увидели как это виглядит </div>
+          <hr />
 
-            <div className='lesson__homework'>Домашние задание</div>
+          <div className='lesson__content'>
+            <div className='module__lesson'>Урок 2</div>
+            <div className='module__content-lesson'>
 
+              <div className='lesson__video'>
+                <iframe
+                  style={{ width: '100%' }}
+                  height="315"
+                  src={`https://www.youtube.com/embed/${videoId}?showinfo=0`}
+                  title="YouTube Video"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                ></iframe>
+
+                <div className='lesson__summary'>Конспект</div>
+
+              </div>
+              <div className='lesson__content'>
+                <div className='lesson__descr'>Здесь будет описание урока, то есть вы описываете что будет в уроке , почему его
+                  важно посмотреть и тому подобное , то есть то есть то есть то есть то есть то естьто есть то естьто естьто есть
+                  то естьто естьто естьто естьто естьто естьто есть
+                </div>
+
+                <div className='lesson__skills'>Здесь вы напиши какие навыки пользовательно получил то есть: русский, анг, казах,
+                  пользоватся компом, это все просто набор слов что бы увидели как это виглядит </div>
+
+                <div className='lesson__homework'>Домашние задание</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </>
-  );
+      </>
+      );
 }
 
-export default ModuleOne;
+      export default ModuleOne;

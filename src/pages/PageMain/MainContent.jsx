@@ -13,6 +13,7 @@ const SmmModules = () => {
       listThree: 'одиндватри',
       listFour: 'одиндватри',
       listFive: 'одиндватри',
+      listSix: 'тритритри',
       isClicked: false,
 
     },
@@ -25,6 +26,7 @@ const SmmModules = () => {
       listThree: 'одиндватри',
       listFour: 'одиндватри',
       listFive: 'одиндватри',
+      listSix: 'тритритри',
       isClicked: false,
 
     },
@@ -66,6 +68,7 @@ const SmmModules = () => {
           listThree = {item.listThree}
           listFour = {item.listFour}
           listFive = {item.listFive}
+          listSix = {item.listSix}
 
           isClicked={item.isClicked}
         />

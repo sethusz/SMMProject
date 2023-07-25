@@ -29,7 +29,7 @@ const PageMain = () => {
       </div>
 
       <div className='main__content main' ref={mainContentRef}>
-        <div className='main__title'>Какие знания получите после прохождения курса</div>
+        <div className='main__title'>Какие знания получите после прохождения курса:</div>
 
         <div className='main__knowledges knowledges'>
 
@@ -47,7 +47,9 @@ const PageMain = () => {
             <img src={checkMark} alt="checkMark" />
             <div className='knowledges__text'>Делать все что хочешь</div>
           </div>
+          
         </div>
+
         <hr />
 
         <SmmModules />

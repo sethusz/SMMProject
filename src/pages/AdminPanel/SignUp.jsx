@@ -1,30 +1,26 @@
 import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { useMutation } from '@apollo/client';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import SIGNUP_MUTATION from '../../server/signUp';
-
 import './AdminPanel.scss';
 
 const SignUp = () => {
   const { handleSubmit, control, formState: { errors } } = useForm();
   const [signupMutation, { loading, error }] = useMutation(SIGNUP_MUTATION);
 
-  const [isPasswordVisible, setIsPasswordVisible] = useState(false)
-  const [isRepeatPasswordVisible, setIsRepeatPasswordVisible] = useState(false)
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const [isRepeatPasswordVisible, setIsRepeatPasswordVisible] = useState(false);
 
   const {
     register,
     reset,
     watch
-  } = useForm()
+  } = useForm();
 
-
-  const password = watch('password')
-  const repeatPassword = watch('repeatPassword')
+  const password = watch('password');
+  const repeatPassword = watch('repeatPassword');
 
   const handleSignUp = async (data) => {
     try {
@@ -41,6 +37,8 @@ const SignUp = () => {
 
       // Handle successful registration here, e.g. show a success message or redirect to another page
       console.log('Successfully registered!', signup);
+      // Save the success message in local state
+      setSuccessMessage(`Пользователь (${data.username}) успешно зарегистрирован`);
     } catch (error) {
       // Handle error here, e.g. show an error message to the user
       console.error('Registration failed', error);
@@ -49,6 +47,30 @@ const SignUp = () => {
 
   const onSubmit = handleSubmit(handleSignUp);
 
+  const validateEmail = (value) => {
+    if (!/^\S+@\S+\.\S+$/.test(value)) {
+      return 'Неправильный формат email';
+    }
+    return true;
+  };
+
+  const validatePassword = (value) => {
+    if (!/(?=.*[a-zA-Z])(?=.*\d).{8,}/.test(value)) {
+      return 'Пароль должен содержать минимум 8 символов, включая буквы и цифры';
+    }
+    return true;
+  };
+
+  const validateUsername = (value) => {
+    if (value.length > 16) {
+      return 'Имя пользователя должно содержать не более 16 символов';
+    }
+    return true;
+  };
+
+  // Local state to hold the success message
+  const [successMessage, setSuccessMessage] = useState('');
+
   return (
     <div className="signup">
       <div className='signup__title'>Sign Up</div>
@@ -56,15 +78,18 @@ const SignUp = () => {
         <div className='signup__field'>
           <label className='signup__label'>Username:</label>
           <div className="signup__input">
-          <Controller
-            name="username"
-            control={control}
-            rules={{ required: 'Username is required' }}
-            defaultValue=""
-            render={({ field }) => (
-              <input type="text" {...field} />
-            )}
-          />
+            <Controller
+              name="username"
+              control={control}
+              rules={{
+                required: 'Username is required',
+                validate: validateUsername,
+              }}
+              defaultValue=""
+              render={({ field }) => (
+                <input type="text" {...field} />
+              )}
+            />
           </div>
           {errors.username && <p>{errors.username.message}</p>}
         </div>
@@ -75,16 +100,16 @@ const SignUp = () => {
               name="email"
               control={control}
               defaultValue=""
-              rules={{ required: 'Email is required' }}
+              rules={{
+                required: 'Email is required',
+                validate: validateEmail,
+              }}
               render={({ field }) => (
                 <input type="text" {...field} />
               )}
             />
-
           </div>
           {errors.email && <p>{errors.email.message}</p>}
-
-
         </div>
 
         <div className={`signup__field ${errors.password ? 'has-error' : ''}`}>
@@ -94,9 +119,10 @@ const SignUp = () => {
               type={isPasswordVisible ? 'text' : 'password'}
               id="password"
               name="password"
-              {...control.register('password', { required: 'Password is required' })}
-
-
+              {...control.register('password', {
+                required: 'Password is required',
+                validate: validatePassword,
+              })}
             />
             <FontAwesomeIcon
               icon={isPasswordVisible ? faEyeSlash : faEye}
@@ -107,19 +133,18 @@ const SignUp = () => {
           {errors.password && <div className="error__message">{errors.password.message}</div>}
         </div>
 
-
         <div className='signup__field'>
           <label className='signup__label'>data:</label>
           <div className="signup__input">
-          <Controller
-            name="closedAt"
-            control={control}
-            defaultValue=""
-            rules={{ required: 'closedAt is required' }}
-            render={({ field }) => (
-              <input type="closedAt" {...field} />
-            )}
-          />
+            <Controller
+              name="closedAt"
+              control={control}
+              defaultValue=""
+              rules={{ required: 'closedAt is required' }}
+              render={({ field }) => (
+                <input type="closedAt" {...field} />
+              )}
+            />
           </div>
           {errors.closedAt && <p>{errors.closedAt.message}</p>}
         </div>
@@ -128,6 +153,7 @@ const SignUp = () => {
       </form>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
+      {successMessage && <p>{successMessage}</p>}
     </div>
   );
 };
