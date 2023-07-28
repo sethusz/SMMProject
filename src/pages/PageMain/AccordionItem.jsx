@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './AccordionModules.scss'
 
 
-const Accordion = ({ isClicked, module, describe, listOne, listTwo, listThree, listFour, listFive, listSix, transitionModule }) => {
+const Accordion = ({ isClicked, module, describe, listOne, listTwo, listThree, listFour, listFive, listSix, transitionModule, link }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleAccordionClick = () => {
@@ -41,7 +41,7 @@ const Accordion = ({ isClicked, module, describe, listOne, listTwo, listThree, l
           {listSix && <li><span>{listSix}</span></li>}
         </ul>
 
-        <Link to='/ModuleOne'>
+        <Link to={link}>
           <div className='accordion__button'> {transitionModule} </div>
         </Link>
       </div>

@@ -1,0 +1,80 @@
+.lesson {
+  &__title {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+  }
+
+&__content{
+  display: flex;
+  gap: 15%;
+}
+
+&__text {
+  max-width: 350px;
+  margin-top: 5%;
+}
+
+&__deadline {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  width: 500px;
+  height: 200px;
+  
+  border: rgb(151, 146, 146) 2px solid;
+  border-radius: 3px;
+}
+
+  &__homework {
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: #9f9f9e;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    &:hover {
+      background-color: #989891;
+
+    }
+  }
+
+  &__summary {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px 20px;
+    background-color: #9f9f9e;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    // margin-left: auto;
+    // margin-left: 10%;
+
+
+    &:hover {
+      background-color: #989891;
+
+    }
+  }
+}

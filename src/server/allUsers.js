@@ -4,18 +4,17 @@ const ALL_USER = gql`
 query Items {
   getAllUsers {
     items {
-      closedAt
-      confirmationCode
-      email
-      createdAt
       id
-      firstname
-      lastname
-      instagram
-      patronymic
-      phone
-      updatedAt
       username
+      email
+      firstname
+      phone
+      lastname
+      patronymic
+      instagram
+      confirmationCode
+      createdAt
+      updatedAt
     }
     totalCount
   }

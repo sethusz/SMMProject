@@ -25,6 +25,26 @@ hr {
 .module {
   margin-top: 20px;
   gap: 10px;
+  color: black;
+
+  &__content-lesson {
+    display: flex;
+    // justify-content:space-between;
+    gap: 10%;
+    // margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  &__content-text {
+    display: flex;
+    // justify-content:space-between;
+    gap: 10%;
+    // margin: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
 
   &__header {
     display: flex;
@@ -51,33 +71,54 @@ hr {
     color: black;
     font-size: 25px;
     font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
-  }
-
-  &__content-lesson {
-    display: flex;
-    // justify-content:space-between;
-    gap: 10%;
-    // margin: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 
   .lesson {
     &__content {
       display: flex;
       flex-direction: column;
+      // gap: 30px;
+    }
+
+    &__content--two {
+      display: flex;
+      flex-direction: column;
       gap: 30px;
+      width: 1000px;
+      color: black;
     }
 
     &__content-two {
       display: flex;
+      gap: 10%;
+      margin-left: 10%;
+      margin-right: 10%;
     }
 
+    &__title { 
+      color: black;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    
+    &__content--three {
+
+      // max-width: 1000px;
+    }
+
+    // &__descr--three {
+    //   margin-top: 10%;;
+    // }
+
     &__two--text {
-      text-align: center;
+      color: black;
+    }
+
+    &__video--1 {
+      width: 1000px;
     }
 
     &__video {
@@ -89,14 +130,20 @@ hr {
     }
 
     &__descr {
-      // word-break: break-all;
+      
+      word-wrap: break-word;
+      color: black;
+    }
+
+    &__descr--text {
+      margin-left: 10%;
+      margin-right: 10%;
       word-wrap: break-word;
       color: black;
     }
 
     &__skills {
       color: black;
-      // word-break: break-all;
       word-wrap: break-word;
     }
 
@@ -145,3 +192,4 @@ hr {
     }
   }
 }
+

@@ -11,7 +11,6 @@ const SignUp = () => {
   const [signupMutation, { loading, error }] = useMutation(SIGNUP_MUTATION);
 
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  const [isRepeatPasswordVisible, setIsRepeatPasswordVisible] = useState(false);
 
   const {
     register,
@@ -19,8 +18,7 @@ const SignUp = () => {
     watch
   } = useForm();
 
-  const password = watch('password');
-  const repeatPassword = watch('repeatPassword');
+  
 
   const handleSignUp = async (data) => {
     try {
@@ -30,17 +28,12 @@ const SignUp = () => {
             username: data.username,
             email: data.email,
             password: data.password,
-            closedAt: data.closedAt,
           },
         },
       });
-
-      // Handle successful registration here, e.g. show a success message or redirect to another page
       console.log('Successfully registered!', signup);
-      // Save the success message in local state
       setSuccessMessage(`Пользователь (${data.username}) успешно зарегистрирован`);
     } catch (error) {
-      // Handle error here, e.g. show an error message to the user
       console.error('Registration failed', error);
     }
   };
@@ -131,22 +124,6 @@ const SignUp = () => {
             />
           </div>
           {errors.password && <div className="error__message">{errors.password.message}</div>}
-        </div>
-
-        <div className='signup__field'>
-          <label className='signup__label'>data:</label>
-          <div className="signup__input">
-            <Controller
-              name="closedAt"
-              control={control}
-              defaultValue=""
-              rules={{ required: 'closedAt is required' }}
-              render={({ field }) => (
-                <input type="closedAt" {...field} />
-              )}
-            />
-          </div>
-          {errors.closedAt && <p>{errors.closedAt.message}</p>}
         </div>
 
         <button type="submit">Register</button>

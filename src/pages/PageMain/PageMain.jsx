@@ -22,7 +22,7 @@ const PageMain = () => {
       <div className='image__container image'>
         <div className='image__content'>
           <img src={img_main} alt="" className='image__main' />
-          <div className='image__text'>КУРС ПО ВИЗУАЛУ АДИНЫ АКПАЕВОЙ.</div>
+          <div className='image__text'>КУРС ПО СММ ОТ ОРАЗБЕКОВОЙ АСЕЛЬ.</div>
           <div className='image__arrow' onClick={scrollToMainContent}></div>
 
         </div>
@@ -32,6 +32,20 @@ const PageMain = () => {
         <div className='main__title'>Какие знания получите после прохождения курса:</div>
 
         <div className='main__knowledges knowledges'>
+          <div className='knowledges__block'>
+            <img src={checkMark} alt="checkMark" />
+            <div className='knowledges__text'>Делать все что хочешь</div>
+          </div>
+
+          <div className='knowledges__block'>
+            <img src={checkMark} alt="checkMark" />
+            <div className='knowledges__text'>Делать все что хочешь</div>
+          </div>
+
+          <div className='knowledges__block'>
+            <img src={checkMark} alt="checkMark" />
+            <div className='knowledges__text'>Делать все что хочешь</div>
+          </div>
 
           <div className='knowledges__block'>
             <img src={checkMark} alt="checkMark" />
@@ -47,7 +61,6 @@ const PageMain = () => {
             <img src={checkMark} alt="checkMark" />
             <div className='knowledges__text'>Делать все что хочешь</div>
           </div>
-          
         </div>
 
         <hr />

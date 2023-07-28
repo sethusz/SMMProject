@@ -1,5 +1,6 @@
 .admin {
   max-width: 800px;
+
   margin: 0 auto;
   padding: 20px;
 
@@ -12,6 +13,10 @@
   }
 
   &__panel {
+
+    max-height: 400px;
+    overflow-y: auto;
+
     table {
       width: 100%;
       border-radius: 5px;
@@ -48,8 +53,39 @@
         }
       }
     }
-    max-height: 400px;
-    overflow-y: auto;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__prevision,
+  &__next {
+    color: #3a3634;
+    background-color: #908d8d;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__dots {
+    color: #3a3634;
+  }
+
+  &__pagination-number {
+    color: #83817f;
+    cursor: pointer;
+  }
+
+  .active__number {
+    color: rgb(60, 60, 67);
+    cursor: pointer;
+    font-weight: bold;
   }
 
   &__registration {
@@ -105,7 +141,7 @@
       border: none;
       outline: none;
     }
-  
+
     input:focus {
       outline: none;
     }
@@ -127,7 +163,7 @@
       outline: none;
       border-bottom: 1px solid rgb(125, 121, 121);
     }
-  
+
     input:focus {
       outline: none;
     }

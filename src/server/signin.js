@@ -15,7 +15,6 @@ mutation Mutation($signInInput: SignInInput!) {
       patronymic
       instagram
       confirmationCode
-      closedAt
       createdAt
       updatedAt
     }

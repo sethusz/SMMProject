@@ -15,6 +15,7 @@ const SmmModules = () => {
       listFive: 'одиндватри',
       listSix: 'тритритри',
       isClicked: false,
+      link: '/ModuleOne'
 
     },
     {
@@ -28,7 +29,7 @@ const SmmModules = () => {
       listFive: 'одиндватри',
       listSix: 'тритритри',
       isClicked: false,
-
+      link: '/ModuleTwo'
     },
     {
       module: 'Модуль 3',
@@ -40,7 +41,7 @@ const SmmModules = () => {
       listFour: 'одиндватри',
       listFive: 'одиндватри',
       isClicked: false,
-
+      link: '/ModuleThree'
     },
     {
       module: 'Модуль 4',
@@ -52,6 +53,7 @@ const SmmModules = () => {
       listFour: 'одиндватри',
       listFive: 'одиндватри',
       isClicked: false,
+      link: '/ModuleFour'
     },
   ];
 
@@ -69,8 +71,8 @@ const SmmModules = () => {
           listFour = {item.listFour}
           listFive = {item.listFive}
           listSix = {item.listSix}
-
           isClicked={item.isClicked}
+          link={item.link}
         />
       ))}
     </>

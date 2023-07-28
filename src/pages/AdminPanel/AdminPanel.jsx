@@ -1,36 +1,43 @@
 import React, { useState } from 'react';
 import './AdminPanel.scss';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation, gql } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import ALL_USER from '../../server/allUsers';
 import Cabinet from '../pageCabinet/Cabinet';
 import arrowLeft from '../../assets/arrowLeft.svg';
 import SignUp from './SignUp';
 import useNoAdmin from '../../hooks/useNoAuth';
+import DELETE_USER from '../../server/deleteUser';
+
 
 const AdminPanel = () => {
   useNoAdmin();
 
-  const { loading, error, data } = useQuery(ALL_USER, {
-    variables: { take: 100 }, // Pass the 'take' variable with a value of 100
-  });
-
+  const { loading, error, data, refetch } = useQuery(ALL_USER);
   const [currentPage, setCurrentPage] = useState(1);
+  const [deleteUser] = useMutation(DELETE_USER);
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
 
-  const accounts = data.getAllUsers.items;
-  const itemsPerPage = 10;
+  const accounts = data?.getAllUsers?.items ?? [];
+  const totalUsers = data?.getAllUsers?.totalCount ?? 0;
+  const itemsPerPage = 5;
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
   };
 
-  const handleDeleteAccount = (email) => {
-    // Implement your delete account logic here
-    console.log('Deleting account:', email);
+  const handleDeleteAccount = (email, userId) => {
+    deleteUser({ variables: { userId } })
+      .then(() => {
+        refetch(); // Refetch data after successful deletion
+        console.log('Account deleted successfully');
+      })
+      .catch((error) => {
+        console.error('Error deleting account:', error);
+      });
   };
 
   const handlePageChange = (pageNumber) => {
@@ -43,7 +50,30 @@ const AdminPanel = () => {
     return accounts.slice(startIndex, endIndex);
   };
 
-  const totalPages = Math.ceil(accounts.length / itemsPerPage);
+  const totalPages = Math.ceil(totalUsers / itemsPerPage);
+
+  const renderPagination = () => {
+    const pageNumbers = [];
+    const showEllipsis = totalPages > 5;
+
+    for (let i = 1; i <= totalPages; i++) {
+      if (!showEllipsis || i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+        pageNumbers.push(
+          <div
+            key={i}
+            onClick={() => handlePageChange(i)}
+            className={currentPage === i ? 'active__number' : 'admin__pagination-number'}
+          >
+            {i}
+          </div>
+        );
+      } else if (showEllipsis && (i === currentPage - 2 || i === currentPage + 2)) {
+        pageNumbers.push(<div className='admin__dots' key={i}>...</div>);
+      }
+    }
+
+    return pageNumbers;
+  };
 
   return (
     <>
@@ -70,7 +100,7 @@ const AdminPanel = () => {
                   <td>{account.email}</td>
                   <td>{formatDate(account.createdAt)}</td>
                   <td>
-                    <button onClick={() => handleDeleteAccount(account.email)}>
+                    <button onClick={() => handleDeleteAccount(account.email, account.id)}>
                       Delete Account
                     </button>
                   </td>
@@ -80,27 +110,21 @@ const AdminPanel = () => {
           </table>
         </div>
         <div className='admin__pagination'>
-          <button
+          <div
+            className='admin__prevision'
             onClick={() => handlePageChange(currentPage > 1 ? currentPage - 1 : 1)}
             disabled={currentPage === 1}
           >
             Previous
-          </button>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => handlePageChange(index + 1)}
-              className={currentPage === index + 1 ? 'active' : ''}
-            >
-              {index + 1}
-            </button>
-          ))}
-          <button
+          </div>
+          {renderPagination()}
+          <div
+            className='admin__next'
             onClick={() => handlePageChange(currentPage < totalPages ? currentPage + 1 : totalPages)}
             disabled={currentPage === totalPages}
           >
             Next
-          </button>
+          </div>
         </div>
         <div className='admin__registration'>Регистрация</div>
         <SignUp />
