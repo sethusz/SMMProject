@@ -63,7 +63,7 @@ hr {
     width: 100%;
     height: auto; /* This will maintain the aspect ratio */
     min-height: 100vh;
-    
+    object-fit: cover;
   }
 
   &__text {

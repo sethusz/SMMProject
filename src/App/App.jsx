@@ -12,16 +12,14 @@ import ModuleThree from '../pages/PageModules/ModuleThree/ModuleThree';
 
 function App() {
   return (
-    <Router> {/* Замените на <Router> вместо <> */}
+    <Router>
       <Routes>
         <Route exact path="/" element={<PageMain />} />
-
-        <Route path="/LogIn" element={<LogIn />} />
         <Route path="/AdminPanel" element={<AdminPanel />} />
-
         <Route path="/ModuleOne" element={<ModuleOne />} />
         <Route path="/ModuleTwo" element={<ModuleTwo />} />
         <Route path="/ModuleThree" element={<ModuleThree />} />
+        <Route path="/LogIn" element={<LogIn />} />
       </Routes>
     </Router>
   );
