@@ -23,7 +23,6 @@ const ModuleOne = () => {
     <>
       <div className="arrow__left">
         <Link to="/">
-          {' '}
           <img src={arrowLeft} alt="Arrow Left" />
         </Link>
       </div>
@@ -34,9 +33,9 @@ const ModuleOne = () => {
           <div className="module__topic">Курс о СММ</div>
         </div>
 
-        <div className="lesson__content ">
+        <div className="lesson__content lesson">
           <div className="module__lesson">Урок 1. Введение. Знакомство</div>
-          <div className="module__content-lesson">
+          <div className="module__content-lesson content">
             <div className="lesson__content">
               <div className="lesson__descr">
                 <p>Здравствуйте дорогие участницы курса по Визуалу и Сторисмейкинг.</p>
@@ -47,12 +46,10 @@ const ModuleOne = () => {
                   За время обучения мы будем учиться понимать свой стиль, фотографировать,
                   обрабатывать снимки и красиво оформлять профиль! Темы не сложные и интересные.
                 </p>
+                <p>Темы не сложные и интересные.</p>
               </div>
 
-              <div className="lesson__skills">
-                Здесь вы напиши какие навыки пользовательно получил то есть: русский, анг, казах,
-                пользоватся компом, это все просто набор слов что бы увидели как это виглядит{' '}
-              </div>
+              {/* <div className="lesson__skills"></div> */}
 
               <div className="lesson__homework">Чат Вакансий</div>
             </div>
@@ -64,7 +61,7 @@ const ModuleOne = () => {
 
           <hr className="hr__black" />
 
-          <div className="lesson__content-two">
+          <div className="lesson__content-two content">
             <div className="lesson__video--1">
               <iframe
                 style={{ width: '100%' }}
@@ -75,20 +72,22 @@ const ModuleOne = () => {
                 allow="autoplay; encrypted-media"
                 allowFullScreen></iframe>
             </div>
-            <div className="lesson__two--text">
-              <ul className="lesson__two--list">
-                <li>Цель курса - научить вас составлять грамотный Визуал ✔️</li>
-                <li>Делать самые трендовые обработки✔️</li>
-                <li>Делать эстетичные кадры в любой обстановке ✔️</li>
-                <li>Рассказать как достичь успеха в Инстаграмм ✔️</li>
-                <li>Научить выделяться среди других ✔️</li>
-                <li>Выстроить свой личный бренд✔️</li>
-              </ul>
+            <div className="lesson__description">
+              <div className="lesson__two--text">
+                <ul className="lesson__two--list">
+                  <li>Цель курса - научить вас составлять грамотный Визуал ✔️</li>
+                  <li>Делать самые трендовые обработки✔️</li>
+                  <li>Делать эстетичные кадры в любой обстановке ✔️</li>
+                  <li>Рассказать как достичь успеха в Инстаграмм ✔️</li>
+                  <li>Научить выделяться среди других ✔️</li>
+                  <li>Выстроить свой личный бренд✔️</li>
+                </ul>
 
-              <p>
-                Будем творить красоту вместе! И самое важное: Пожалуйста выполняйте домашние
-                задания, они помогут вам улучшить навыки и закрепить теорию!
-              </p>
+                <p>
+                  Будем творить красоту вместе! И самое важное: Пожалуйста выполняйте домашние
+                  задания, они помогут вам улучшить навыки и закрепить теорию!
+                </p>
+              </div>
               <div className="lesson__homework">Телеграмм канал файлы</div>
             </div>
           </div>
@@ -108,9 +107,9 @@ const ModuleOne = () => {
 
         <hr />
 
-        <div className="lesson__content">
+        <div className="lesson__content lesson">
           <div className="module__lesson">УРОК 3. Цели, миссия и позиционирование в блоге.</div>
-          <div className="module__content-text">
+          <div className="module__content-text content">
             <div className="lesson__text--three">
               <div className="lesson__content--three">
                 В этом уроке поговорим о том, как поставить перед собой главные цели в блоге,
@@ -121,8 +120,8 @@ const ModuleOne = () => {
 
               <div className="lesson__summary">Конспект</div>
             </div>
-            <div className="lesson__content">
-              <div className="lesson__descr--three">
+            <div className="lesson__text--three">
+              <div className="lesson__content--three">
                 Домашним заданием будет воркбук по целям и миссии в блоге. Распечатайте его и
                 заполните. Или сделайте пометки в своём ежедневнике. Неважно как, главное —
                 сделайте.

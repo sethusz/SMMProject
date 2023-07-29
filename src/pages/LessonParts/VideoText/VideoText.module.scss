@@ -3,6 +3,7 @@
     font-size: 1.25rem;
     display: flex;
     justify-content: space-around;
+    align-items: start;
     // margin-left: 15%;
     // margin-right: 15%;
     color: black;
@@ -20,9 +21,19 @@
   &__contentTwo {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   &__descr {
+  }
+
+  &__list {
+    align-self: baseline;
+    padding: 0 0 0 20px;
+    li {
+      list-style-type: decimal;
+    }
   }
 
   &__deadline {
@@ -104,4 +115,8 @@
     margin-bottom: 30px;
     text-align: center;
   }
+}
+
+.content {
+  margin: 0 4rem;
 }
