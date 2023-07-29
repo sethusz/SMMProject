@@ -1,33 +1,30 @@
 .module {
   &__content {
+    font-size: 1.25rem;
     display: flex;
     justify-content: space-around;
-    margin-left: 15%;
-    margin-right: 15%;
+    // margin-left: 15%;
+    // margin-right: 15%;
     color: black;
+    gap: 8rem;
   }
-  
-  
-  
+
   &__video {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    flex: 1;
   }
 
   &__contentTwo {
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
   }
 
   &__descr {
-
-  
   }
-  
+
   &__deadline {
     display: flex;
     flex-direction: column;
@@ -37,11 +34,11 @@
     margin-bottom: 10%;
     width: 500px;
     height: 200px;
-  
+
     border: rgb(151, 146, 146) 2px solid;
     border-radius: 3px;
   }
-  
+
   &__homework {
     margin: 20px;
     padding: 20px 20px;
@@ -56,14 +53,12 @@
     transition: background-color 0.3s ease;
     margin-left: auto;
     margin-right: auto;
-  
-  
+
     &:hover {
       background-color: #989891;
-  
     }
   }
-  
+
   &__summary {
     display: flex;
     text-align: center;
@@ -82,41 +77,31 @@
     transition: background-color 0.3s ease;
     // margin-left: auto;
     // margin-left: 10%;
-  
-  
+
     &:hover {
       background-color: #989891;
-  
     }
   }
-  
+}
+
+.lesson {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
-  
-  .lesson {
-  
-    &__content {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    &__title {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-    
-    
-    &__lesson {
-      color: black;
-      font-size: 25px;
-      font-weight: bold;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-  
+
+  &__title {
+    margin-left: 10%;
+    margin-right: 10%;
   }
-  
-  
-  
-  
+
+  &__lesson {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

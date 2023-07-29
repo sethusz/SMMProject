@@ -1,27 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
 import scss from './Cabinet.module.scss';
-import { useMutation } from '@apollo/client'
+import { useMutation } from '@apollo/client';
 import { useNavigate } from 'react-router-dom';
-import jwt from 'jwt-decode'
+import jwt from 'jwt-decode';
 
-import LOGOUT_MUTATION from '../../server/logout'
-
+import LOGOUT_MUTATION from '../../server/logout';
 
 import { Link } from 'react-router-dom';
 
 const Cabinet = () => {
-
-
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   const [logout] = useMutation(LOGOUT_MUTATION);
 
   const accessToken = localStorage.getItem('accesstoken');
 
-  const payLoad = jwt(accessToken)
+  const payLoad = accessToken ? jwt(accessToken) : null;
 
   const roleUser = payLoad && payLoad.role ? payLoad.role : null;
-
 
   const handleAvatarClick = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -38,7 +34,6 @@ const Cabinet = () => {
       localStorage.removeItem('refreshtoken');
       localStorage.removeItem('user');
       navigate('/LogIn');
-
     } catch (error) {
       console.error(error);
     }
@@ -67,7 +62,8 @@ const Cabinet = () => {
       <div className={scss.image__avatar} onClick={handleAvatarClick}></div>
       {isDropdownOpen && (
         <div ref={dropdownRef} className={scss.dropdown__content}>
-          <div className={scss.dropdown__username}>{userData.username}
+          <div className={scss.dropdown__username}>
+            {userData.username}
 
             <div className={scss.dropdown__email}>({userData.email})</div>
           </div>
@@ -75,12 +71,14 @@ const Cabinet = () => {
           {/* <div className='dropdown__actions'> */}
 
           {roleUser === 'ADMIN' ? (
-  <Link to='/AdminPanel'>
-    <div className={scss.dropdown__admin}>Admin Panel</div>
-  </Link>
-) : null}
+            <Link to="/AdminPanel">
+              <div className={scss.dropdown__admin}>Admin Panel</div>
+            </Link>
+          ) : null}
 
-          <div className={scss.dropdown__logout} onClick={handleLogout}>Выйти</div>
+          <div className={scss.dropdown__logout} onClick={handleLogout}>
+            Выйти
+          </div>
           {/* </div> */}
 
           <hr className={scss.hr} />

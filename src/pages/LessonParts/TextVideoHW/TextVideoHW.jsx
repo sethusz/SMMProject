@@ -11,14 +11,13 @@ const TextVideoHW = ({ lessonNumber, lessonTitle, lessonDescription, videoId, de
         <div className={scss.module__content}>
           <div className={scss.module__video}>
             <iframe
-              style={{ width: '500px' }}
+              style={{ width: '100%' }}
               height="315"
               src={`https://www.youtube.com/embed/${videoId}?showinfo=0`}
               title="YouTube Video"
               frameBorder="0"
               allow="autoplay; encrypted-media"
-              allowFullScreen
-            ></iframe>
+              allowFullScreen></iframe>
             <div className={scss.module__summary}>Конспект</div>
           </div>
           <div className={scss.module__deadline}>
@@ -29,6 +28,6 @@ const TextVideoHW = ({ lessonNumber, lessonTitle, lessonDescription, videoId, de
       </div>
     </>
   );
-}
+};
 
 export default TextVideoHW;

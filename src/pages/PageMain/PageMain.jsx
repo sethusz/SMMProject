@@ -46,7 +46,7 @@ const PageMain = () => {
             <img src={checkMark} alt="checkMark" />
             <div className='knowledges__text'>Делать все что хочешь</div>
           </div>
-          
+
         </div>
 
         <hr />

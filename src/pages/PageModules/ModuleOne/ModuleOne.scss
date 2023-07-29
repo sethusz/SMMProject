@@ -1,7 +1,7 @@
 hr {
   border: none;
   border-top: 1px solid rgb(189, 176, 176);
-  width: 80%;
+  width: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -14,7 +14,7 @@ hr {
   margin-bottom: 5%;
 }
 
-.arrow__left img{
+.arrow__left img {
   position: absolute;
   position: fixed;
   margin-left: 20px;
@@ -30,21 +30,23 @@ hr {
   &__content-lesson {
     display: flex;
     // justify-content:space-between;
-    gap: 10%;
+    gap: 2rem;
+    font-size: 1.25rem;
+    // margin: 0 4rem;
     // margin: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    // margin-left: 10%;
+    // margin-right: 10%;
   }
 
   &__content-text {
     display: flex;
+    font-size: 1.25rem;
     // justify-content:space-between;
     gap: 10%;
     // margin: 20px;
-    margin-left: 15%;
-    margin-right: 15%;
+    // margin-left: 15%;
+    // margin-right: 15%;
   }
-
 
   &__header {
     display: flex;
@@ -80,6 +82,8 @@ hr {
     &__content {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      // margin: 0 4rem;
       // gap: 30px;
     }
 
@@ -87,25 +91,25 @@ hr {
       display: flex;
       flex-direction: column;
       gap: 30px;
-      width: 1000px;
+      // width: 1000px;
       color: black;
     }
 
     &__content-two {
       display: flex;
-      gap: 10%;
-      margin-left: 10%;
-      margin-right: 10%;
+      gap: 4rem;
+
+      // margin-left: 10%;
+      // margin-right: 10%;
     }
 
-    &__title { 
+    &__title {
       color: black;
       margin-left: 10%;
       margin-right: 10%;
     }
-    
-    &__content--three {
 
+    &__content--three {
       // max-width: 1000px;
     }
 
@@ -115,10 +119,20 @@ hr {
 
     &__two--text {
       color: black;
+      font-size: 1.25rem;
+      flex: 1;
+    }
+
+    &__two--list {
+      margin-bottom: 2rem;
+      li {
+        white-space: nowrap;
+      }
     }
 
     &__video--1 {
-      width: 1000px;
+      // width: 1000px;
+      flex: 1;
     }
 
     &__video {
@@ -126,13 +140,20 @@ hr {
     }
 
     &__img img {
-      height: 300px;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      min-width: 300px;
+      // height: 300px;
     }
 
     &__descr {
-      
       word-wrap: break-word;
       color: black;
+      p {
+        margin: 0;
+        margin-bottom: 1em;
+      }
     }
 
     &__descr--text {
@@ -148,7 +169,8 @@ hr {
     }
 
     &__homework {
-      margin: 20px;
+      // margin: 20px;
+      margin-top: 1.5rem;
       padding: 20px 20px;
       background-color: #9f9f9e;
       width: 50%;
@@ -162,10 +184,8 @@ hr {
       margin-left: auto;
       margin-right: auto;
 
-
       &:hover {
         background-color: #989891;
-
       }
     }
 
@@ -184,12 +204,38 @@ hr {
       margin-left: auto;
       margin-right: auto;
 
-
       &:hover {
         background-color: #989891;
-
       }
     }
   }
 }
 
+@media (max-width: 768px) {
+  .module {
+    &__content-lesson {
+      flex-direction: column-reverse;
+    }
+  }
+  .lesson {
+    &__content-two {
+      flex-direction: column;
+    }
+    &__two--list {
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .module {
+    .lesson__homework {
+      width: 100%;
+    }
+    .lesson__img img {
+      min-width: auto;
+    }
+  }
+}
