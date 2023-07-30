@@ -27,8 +27,7 @@ body {
   /* display: flex; */
   /* place-items: center; */
   background-color: #e3e1e1;
-  min-width:280px;
-  min-height: 100vh;
+  min-width: 280px;
 }
 
 h1 {
