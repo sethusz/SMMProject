@@ -25,8 +25,7 @@ const ModuleThree = () => {
     <>
       <div className="arrow__left">
         <Link to="/">
-          {' '}
-          <img src={arrowLeft} alt="Arrow Left" />{' '}
+          <img src={arrowLeft} alt="Arrow Left" />
         </Link>
       </div>
 
@@ -52,7 +51,7 @@ const ModuleThree = () => {
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__text}>
-              {lessonText}
+              <div className={`${scss.lesson__text_content}`}>{lessonText}</div>
               <div className={scss.lesson__summary}>Конспект</div>
             </div>
             <div className={scss.lesson__deadline}>

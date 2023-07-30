@@ -13,7 +13,6 @@
   }
 
   &__panel {
-
     max-height: 400px;
     overflow-y: auto;
 
@@ -47,6 +46,8 @@
         font-size: 14px;
         border-radius: 4px;
         transition: background-color 0.3s ease;
+
+        white-space: nowrap;
 
         &:hover {
           background-color: #d32f2f;
@@ -107,14 +108,13 @@
   margin: 0 auto;
   padding: 20px;
 
-  @media screen and (max-width: 500px) {
-    width: 300px;
+  @media screen and (max-width: 576px) {
+    width: 100%;
   }
 
-  @media screen and (max-width: 400px) {
-    width: 200px;
-  }
-
+  // @media screen and (max-width: 400px) {
+  //   width: 200px;
+  // }
 
   &__title {
     text-align: center;
@@ -148,7 +148,6 @@
     }
   }
 
-
   &__input {
     padding: 10px;
     width: 90%;
@@ -170,9 +169,8 @@
     }
   }
 
-
   p {
-    color: red;
+    color: rgb(255, 255, 255);
     margin: 5px 0;
   }
 
@@ -193,6 +191,46 @@
 
     &:hover {
       background-color: darken(red, 10%);
+    }
+  }
+}
+
+.modal {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    text-align: center;
+  }
+  &__info {
+  }
+
+  &__actions {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    background-color: red;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken(red, 10%);
+    }
+
+    &.confirm {
+      background-color: #09ec42;
+      &:hover {
+        background-color: darken(#09ec42, 10%);
+      }
     }
   }
 }

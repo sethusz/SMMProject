@@ -86,10 +86,19 @@ const Cabinet = () => {
           <div className={scss.dropdown__module}>
             {/* <ul className='module__list'> */}
             <div className={scss.module__title}>Modules</div>
-            <div className={scss.module__number}>Module 1</div>
-            <div className={scss.module__number}>Module 2</div>
-            <div className={scss.module__number}>Module 3</div>
-            <div className={scss.module__number}>Module 4</div>
+            <div className={scss.module__number}>
+              <Link to="/ModuleOne">Module 1</Link>
+            </div>
+
+            <div className={scss.module__number}>
+              <Link to="/ModuleTwo">Module 2</Link>
+            </div>
+            <div className={scss.module__number}>
+              <Link to="/ModuleThree">Module 3</Link>
+            </div>
+            <div className={scss.module__number}>
+              <Link to="/ModuleFour">Module 4</Link>
+            </div>
             <div className={scss.module__number}>Module 5</div>
             {/* </ul> */}
           </div>

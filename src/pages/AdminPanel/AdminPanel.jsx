@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, createPortal } from 'react';
 import './AdminPanel.scss';
 import { useQuery, useMutation, gql } from '@apollo/client';
 import { Link } from 'react-router-dom';
@@ -8,10 +8,13 @@ import arrowLeft from '../../assets/arrowLeft.svg';
 import SignUp from './SignUp';
 import useNoAdmin from '../../hooks/useNoAuth';
 import DELETE_USER from '../../server/deleteUser';
-
+import { Modal } from './Modal/Modal';
 
 const AdminPanel = () => {
   useNoAdmin();
+
+  const [isModalOpened, setIsModalOpened] = useState(false);
+  const [currentUser, setCurrentUser] = useState(null);
 
   const { loading, error, data, refetch } = useQuery(ALL_USER);
   const [currentPage, setCurrentPage] = useState(1);
@@ -29,15 +32,27 @@ const AdminPanel = () => {
     return date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
   };
 
-  const handleDeleteAccount = (email, userId) => {
-    deleteUser({ variables: { userId } })
+  const handleShowConfirm = ({ userId, email, userName }) => {
+    setIsModalOpened(true);
+    setCurrentUser({ userId, email, userName });
+  };
+
+  const handleDeleteAccount = () => {
+    console.log(currentUser);
+    deleteUser({ variables: { userId: Number(currentUser.userId) } })
       .then(() => {
         refetch(); // Refetch data after successful deletion
+        setIsModalOpened(false);
         console.log('Account deleted successfully');
       })
       .catch((error) => {
         console.error('Error deleting account:', error);
       });
+  };
+
+  const handleCancelDelete = () => {
+    setCurrentUser(null);
+    setIsModalOpened(false);
   };
 
   const handlePageChange = (pageNumber) => {
@@ -57,18 +72,26 @@ const AdminPanel = () => {
     const showEllipsis = totalPages > 5;
 
     for (let i = 1; i <= totalPages; i++) {
-      if (!showEllipsis || i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+      if (
+        !showEllipsis ||
+        i === 1 ||
+        i === totalPages ||
+        (i >= currentPage - 1 && i <= currentPage + 1)
+      ) {
         pageNumbers.push(
           <div
             key={i}
             onClick={() => handlePageChange(i)}
-            className={currentPage === i ? 'active__number' : 'admin__pagination-number'}
-          >
+            className={currentPage === i ? 'active__number' : 'admin__pagination-number'}>
             {i}
-          </div>
+          </div>,
         );
       } else if (showEllipsis && (i === currentPage - 2 || i === currentPage + 2)) {
-        pageNumbers.push(<div className='admin__dots' key={i}>...</div>);
+        pageNumbers.push(
+          <div className="admin__dots" key={i}>
+            ...
+          </div>,
+        );
       }
     }
 
@@ -78,14 +101,14 @@ const AdminPanel = () => {
   return (
     <>
       <Cabinet />
-      <div className='arrow__left'>
-        <Link to='/'>
+      <div className="arrow__left">
+        <Link to="/">
           <img src={arrowLeft} alt="Arrow Left" />
         </Link>
       </div>
-      <div className='admin'>
-        <div className='admin__title'>Admin Panel</div>
-        <div className='admin__panel'>
+      <div className="admin">
+        <div className="admin__title">Admin Panel</div>
+        <div className="admin__panel">
           <table>
             <thead>
               <tr>
@@ -100,7 +123,15 @@ const AdminPanel = () => {
                   <td>{account.email}</td>
                   <td>{formatDate(account.createdAt)}</td>
                   <td>
-                    <button onClick={() => handleDeleteAccount(account.email, account.id)}>
+                    {/* handleDeleteAccount(account.email, account.id) */}
+                    <button
+                      onClick={() =>
+                        handleShowConfirm({
+                          userId: account.id,
+                          email: account.email,
+                          userName: account.username,
+                        })
+                      }>
                       Delete Account
                     </button>
                   </td>
@@ -109,26 +140,44 @@ const AdminPanel = () => {
             </tbody>
           </table>
         </div>
-        <div className='admin__pagination'>
+        <div className="admin__pagination">
           <div
-            className='admin__prevision'
+            className="admin__prevision"
             onClick={() => handlePageChange(currentPage > 1 ? currentPage - 1 : 1)}
-            disabled={currentPage === 1}
-          >
+            disabled={currentPage === 1}>
             Previous
           </div>
           {renderPagination()}
           <div
-            className='admin__next'
-            onClick={() => handlePageChange(currentPage < totalPages ? currentPage + 1 : totalPages)}
-            disabled={currentPage === totalPages}
-          >
+            className="admin__next"
+            onClick={() =>
+              handlePageChange(currentPage < totalPages ? currentPage + 1 : totalPages)
+            }
+            disabled={currentPage === totalPages}>
             Next
           </div>
         </div>
-        <div className='admin__registration'>Регистрация</div>
+        <div className="admin__registration">Регистрация</div>
         <SignUp />
       </div>
+
+      {isModalOpened && (
+        <Modal setIsModalOpened={setIsModalOpened} isModalOpened={isModalOpened}>
+          <div className="modal__content">
+            <div className="modal__info">
+              Вы действительно хотите удалить пользователя {currentUser.userName} ?
+            </div>
+            <div className="modal__actions">
+              <button className="modal__button" onClick={handleCancelDelete}>
+                Cancel
+              </button>
+              <button className="modal__button confirm" onClick={handleDeleteAccount}>
+                Confirm
+              </button>
+            </div>
+          </div>
+        </Modal>
+      )}
     </>
   );
 };

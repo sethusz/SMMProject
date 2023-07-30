@@ -9,6 +9,7 @@ import AdminPanel from '../pages/AdminPanel/AdminPanel';
 import ModuleOne from '../pages/PageModules/ModuleOne/ModuleOne';
 import ModuleTwo from '../pages/PageModules/ModuleTwo/ModuleTwo';
 import ModuleThree from '../pages/PageModules/ModuleThree/ModuleThree';
+import ModuleFour from '../pages/PageModules/ModuleFour/ModuleFoure';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/ModuleOne" element={<ModuleOne />} />
         <Route path="/ModuleTwo" element={<ModuleTwo />} />
         <Route path="/ModuleThree" element={<ModuleThree />} />
+        <Route path="/ModuleFour" element={<ModuleFour />} />
         <Route path="/LogIn" element={<LogIn />} />
       </Routes>
     </Router>

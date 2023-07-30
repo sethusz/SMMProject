@@ -230,10 +230,34 @@ hr {
   }
 }
 
+@media (max-width: 1024px) {
+  .module {
+    .lesson {
+      &__content-two {
+        gap: 2rem;
+      }
+      &__two--list {
+        li {
+          white-space: normal;
+        }
+      }
+    }
+    &__content-text {
+      gap: 2rem;
+    }
+    .content {
+      margin: 0 2rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .module {
     &__content-lesson {
       flex-direction: column-reverse;
+    }
+    &__content-text {
+      flex-direction: column;
     }
   }
   .lesson {
@@ -255,6 +279,9 @@ hr {
     }
     .lesson__img img {
       min-width: auto;
+    }
+    .content {
+      margin: 0;
     }
   }
 }

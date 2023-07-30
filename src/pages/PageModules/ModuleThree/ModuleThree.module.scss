@@ -16,6 +16,11 @@
   &__text {
     margin-top: 5%;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &_content {
+    }
   }
 
   &__deadline {
@@ -23,6 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
     margin-top: 5%;
     margin-bottom: 10%;
     flex: 1;
@@ -58,7 +64,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    // margin: 20px;
     padding: 20px 20px;
     background-color: #9f9f9e;
     width: 50%;
@@ -80,4 +86,26 @@
 
 .content {
   margin: 0 4rem;
+}
+
+@media (max-width: 768px) {
+  .lesson {
+    &__content {
+      flex-direction: column;
+    }
+    &__summary {
+      margin: 0 auto;
+    }
+  }
+  .content {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .lesson {
+    &__deadline {
+      text-align: center;
+    }
+  }
 }

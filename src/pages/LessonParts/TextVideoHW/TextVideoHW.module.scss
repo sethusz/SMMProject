@@ -30,6 +30,7 @@
     flex: 1;
     border: rgb(151, 146, 146) 2px solid;
     border-radius: 3px;
+    padding: 1rem;
   }
 
   &__homework {
@@ -108,4 +109,29 @@
 
 .content {
   margin: 0 4rem;
+}
+
+@media (max-width: 1024px) {
+  .module {
+    &__content {
+      gap: 2rem;
+    }
+  }
+  .content {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .module {
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    margin: 0;
+  }
 }

@@ -80,7 +80,6 @@ hr {
 
     @media screen and (max-width: 600px) {
       font-size: 22px;
-      
     }
   }
 }
@@ -98,7 +97,7 @@ hr {
     color: black;
     font-size: 42px;
     font-weight: bold;
-  
+
     @media screen and (max-width: 1220px) {
       font-size: 30px;
     }
@@ -125,18 +124,20 @@ hr {
     // width: 320px;
     color: black;
     justify-items: center;
-      align-items: center;
-      text-align: center;
-  
+    align-items: center;
+    text-align: center;
+
     @media screen and (max-width: 850px) {
       grid-template-columns: repeat(2, 1fr);
- 
     }
-  
+
     @media screen and (max-width: 600px) {
       grid-template-columns: 1fr;
     }
-  
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+
     &__block {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       padding: 20px;
@@ -144,11 +145,12 @@ hr {
       width: 200px;
       background-color: rgb(215, 210, 210);
       border-radius: 3px;
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
     }
   }
-  
 }
-
 
 .footer {
   display: flex;
@@ -219,4 +221,3 @@ hr {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-

@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+    width: 100%;
   }
 
   &__contentTwo {
@@ -23,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    flex: 1;
   }
 
   &__descr {
@@ -43,8 +45,9 @@
     align-items: center;
     margin-top: 5%;
     margin-bottom: 10%;
-    width: 500px;
-    height: 200px;
+    padding: 1rem;
+    // width: 500px;
+    // height: 200px;
 
     border: rgb(151, 146, 146) 2px solid;
     border-radius: 3px;
@@ -95,6 +98,9 @@
   }
 }
 
+.content {
+  margin: 0 4rem;
+}
 .lesson {
   &__content {
     display: flex;
@@ -117,6 +123,35 @@
   }
 }
 
-.content {
-  margin: 0 4rem;
+@media (max-width: 1024px) {
+  .module {
+    &__content {
+      gap: 2rem;
+    }
+  }
+  .content {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .module {
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .module {
+    &__content {
+      gap: 2rem;
+    }
+    &__deadline {
+      text-align: center;
+    }
+  }
+  .content {
+    margin: 0;
+  }
 }

@@ -9,7 +9,7 @@ const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, dead
         <div className={`${scss.module__content} ${scss.content}`}>
           <div className={scss.module__video}>
             <iframe
-              style={{ width: '500px' }}
+              style={{ width: '100%' }}
               height="315"
               src={`https://www.youtube.com/embed/${videoId}?showinfo=0`}
               title="YouTube Video"
