@@ -10,6 +10,7 @@ import TextVideoHW from '../../LessonParts/TextVideoHW/TextVideoHW.jsx';
 import VideoText from './../../LessonParts/VideoText/VideoText.jsx';
 
 import useNoAuth from '../../../hooks/useNoAuth';
+import Cabinet from '../../pageCabinet/Cabinet';
 
 const ModuleOne = () => {
   useNoAuth();
@@ -26,6 +27,7 @@ const ModuleOne = () => {
           <img src={arrowLeft} alt="Arrow Left" />
         </Link>
       </div>
+      <Cabinet />
 
       <div className="module container">
         <div className="module__header">
@@ -97,8 +99,8 @@ const ModuleOne = () => {
 
         <TextVideoHW
           lessonNumber="2"
-          lessonTitle=" Сегодня у нас урок будет посвящён РАСПАКОВКИ ЛИЧНОСТИ."
-          lessonDescription="Для чего это нам нужно? Для того, чтобы лучше себя понять и знать о чем вести вашу страницу! Независимо от того,
+          lessonTitle="РАСПАКОВКА ЛИЧНОСТИ"
+          lessonDescription="Сегодня у нас урок будет посвящён РАСПАКОВКИ ЛИЧНОСТИ.Для чего это нам нужно? Для того, чтобы лучше себя понять и знать о чем вести вашу страницу! Независимо от того,
           какой тип блога вы ведёте: личный, экспертный, коммерческий ( магазины, и т.д.)! Когда мы с вами откроем и пропишем все наши стороны,
           тогда нам будет легче знать в каком направлении создавать Визуал и сторис!"
           videoId="bfj4lEyc4w8"
@@ -136,7 +138,7 @@ const ModuleOne = () => {
 
         <VideoText
           lessonNumber="4"
-          lessonTitle=" Сегодня у нас урок будет посвящён РАСПАКОВКИ ЛИЧНОСТИ."
+          lessonTitle="Насмотренность"
           lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
 
           Насмотренность – это визуальный опыт, который создатель получает, просматривая работы других авторов и произведения искусства."

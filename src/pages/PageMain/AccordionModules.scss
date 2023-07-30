@@ -58,7 +58,7 @@
 
     li {
       padding: 10px 0;
-
+      list-style-type: disc;
       :last-child {
         border-bottom: none;
       }
@@ -108,7 +108,7 @@
 
   &__content {
     // opacity: 0;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     max-height: 0;
     will-change: max-height;
     transition: all 1.5s;

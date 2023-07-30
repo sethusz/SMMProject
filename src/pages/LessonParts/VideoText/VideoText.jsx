@@ -5,7 +5,9 @@ const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, dead
   return (
     <>
       <div className={`${scss.lesson__content} ${scss.lesson}`}>
-        <div className={scss.lesson__lesson}>Урок {lessonNumber}</div>
+        <div className={scss.lesson__lesson}>
+          Урок {lessonNumber}. {lessonTitle}
+        </div>
         <div className={`${scss.module__content} ${scss.content}`}>
           <div className={scss.module__video}>
             <iframe
@@ -24,8 +26,7 @@ const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, dead
               <ol type="1" className={scss.module__list}>
                 <li>Никнейм</li>
                 <li> Аватар</li>
-                <li> Шапка </li>
-                <li>профиля</li>
+                <li> Шапка профиля </li>
                 <li> Актуальные</li>
                 <li> Визуал </li>
               </ol>

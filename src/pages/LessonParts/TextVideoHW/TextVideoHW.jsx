@@ -1,13 +1,22 @@
 import React from 'react';
 import scss from './TextVideoHW.module.scss'; // Import the SCSS module
 
-const TextVideoHW = ({ lessonNumber, lessonTitle, lessonDescription, videoId, deadline }) => {
+const TextVideoHW = ({
+  lessonNumber,
+  lessonTitle,
+  lessonDescription,
+  videoId,
+  deadline,
+  secondSummary,
+}) => {
   return (
     <>
       <div className={`${scss.lesson__content} lesson`}>
         <div className={scss.content}>
-          <div className={scss.lesson__lesson}>Урок {lessonNumber} </div>
-          <div className={scss.lesson__title}>{lessonTitle}</div>
+          <div className={scss.lesson__lesson}>
+            Урок {lessonNumber}. {lessonTitle}
+          </div>
+          {/* <div className={scss.lesson__title}>{lessonTitle}</div> */}
           <div className={scss.lesson__descr}>{lessonDescription}</div>
           <div className={scss.module__content}>
             <div className={scss.module__video}>
@@ -20,6 +29,7 @@ const TextVideoHW = ({ lessonNumber, lessonTitle, lessonDescription, videoId, de
                 allow="autoplay; encrypted-media"
                 allowFullScreen></iframe>
               <div className={scss.module__summary}>Конспект</div>
+              {secondSummary && <div className={scss.module__summary}>{secondSummary}</div>}
             </div>
             <div className={scss.module__deadline}>
               <div>{deadline}</div>

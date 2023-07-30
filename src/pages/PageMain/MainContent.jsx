@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './PageMain.scss';
-import AccordionItem from "./AccordionItem.jsx";
+import AccordionItem from './AccordionItem.jsx';
 
 const SmmModules = () => {
   const accordionData = [
@@ -15,8 +15,7 @@ const SmmModules = () => {
       listFive: 'одиндватри',
       listSix: 'тритритри',
       isClicked: false,
-      link: '/ModuleOne'
-
+      link: '/ModuleOne',
     },
     {
       module: 'Модуль 2',
@@ -29,7 +28,7 @@ const SmmModules = () => {
       listFive: 'одиндватри',
       listSix: 'тритритри',
       isClicked: false,
-      link: '/ModuleTwo'
+      link: '/ModuleTwo',
     },
     {
       module: 'Модуль 3',
@@ -41,7 +40,7 @@ const SmmModules = () => {
       listFour: 'одиндватри',
       listFive: 'одиндватри',
       isClicked: false,
-      link: '/ModuleThree'
+      link: '/ModuleThree',
     },
     {
       module: 'Модуль 4',
@@ -53,24 +52,37 @@ const SmmModules = () => {
       listFour: 'одиндватри',
       listFive: 'одиндватри',
       isClicked: false,
-      link: '/ModuleFour'
+      link: '/ModuleFour',
+    },
+    {
+      module: 'Модуль 5',
+      description: 'SMM Content',
+      transitionModule: 'Перейти к модулю',
+      listOne: 'одиндватри',
+      listTwo: 'одиндватри',
+      listThree: 'одиндватри',
+      listFour: 'одиндватри',
+      listFive: 'одиндватри',
+      listSix: 'тритритри',
+      isClicked: false,
+      link: '/ModuleFive',
     },
   ];
 
   return (
     <>
-      {accordionData.map(item => (
+      {accordionData.map((item) => (
         <AccordionItem
           key={item.module}
-          module={item.module}  
+          module={item.module}
           describe={item.description}
           transitionModule={item.transitionModule}
-          listOne = {item.listOne}
-          listTwo = {item.listTwo}
-          listThree = {item.listThree}
-          listFour = {item.listFour}
-          listFive = {item.listFive}
-          listSix = {item.listSix}
+          listOne={item.listOne}
+          listTwo={item.listTwo}
+          listThree={item.listThree}
+          listFour={item.listFour}
+          listFive={item.listFive}
+          listSix={item.listSix}
           isClicked={item.isClicked}
           link={item.link}
         />

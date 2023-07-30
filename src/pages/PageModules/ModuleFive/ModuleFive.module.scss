@@ -1,0 +1,72 @@
+.lesson {
+  margin-top: 4rem;
+  &__title {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  &__content {
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__footer {
+    display: flex;
+    gap: 4rem;
+  }
+  &__summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 5%;
+    gap: 2rem;
+    // margin-bottom: 10%;
+    flex: 1;
+    height: 200px;
+    border: rgb(151, 146, 146) 2px solid;
+    border-radius: 3px;
+    &_text {
+      text-align: center;
+    }
+    &_action {
+      padding: 20px 20px;
+      background-color: #9f9f9e;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.video {
+  width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .lesson {
+    &__content {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    width: 100%;
+  }
+}

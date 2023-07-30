@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import arrowLeft from '../../../assets/arrowLeft.svg';
 import { Link } from 'react-router-dom';
 
@@ -6,25 +6,14 @@ import TextVideoHW from '../../LessonParts/TextVideoHW/TextVideoHW.jsx';
 import VideoText from './../../LessonParts/VideoText/VideoText.jsx';
 
 import scss from './ModuleFour.module.scss';
-
-const Video = ({ videoId }) => {
-  return (
-    <div className={scss.module__video}>
-      <iframe
-        style={{ width: '100%' }}
-        height="315"
-        src={`https://www.youtube.com/embed/${videoId}?showinfo=0`}
-        title="YouTube Video"
-        frameBorder="0"
-        allow="autoplay; encrypted-media"
-        allowFullScreen></iframe>
-      {/* <div className={scss.module__summary}>Конспект</div> */}
-    </div>
-  );
-};
+import { Video } from '../../LessonParts/Video/Video';
+import Cabinet from '../../pageCabinet/Cabinet';
 
 const ModuleFour = () => {
   const videoId = 'bfj4lEyc4w8';
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="arrow__left">
@@ -32,6 +21,7 @@ const ModuleFour = () => {
           <img src={arrowLeft} alt="Arrow Left" />
         </Link>
       </div>
+      <Cabinet />
 
       <div className="module__header">
         <div className="module__title">Модуль 4</div>
@@ -45,11 +35,11 @@ const ModuleFour = () => {
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__grid}>
               <div className={scss.lesson__grid_col}>
-                <Video videoId={videoId} />
-                <Video videoId={videoId} />
-                <Video videoId={videoId} />
-                <Video videoId={videoId} />
-                <Video videoId={videoId} />
+                <Video videoId={videoId} height={160} />
+                <Video videoId={videoId} height={160} />
+                <Video videoId={videoId} height={160} />
+                <Video videoId={videoId} height={160} />
+                <Video videoId={videoId} height={160} />
                 <div className={scss.lesson__grid_summary}>
                   <div className={scss.lesson__summary_action}>Конспект Урока</div>
                   <div className={scss.lesson__summary_action}>Домашнее задание</div>
@@ -60,7 +50,7 @@ const ModuleFour = () => {
                   В данном уроке мы поговорим о существующих стилях в оформлении сторис через призму
                   искусства.
                 </p>
-                <Video videoId={videoId} />
+                <Video videoId={videoId} height={315} />
                 <div className={scss.lesson__summary}>
                   <div className={scss.lesson__summary_text}>
                     Дедлайны по домашнему заданию к уроку 2:

@@ -27,7 +27,19 @@
       flex-direction: column;
       justify-content: space-around;
       .lesson__summary_action {
-        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px;
+        background-color: #9f9f9e;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
       }
     }
   }
@@ -48,27 +60,21 @@
       }
     }
   }
-  &__footer {
-    display: flex;
-    gap: 4rem;
-  }
   &__summary {
     display: flex;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     margin-top: 5%;
-    gap: 2rem;
-    // margin-bottom: 10%;
-    flex: 1;
-    height: 200px;
+    padding: 1rem;
     border: rgb(151, 146, 146) 2px solid;
     border-radius: 3px;
-    &_text {
-      text-align: center;
-    }
     &_action {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
       padding: 20px 20px;
       background-color: #9f9f9e;
       color: white;
@@ -78,9 +84,11 @@
       text-align: center;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin-left: auto;
-      margin-right: auto;
     }
+  }
+  &__footer {
+    display: flex;
+    gap: 4rem;
   }
 }
 
@@ -94,6 +102,10 @@
 
 @media screen and (max-width: 1024px) {
   .lesson {
+    &__grid {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     &__footer {
       gap: 2rem;
     }
@@ -105,10 +117,6 @@
     margin: 0 2rem;
   }
   .lesson {
-    &__grid {
-      display: flex;
-      flex-direction: column-reverse;
-    }
     &__footer {
       flex-direction: column;
       gap: 1rem;
