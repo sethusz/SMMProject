@@ -30,6 +30,15 @@
     border-radius: 3px;
     z-index: 100;
     color: black;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      right: 24px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #fff;
+    }
 
     @media screen and (max-width: 500px) {
       // width: 120px;
