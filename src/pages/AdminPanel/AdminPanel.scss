@@ -1,12 +1,10 @@
 .admin {
   max-width: 800px;
-
   margin: 0 auto;
   padding: 20px;
 
   &__title {
     font-size: 24px;
-    color: #a5a4a4;
     text-align: center;
     font-weight: bold;
     margin-bottom: 20px;
@@ -19,7 +17,7 @@
     table {
       width: 100%;
       border-radius: 5px;
-      background-color: #908d8d;
+      background-color: #fff;
       border-collapse: collapse;
 
       th,
@@ -34,11 +32,11 @@
       }
 
       tr:hover {
-        background-color: rgb(174, 172, 172);
+        background-color: rgb(245, 245, 245);
       }
 
       button {
-        background-color: #f44336;
+        background-color: #f48c74;
         color: white;
         border: none;
         padding: 8px 16px;
@@ -50,7 +48,7 @@
         white-space: nowrap;
 
         &:hover {
-          background-color: #d32f2f;
+          background-color: #f3846b;
         }
       }
     }
@@ -66,9 +64,8 @@
 
   &__prevision,
   &__next {
-    color: #3a3634;
-    background-color: #908d8d;
-    padding: 5px;
+    background-color: #b8dfe6;
+    padding: 6px 16px;
     border-radius: 3px;
     font-weight: 500;
     cursor: pointer;
@@ -91,7 +88,6 @@
 
   &__registration {
     font-size: 24px;
-    color: #a5a4a4;
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
@@ -101,7 +97,7 @@
 
 .signup {
   display: flex;
-  background-color: #908d8d;
+  background-color: #fff;
   flex-direction: column;
   width: 400px;
   border-radius: 5px;
@@ -128,49 +124,55 @@
   }
 
   &__password {
-    padding: 10px;
-    width: 90%;
-    margin-bottom: 15px;
-    background-color: #676463;
-    border: 1px solid rgb(125, 121, 121);
-    border-radius: 5px;
+    position: relative;
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    margin: 6px 0;
+    background: #fffbfb;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(20, 29, 52, 0.3), -1px -1px 4px rgba(20, 29, 52, 0.25);
+    border: none;
     input {
       background-color: transparent;
-      width: 93%;
       border: none;
       outline: none;
+      padding: 6px 24px 6px 8px;
+      width: 100%;
+      color: #141d34;
+      border-radius: 5px;
     }
-
     input:focus {
       outline: none;
     }
   }
 
   &__input {
-    padding: 10px;
-    width: 90%;
-    margin-bottom: 15px;
-    background-color: #676463;
-    border: 1px solid rgb(125, 121, 121);
     border-radius: 5px;
+    margin: 6px 0;
+    // border: 1px solid rgb(99, 98, 98);
+    box-shadow: 1px 1px 6px rgba(20, 29, 52, 0.3), -1px -1px 4px rgba(20, 29, 52, 0.25);
+    color: #141d34;
 
     input {
-      background-color: transparent;
+      padding: 6px 8px;
       width: 100%;
-      border: none;
+      background: #fffbfb;
       outline: none;
-      border-bottom: 1px solid rgb(125, 121, 121);
+      border: none;
+      border-radius: 5px;
+      color: #141d34;
     }
 
-    input:focus {
+    &:focus {
       outline: none;
+      border-color: #828385;
     }
   }
 
-  p {
-    color: rgb(255, 255, 255);
+  .error__message {
+    color: #f3846b;
     margin: 5px 0;
   }
 
@@ -181,7 +183,7 @@
     width: 50%;
 
     margin: 20px auto 0 auto;
-    background-color: red;
+    background-color: #f48c74;
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -233,4 +235,9 @@
       }
     }
   }
+}
+
+.password__icon {
+  position: absolute;
+  right: 8px;
 }

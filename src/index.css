@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Comfortaa, system-ui, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -26,8 +28,9 @@ body {
   margin: 0;
   /* display: flex; */
   /* place-items: center; */
-  background-color: #e3e1e1;
+  background-color: #fcf7e3;
   min-width: 280px;
+  color: #141d34;
 }
 
 h1 {

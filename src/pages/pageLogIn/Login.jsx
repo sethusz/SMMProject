@@ -51,8 +51,8 @@ const Login = () => {
   const onSubmit = handleSubmit(handleSignIn);
 
   return (
-    <>
-      <div className="login">
+    <div className="login">
+      <div className="login__form">
         <div className="login__container">
           <h2 className="login__title">Авторизоваться</h2>
           <form onSubmit={onSubmit}>
@@ -99,7 +99,7 @@ const Login = () => {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

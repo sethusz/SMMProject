@@ -85,7 +85,7 @@ const SignUp = () => {
               render={({ field }) => <input type="text" {...field} />}
             />
           </div>
-          {errors.username && <p>{errors.username.message}</p>}
+          {errors.username && <p className="error__message">{errors.username.message}</p>}
         </div>
         <div className="signup__field">
           <label className="signup__label">Email:</label>
@@ -101,7 +101,7 @@ const SignUp = () => {
               render={({ field }) => <input type="text" {...field} />}
             />
           </div>
-          {errors.email && <p>{errors.email.message}</p>}
+          {errors.email && <p className="error__message">{errors.email.message}</p>}
         </div>
 
         <div className={`signup__field ${errors.password ? 'has-error' : ''}`}>
@@ -124,7 +124,7 @@ const SignUp = () => {
               className="password__icon"
             />
           </div>
-          {errors.password && <div className="error__message">{errors.password.message}</div>}
+          {errors.password && <p className="error__message">{errors.password.message}</p>}
         </div>
 
         <button type="submit">Register</button>
