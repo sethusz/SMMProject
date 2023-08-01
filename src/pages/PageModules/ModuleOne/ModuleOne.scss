@@ -102,7 +102,7 @@ hr {
 
     &__content-two {
       display: flex;
-      gap: 4rem;
+      gap: 8rem;
 
       // margin-left: 10%;
       // margin-right: 10%;
@@ -144,9 +144,6 @@ hr {
 
     &__two--list {
       margin-bottom: 2rem;
-      li {
-        white-space: nowrap;
-      }
     }
 
     &__video--1 {

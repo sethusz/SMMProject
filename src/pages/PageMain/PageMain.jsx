@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import './PageMain.scss';
-import img_main from '../../assets/img_main.jpg';
+import img_main from '../../assets/main.jpg';
 import checkMark from '../../assets/checkMark.svg';
 import SmmModules from './MainContent';
 import Cabinet from '../pageCabinet/Cabinet';
@@ -29,7 +29,7 @@ const PageMain = () => {
 
       <div className="main__content main" ref={mainContentRef}>
         <div className="main__title">VISUAL&STORIES</div>
-        <hr />
+        <hr className="hr" />
 
         <SmmModules />
       </div>

@@ -1,8 +1,8 @@
-hr {
+.hr {
   border: none;
   border-top: 1px solid rgb(189, 176, 176);
   width: 80%;
-  margin-top: 5%;
+  margin-top: 0;
 }
 
 @keyframes arrowFade {
@@ -93,13 +93,14 @@ hr {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 32px;
   }
 
   &__title {
     color: black;
     font-size: 42px;
     font-weight: bold;
+    margin-bottom: 32px;
 
     @media screen and (max-width: 1220px) {
       font-size: 30px;

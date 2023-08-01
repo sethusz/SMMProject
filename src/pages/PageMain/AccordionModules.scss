@@ -111,13 +111,13 @@
     padding: 0 1.5rem;
     max-height: 0;
     will-change: max-height;
-    transition: all 750ms;
+    transition: all 850ms;
     overflow: hidden;
   }
 
   &.active &__content {
     // opacity: 1;
-    max-height: 350px;
+    max-height: 900px;
   }
 }
 
