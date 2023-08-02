@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import './PageMain.scss';
-import img_main from '../../assets/main.jpg';
+import img_main from '../../assets/img_main.jpg';
 import checkMark from '../../assets/checkMark.svg';
 import SmmModules from './MainContent';
 import Cabinet from '../pageCabinet/Cabinet';

@@ -69,16 +69,15 @@ const SignUp = () => {
 
   return (
     <div className="signup">
-      <div className="signup__title">Sign Up</div>
       <form onSubmit={onSubmit}>
         <div className="signup__field">
-          <label className="signup__label">Username:</label>
+          <label className="signup__label">Имя пользователя:</label>
           <div className="signup__input">
             <Controller
               name="username"
               control={control}
               rules={{
-                required: 'Username is required',
+                required: 'Укажите имя пользователя',
                 validate: validateUsername,
               }}
               defaultValue=""
@@ -95,7 +94,7 @@ const SignUp = () => {
               control={control}
               defaultValue=""
               rules={{
-                required: 'Email is required',
+                required: 'Укажите Email',
                 validate: validateEmail,
               }}
               render={({ field }) => <input type="text" {...field} />}
@@ -106,7 +105,7 @@ const SignUp = () => {
 
         <div className={`signup__field ${errors.password ? 'has-error' : ''}`}>
           <label htmlFor="password" className="signup__label">
-            Password:
+            Пароль:
           </label>
           <div className="signup__password">
             <input
@@ -114,7 +113,7 @@ const SignUp = () => {
               id="password"
               name="password"
               {...control.register('password', {
-                required: 'Password is required',
+                required: 'Укажите пароль',
                 validate: validatePassword,
               })}
             />
@@ -127,11 +126,11 @@ const SignUp = () => {
           {errors.password && <p className="error__message">{errors.password.message}</p>}
         </div>
 
-        <button type="submit">Register</button>
+        <button type="submit">Зарегистрировать</button>
       </form>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error.message}</p>}
-      {successMessage && <p>{successMessage}</p>}
+      {loading && <p>Загрузка...</p>}
+      {error && <p className="p signup__error">{error.message}</p>}
+      {successMessage && <p className="p signup__success">{successMessage}</p>}
     </div>
   );
 };

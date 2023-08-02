@@ -100,12 +100,24 @@
   background-color: #fff;
   flex-direction: column;
   width: 400px;
+  gap: 1rem;
   border-radius: 5px;
   margin: 0 auto;
   padding: 20px;
 
   @media screen and (max-width: 576px) {
     width: 100%;
+  }
+  .p {
+    text-align: center;
+  }
+
+  &__error {
+    color: #f48c74;
+  }
+
+  &__success {
+    color: #141d34;
   }
 
   // @media screen and (max-width: 400px) {
@@ -192,7 +204,7 @@
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: darken(red, 10%);
+      background-color: darken(#f48c74, 10%);
     }
   }
 }
@@ -216,7 +228,7 @@
     justify-content: center;
     text-align: center;
     margin: 20px auto 0 auto;
-    background-color: red;
+    background-color: darken(#f48c74, 10%);
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -225,13 +237,13 @@
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: darken(red, 10%);
+      background-color: darken(#f48c74, 30%);
     }
 
     &.confirm {
-      background-color: #09ec42;
+      background-color: darken(#b8dfe6, 10%);
       &:hover {
-        background-color: darken(#09ec42, 10%);
+        background-color: darken(#b8dfe6, 30%);
       }
     }
   }

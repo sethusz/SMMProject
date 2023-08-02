@@ -113,8 +113,8 @@ const AdminPanel = () => {
             <thead>
               <tr>
                 <th>Email</th>
-                <th>Date</th>
-                <th>Action</th>
+                <th>Дата</th>
+                <th>Действие</th>
               </tr>
             </thead>
             <tbody>

@@ -14,9 +14,12 @@ const Login = () => {
     control,
     formState: { errors },
     setError,
+    reset,
   } = useForm();
   const navigate = useNavigate();
   const [signin, { loading, error }] = useMutation(SIGNIN_MUTATION);
+
+  console.log(error);
 
   const handleSignIn = (data) => {
     signin({
@@ -28,16 +31,15 @@ const Login = () => {
       },
     })
       .then((response) => {
-        console.log('Logged in successfully', response.data);
-
+        // console.log('Logged in successfully', response.data);
         localStorage.setItem('accesstoken', response.data.signin.accessToken);
         localStorage.setItem('refreshtoken', response.data.signin.refreshToken);
         localStorage.setItem('user', JSON.stringify(response.data.signin.user));
-
         navigate('/');
       })
       .catch((error) => {
         console.error('SignIn failed', error);
+        reset();
       });
   };
 
@@ -92,6 +94,7 @@ const Login = () => {
                 />
               </div>
               {errors.password && <p className="login__error">{errors.password.message}</p>}
+              {error && <p className="login__error">{error.message}</p>}
             </div>
             <button type="submit" className="login__button">
               Войти
