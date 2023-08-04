@@ -1,7 +1,16 @@
 import React from 'react';
 import scss from './VideoText.module.scss'; // Import the SCSS module
 
-const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, deadline, list }) => {
+const VideoText = ({
+  lessonNumber,
+  lessonTitle,
+  lessonDescription,
+  videoId,
+  deadline,
+  list,
+  link,
+  homework,
+}) => {
   return (
     <>
       <div className={`${scss.lesson__content} ${scss.lesson}`}>
@@ -19,7 +28,7 @@ const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, dead
               allow="autoplay; encrypted-media"
               allowFullScreen></iframe>
             <div className={scss.module__summary}>
-              <a href="" className="link">
+              <a href={link} className="link">
                 Конспект
               </a>
             </div>
@@ -38,7 +47,7 @@ const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, dead
             <div className={scss.module__deadline}>
               <div>{deadline}</div>
               <div className={scss.module__homework}>
-                <a href="" className="link">
+                <a href={homework} className="link">
                   Домашние задание
                 </a>
               </div>

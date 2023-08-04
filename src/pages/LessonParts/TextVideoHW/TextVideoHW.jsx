@@ -8,6 +8,7 @@ const TextVideoHW = ({
   videoId,
   deadline,
   secondSummary,
+  firstConspect,
 }) => {
   return (
     <>
@@ -29,11 +30,17 @@ const TextVideoHW = ({
                 allow="autoplay; encrypted-media"
                 allowFullScreen></iframe>
               <div className={scss.module__summary}>
-                <a href="" className="link">
+                <a href={firstConspect} className="link">
                   Конспект
                 </a>
               </div>
-              {secondSummary && <div className={scss.module__summary}>{secondSummary}</div>}
+              {secondSummary && (
+                <div className={scss.module__summary}>
+                  <a href={{ secondLink }} className="link">
+                    {secondSummary}
+                  </a>
+                </div>
+              )}
             </div>
             <div className={scss.module__deadline}>
               <div>{deadline}</div>

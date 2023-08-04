@@ -38,6 +38,9 @@ const ModuleTwo = () => {
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           list="true"
+          link={
+            'https://drive.google.com/file/d/1zf5fff-I2zhXGTzJwSY9EqiYd3IjXisE/view?usp=drive_link'
+          }
         />
 
         <hr />
@@ -50,6 +53,8 @@ const ModuleTwo = () => {
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           secondSummary={'Конспект Урока 2'}
+          firstConspect="https://drive.google.com/file/d/1yaaGmvl5Cq_RLqD-7dkTmmSw4n074Hmh/view?usp=drive_link"
+          secondLink="https://drive.google.com/file/d/15Ig1VnzaHld44Aeu9lkCo1tykfEbxQL3/view?usp=drive_link"
         />
 
         <hr />
@@ -96,10 +101,18 @@ const ModuleTwo = () => {
                 <div className={scss.video}>
                   <Video videoId={videoId} />
                 </div>
-                <div className={scss.lesson__summary}>Конспект</div>
+                <div className={scss.lesson__summary}>
+                  <a href="" className="link">
+                    Конспект
+                  </a>
+                </div>
               </div>
               <div className={scss.lesson__grid_col}>
-                <div className={scss.lesson__summary}>Конспект</div>
+                <div className={scss.lesson__summary}>
+                  <a href="" className="link">
+                    Конспект
+                  </a>
+                </div>
                 <div className={scss.video}>
                   <Video videoId={videoId} />
                 </div>
@@ -107,7 +120,11 @@ const ModuleTwo = () => {
               <div className={scss.lesson__grid_col}>
                 <div className={scss.lesson__deadline}>
                   <div>Дедлайны по домашнему заданию к уроку 6:</div>
-                  <div className={scss.lesson__homework}>Домашние задание</div>
+                  <div className={scss.lesson__homework}>
+                    <a href="" className="link">
+                      Домашние задание
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

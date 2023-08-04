@@ -13,7 +13,9 @@ const ModuleFive = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const videoId = 'bfj4lEyc4w8';
+
   return (
     <>
       <div className="arrow__left">
@@ -45,7 +47,11 @@ const ModuleFive = () => {
             </div>
           </div>
           <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>Конспект урока</div>
+            <div className={scss.lesson__summary_action}>
+              <a href="" className="link">
+                Конспект урока
+              </a>
+            </div>
           </div>
         </div>
         <hr />
@@ -58,7 +64,11 @@ const ModuleFive = () => {
             </div>
           </div>
           <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>Конспект урока</div>
+            <div className={scss.lesson__summary_action}>
+              <a href="" className="link">
+                Конспект урока
+              </a>
+            </div>
           </div>
         </div>
 
@@ -72,7 +82,11 @@ const ModuleFive = () => {
             </div>
           </div>
           <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>Конспект урока</div>
+            <div className={scss.lesson__summary_action}>
+              <a href="" className="link">
+                Конспект урока
+              </a>
+            </div>
           </div>
         </div>
         <hr />
@@ -85,7 +99,11 @@ const ModuleFive = () => {
             </div>
           </div>
           <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>Конспект урока</div>
+            <div className={scss.lesson__summary_action}>
+              <a href="" className="link">
+                Конспект урока
+              </a>
+            </div>
           </div>
         </div>
 
@@ -101,7 +119,11 @@ const ModuleFive = () => {
             </div>
           </div>
           <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>Конспект урока</div>
+            <div className={scss.lesson__summary_action}>
+              <a href="" className="link">
+                Конспект урока
+              </a>
+            </div>
           </div>
         </div>
 
@@ -114,7 +136,11 @@ const ModuleFive = () => {
             </div>
           </div>
           <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>Конспект урока</div>
+            <div className={scss.lesson__summary_action}>
+              <a href="" className="link">
+                Конспект урока
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -60,11 +60,19 @@ const ModuleThree = () => {
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__text}>
               <div className={`${scss.lesson__text_content}`}>{lessonText}</div>
-              <div className={scss.lesson__summary}>Конспект</div>
+              <div className={scss.lesson__summary}>
+                <a href="" className="link">
+                  Конспект
+                </a>
+              </div>
             </div>
             <div className={scss.lesson__deadline}>
               <div>Дедлайны по домашнему заданию к уроку 2:</div>
-              <div className={scss.lesson__homework}>Домашние задание</div>
+              <div className={scss.lesson__homework}>
+                <a href="" className="link">
+                  Домашние задание
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -102,7 +110,11 @@ const ModuleThree = () => {
               </div>
               <div className={scss.lesson__deadline}>
                 <div>Дедлайны по домашнему заданию к уроку 3:</div>
-                <div className={scss.lesson__homework}>Домашние задание</div>
+                <div className={scss.lesson__homework}>
+                  <a href="" className="link">
+                    Домашние задание
+                  </a>
+                </div>
               </div>
               {/* <div className={scss.lesson__summary}>Конспект</div> */}
             </div>
@@ -121,7 +133,11 @@ const ModuleThree = () => {
               </div>
               <div className={scss.lesson__grid_summary}>
                 <div>Все пресеты вы cможете скачать в телеграмм канале под названием «Файлы»</div>
-                <div className={scss.lesson__homework}>Конспект урока</div>
+                <div className={scss.lesson__homework}>
+                  <a href="" className="link">
+                    Конспект урока
+                  </a>
+                </div>
               </div>
               <div className={scss.video}>
                 <Video videoId={videoId} />
@@ -134,7 +150,11 @@ const ModuleThree = () => {
               </div>
               <div className={scss.lesson__grid_deadline}>
                 <div>Дедлайны по домашнему заданию к уроку 4:</div>
-                <div className={scss.lesson__homework}>Домашние задание</div>
+                <div className={scss.lesson__homework}>
+                  <a href="" className="link">
+                    Домашние задание
+                  </a>
+                </div>
               </div>
             </div>
           </div>

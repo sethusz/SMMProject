@@ -41,8 +41,16 @@ const ModuleFour = () => {
                 <Video videoId={videoId} height={160} />
                 <Video videoId={videoId} height={160} />
                 <div className={scss.lesson__grid_summary}>
-                  <div className={scss.lesson__summary_action}>Конспект Урока</div>
-                  <div className={scss.lesson__summary_action}>Домашнее задание</div>
+                  <div className={scss.lesson__summary_action}>
+                    <a href="" className="link">
+                      Конспект Урока
+                    </a>
+                  </div>
+                  <div className={scss.lesson__summary_action}>
+                    <a href="" className="link">
+                      Домашнее задание
+                    </a>
+                  </div>
                 </div>
               </div>
               <div className={scss.lesson__grid_col}>
@@ -55,7 +63,11 @@ const ModuleFour = () => {
                   <div className={scss.lesson__summary_text}>
                     Дедлайны по домашнему заданию к уроку 2:
                   </div>
-                  <div className={scss.lesson__summary_action}>Домашнее задание</div>
+                  <div className={scss.lesson__summary_action}>
+                    <a href="" className="link">
+                      Домашнее задание
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -82,13 +94,21 @@ const ModuleFour = () => {
             <div className={scss.lesson__footer}>
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>Презентация по теме урока:</div>
-                <div className={scss.lesson__summary_action}>Конспект урока</div>
+                <div className={scss.lesson__summary_action}>
+                  <a href="" className="link">
+                    Конспект урока
+                  </a>
+                </div>
               </div>
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>
                   Дедлайны по домашнему заданию к уроку 2:
                 </div>
-                <div className={scss.lesson__summary_action}>Домашнее задание</div>
+                <div className={scss.lesson__summary_action}>
+                  <a href="" className="link">
+                    Домашнее задание
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -101,6 +121,9 @@ const ModuleFour = () => {
           lessonDescription=""
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 3:"
+          link={
+            'https://drive.google.com/file/d/14MHK-k3_0uGWJ-O3XfomXqBKRakMRNXm/view?usp=drive_link'
+          }
         />
 
         <hr />

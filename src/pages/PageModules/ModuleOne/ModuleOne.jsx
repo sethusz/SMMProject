@@ -129,7 +129,9 @@ const ModuleOne = () => {
               </div>
 
               <div className="lesson__summary">
-                <a href="" className="link">
+                <a
+                  href="https://drive.google.com/file/d/1dub5cvadWoE4cynkNBwgJFVCdUYV2_Co/view?usp=drive_link"
+                  className="link">
                   Конспект
                 </a>
               </div>
@@ -160,6 +162,9 @@ const ModuleOne = () => {
           Насмотренность – это визуальный опыт, который создатель получает, просматривая работы других авторов и произведения искусства."
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link={
+            'https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link'
+          }
         />
       </div>
     </>
