@@ -118,7 +118,7 @@ const ModuleOne = () => {
         <hr />
 
         <div className="lesson__content lesson">
-          <div className="module__lesson">УРОК 3. Цели, миссия и позиционирование в блоге.</div>
+          <div className="module__lesson">УРОК 3. Поиск тематики..</div>
           <div className="module__content-text content">
             <div className="lesson__text--three">
               <div className="lesson__content--three">
@@ -156,6 +156,35 @@ const ModuleOne = () => {
 
         <VideoText
           lessonNumber="4"
+          lessonTitle="Определение концепции блога."
+          lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
+
+          Насмотренность – это визуальный опыт, который создатель получает, просматривая работы других авторов и произведения искусства."
+          videoId="bfj4lEyc4w8"
+          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link={
+            'https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link'
+          }
+        />
+
+        <hr />
+        <VideoText
+          lessonNumber="5"
+          lessonTitle="Цели, Миссия и позоционирование в блоге"
+          lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
+
+          Насмотренность – это визуальный опыт, который создатель получает, просматривая работы других авторов и произведения искусства."
+          videoId="bfj4lEyc4w8"
+          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link={
+            'https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link'
+          }
+        />
+
+        <hr />
+
+        <VideoText
+          lessonNumber="6"
           lessonTitle="Насмотренность"
           lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
 

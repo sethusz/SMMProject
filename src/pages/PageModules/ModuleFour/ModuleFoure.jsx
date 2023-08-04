@@ -30,7 +30,7 @@ const ModuleFour = () => {
 
       <div className="container">
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 1. Сторис.</div>
+          <div className={scss.lesson__title}>УРОК 1. Что такое рилс и для чего он нам нужен?</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__grid}>
@@ -76,7 +76,7 @@ const ModuleFour = () => {
         <hr />
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 2. Текст</div>
+          <div className={scss.lesson__title}>УРОК 2. Приложение и основы монтажа видео-рилс.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__text}>
@@ -117,7 +117,7 @@ const ModuleFour = () => {
         <hr />
 
         <VideoText
-          lessonNumber="УРОК 3.СММ"
+          lessonNumber="УРОК 3. Цепляющий оффер, который будет использоваться в рилс воронке."
           lessonDescription=""
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 3:"

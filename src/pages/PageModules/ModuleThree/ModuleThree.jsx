@@ -44,7 +44,7 @@ const ModuleThree = () => {
 
       <div className="container">
         <VideoText
-          lessonNumber="1. Как делать фотографии в домашних условиях."
+          lessonNumber="1. Сторис."
           lessonDescription="В данном уроке я покажу вам как делать красивые кадры в домашних условиях. Самое важное это – практика! Чем чаще вы фотографируете разные предметы, тем лучше они у вас будут получаться! Более подробная информация будет выслана в презентации!"
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
@@ -53,9 +53,7 @@ const ModuleThree = () => {
         <hr />
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>
-            УРОК 2. Основные правила композиции в фотографии.
-          </div>
+          <div className={scss.lesson__title}>УРОК 2. Приложение для сторис.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__text}>
@@ -87,7 +85,7 @@ const ModuleThree = () => {
         /> */}
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 3. Фуд съёмка.</div>
+          <div className={scss.lesson__title}>УРОК 3. Как вести гармонические сторис.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__video}>
@@ -124,7 +122,7 @@ const ModuleThree = () => {
         <hr />
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 4. Обработка фотографий.</div>
+          <div className={scss.lesson__title}>УРОК 4. Копирайтинг.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__grid}>
@@ -164,7 +162,7 @@ const ModuleThree = () => {
 
         <VideoText
           lessonNumber="5"
-          lessonDescription="qweqwe"
+          lessonDescription="Контент план."
           videoId="Zopud20A7lY"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
         />
@@ -173,7 +171,7 @@ const ModuleThree = () => {
 
         <VideoText
           lessonNumber="6"
-          lessonDescription="qweqwe"
+          lessonDescription="Тайм-менеджмент."
           videoId="otccevOOgK0"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
         />
