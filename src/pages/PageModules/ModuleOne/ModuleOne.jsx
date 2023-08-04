@@ -72,7 +72,7 @@ const ModuleOne = () => {
               <iframe
                 style={{ width: '100%' }}
                 height="315"
-                src={`https://www.youtube.com/embed/${videoId}?showinfo=0`}
+                src={`https://www.youtube.com/embed/${'Ph5caGs394Y'}?showinfo=0`}
                 title="YouTube Video"
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
@@ -111,7 +111,7 @@ const ModuleOne = () => {
           lessonDescription="Сегодня у нас урок будет посвящён РАСПАКОВКИ ЛИЧНОСТИ.Для чего это нам нужно? Для того, чтобы лучше себя понять и знать о чем вести вашу страницу! Независимо от того,
           какой тип блога вы ведёте: личный, экспертный, коммерческий ( магазины, и т.д.)! Когда мы с вами откроем и пропишем все наши стороны,
           тогда нам будет легче знать в каком направлении создавать Визуал и сторис!"
-          videoId="bfj4lEyc4w8"
+          videoId="zLdHz4WqmuI"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
         />
 
