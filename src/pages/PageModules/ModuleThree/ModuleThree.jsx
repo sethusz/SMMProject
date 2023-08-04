@@ -159,6 +159,24 @@ const ModuleThree = () => {
             </div>
           </div>
         </div>
+
+        <hr />
+
+        <VideoText
+          lessonNumber="5"
+          lessonDescription="qweqwe"
+          videoId="Zopud20A7lY"
+          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+        />
+
+        <hr />
+
+        <VideoText
+          lessonNumber="6"
+          lessonDescription="qweqwe"
+          videoId="otccevOOgK0"
+          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+        />
       </div>
     </>
   );

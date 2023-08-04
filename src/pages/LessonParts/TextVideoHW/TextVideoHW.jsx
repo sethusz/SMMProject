@@ -7,6 +7,7 @@ const TextVideoHW = ({
   lessonDescription,
   videoId,
   deadline,
+  secondLink,
   secondSummary,
   firstConspect,
 }) => {
@@ -36,7 +37,7 @@ const TextVideoHW = ({
               </div>
               {secondSummary && (
                 <div className={scss.module__summary}>
-                  <a href={{ secondLink }} className="link">
+                  <a href={secondLink} className="link">
                     {secondSummary}
                   </a>
                 </div>
