@@ -53,7 +53,11 @@ const ModuleOne = () => {
 
               {/* <div className="lesson__skills"></div> */}
 
-              <div className="lesson__homework">Чат Вакансий</div>
+              <div className="lesson__homework">
+                <a href="https://t.me/+4t2FFF5q7Dw0OTYy" className="link" target="_blank">
+                  Чат Вакансий
+                </a>
+              </div>
             </div>
 
             <div className="lesson__img">
@@ -90,7 +94,11 @@ const ModuleOne = () => {
                   задания, они помогут вам улучшить навыки и закрепить теорию!
                 </p>
               </div>
-              <div className="lesson__homework">Телеграмм канал файлы</div>
+              <div className="lesson__homework">
+                <a href="https://t.me/+4f_vVAOmtexhYTUy" className="link" target="_blank">
+                  Телеграмм канал файлы
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +128,11 @@ const ModuleOne = () => {
                 блога выбрать для выстраивания позиционирования в нем.
               </div>
 
-              <div className="lesson__summary">Конспект</div>
+              <div className="lesson__summary">
+                <a href="" className="link">
+                  Конспект
+                </a>
+              </div>
             </div>
             <div className="lesson__text--three">
               <div className="lesson__content--three">
@@ -129,7 +141,11 @@ const ModuleOne = () => {
                 сделайте.
               </div>
 
-              <div className="lesson__homework">Домашние задание</div>
+              <div className="lesson__homework">
+                <a href="" className="link">
+                  Домашние задание
+                </a>
+              </div>
             </div>
           </div>
         </div>

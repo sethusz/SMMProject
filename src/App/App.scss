@@ -2,12 +2,20 @@ body {
   font-size: 16px;
 }
 
-#root {
-  // max-width: 1920px;
-  // margin: 0 auto;
-  // padding: 2rem;
-  // text-align: center;
+.link {
+  color: #fcf7e3;
+  transition: color 250ms ease;
+  &:hover {
+    color: darken(#fcf7e3, 10%);
+  }
 }
+
+// #root {
+//   // max-width: 1920px;
+//   // margin: 0 auto;
+//   // padding: 2rem;
+//   // text-align: center;
+// }
 
 // .logo {
 //   height: 6em;

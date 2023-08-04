@@ -18,7 +18,11 @@ const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, dead
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen></iframe>
-            <div className={scss.module__summary}>Конспект</div>
+            <div className={scss.module__summary}>
+              <a href="" className="link">
+                Конспект
+              </a>
+            </div>
           </div>
           <div className={scss.module__contentTwo}>
             <div className={scss.module__descr}>{lessonDescription}</div>
@@ -33,7 +37,11 @@ const VideoText = ({ lessonNumber, lessonTitle, lessonDescription, videoId, dead
             )}
             <div className={scss.module__deadline}>
               <div>{deadline}</div>
-              <div className={scss.module__homework}>Домашние задание</div>
+              <div className={scss.module__homework}>
+                <a href="" className="link">
+                  Домашние задание
+                </a>
+              </div>
             </div>
           </div>
         </div>
