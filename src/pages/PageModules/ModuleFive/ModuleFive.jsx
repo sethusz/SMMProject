@@ -36,6 +36,7 @@ const ModuleFive = () => {
           lessonDescription=""
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 1:"
+          link="https://drive.google.com/file/d/1B9iii_vuYOTEJ1IK9PQ6yBVg9KMel4df/view?usp=sharing"
         />
         <hr />
         <div className={scss.lesson}>
@@ -48,7 +49,7 @@ const ModuleFive = () => {
           </div>
           <div className={scss.lesson__footer}>
             <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
+              <a href="https://drive.google.com/file/d/19ifiovHbLV76tURRI4UOdDW7z5fHMXHz/view?usp=sharing" className="link" target="blank">
                 Конспект урока
               </a>
             </div>
@@ -65,7 +66,7 @@ const ModuleFive = () => {
           </div>
           <div className={scss.lesson__footer}>
             <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
+              <a href="https://drive.google.com/file/d/1zVQp83nUHi9Wrb_7b9zkI3nHZBxFQIa7/view?usp=sharing" className="link" target='blank'>
                 Конспект урока
               </a>
             </div>
@@ -83,7 +84,7 @@ const ModuleFive = () => {
           </div>
           <div className={scss.lesson__footer}>
             <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
+              <a href="https://drive.google.com/file/d/1O5gYUBZ44IL0HL0e1nodAL5_b-LNkMkl/view?usp=sharing" className="link" target='blank'>
                 Конспект урока
               </a>
             </div>
@@ -170,11 +171,13 @@ const ModuleFive = () => {
             </div>
           </div>
           <div className={scss.lesson__footer}>
+
             <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
+              <a href="https://drive.google.com/file/d/1TelzugH10-1F6PqXmIQjaRyya6yQ7Lyp/view" className="link" target='blank'>
                 Конспект урока
               </a>
             </div>
+
           </div>
         </div>
 

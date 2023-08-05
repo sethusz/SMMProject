@@ -48,6 +48,7 @@ const ModuleThree = () => {
           lessonDescription="В данном уроке я покажу вам как делать красивые кадры в домашних условиях. Самое важное это – практика! Чем чаще вы фотографируете разные предметы, тем лучше они у вас будут получаться! Более подробная информация будет выслана в презентации!"
           videoId="D1xSV7PbYOg"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link="https://drive.google.com/file/d/1I1VLRLRHri_yZTVybQPLSD5p51tK-FIa/view?usp=sharing"
         />
 
         <hr />
@@ -59,7 +60,7 @@ const ModuleThree = () => {
             <div className={scss.lesson__text}>
               <div className={`${scss.lesson__text_content}`}>{lessonText}</div>
               <div className={scss.lesson__summary}>
-                <a href="" className="link">
+                <a href="https://drive.google.com/file/d/1VanVbfwg4EAXGW10Jncy8mZlzW_owI5O/view?usp=sharing" className="link" target='blank'>
                   Конспект
                 </a>
               </div>

@@ -95,7 +95,7 @@ const ModuleFour = () => {
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>Презентация по теме урока:</div>
                 <div className={scss.lesson__summary_action}>
-                  <a href="" className="link">
+                  <a href="https://drive.google.com/file/d/1fEP5VxH5X2__QD1R9BJzYC7HN1RjvPtd/view?usp=sharing" className="link" target='blank'>
                     Конспект урока
                   </a>
                 </div>

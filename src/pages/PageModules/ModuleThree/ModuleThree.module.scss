@@ -28,6 +28,7 @@
 
     &_summary {
       text-align: center;
+      padding: 0 20px;
     }
     &_deadline {
       border: rgb(151, 146, 146) 2px solid;
@@ -109,9 +110,9 @@
     // margin-left: auto;
     // margin-left: 10%;
 
-    &:hover {
-      background-color: #c389f0;
-    }
+    // &:hover {
+    //   background-color: #c389f0;
+    // }
   }
 }
 

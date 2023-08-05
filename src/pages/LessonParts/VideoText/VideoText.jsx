@@ -28,7 +28,7 @@ const VideoText = ({
               allow="autoplay; encrypted-media"
               allowFullScreen></iframe>
             <div className={scss.module__summary}>
-              <a href={link} className="link">
+              <a href={link} className="link" target='blank'>
                 Конспект
               </a>
             </div>
