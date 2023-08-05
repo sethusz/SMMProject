@@ -50,7 +50,7 @@ const ModuleTwo = () => {
           lessonTitle="SMM."
           lessonDescription="Визуал и визуальная концепция - это ваша лента в инстаграме, эстетичная и гармоничная, состоящая из ваших фото (не используйте чужие фото для построения ленты). Для того, чтобы выстроить гармоничную ленту вам понадобится планер.
           Референс - это фото, взятое в приложении Пинтерест, на просторах Инстаграм или из других источников, которое вам понравилось и вы захотели повторить это фото. То есть это пример, материал для вдохновения. Вдохновляться можно кадрами из фильмов, модными показами, фото из журналов, старыми фотографиями и тд. Из референсов складывается ваш мудборд."
-          videoId="bfj4lEyc4w8"
+          videoId="LjnL3H1Svhg"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           secondSummary={'Конспект Урока 2'}
           firstConspect="https://drive.google.com/file/d/1yaaGmvl5Cq_RLqD-7dkTmmSw4n074Hmh/view?usp=drive_link"
@@ -59,13 +59,54 @@ const ModuleTwo = () => {
 
         <hr />
 
-        <VideoText
+        {/* <VideoText
           lessonTitle="Размеры и расположение фотографий в ленте."
           lessonNumber="3"
           lessonDescription="Для того, чтобы ваша лента выглядела гармонично и интересно, не забывайте о разноплановости кадра. Кадр может быть: ближнего, среднего и дальнего плана. Рассмотрим на примере человека - только лицо (сэлфи) = ближний план. Средний план - фото по пояс. Дальний план - человек сфотографирован полностью + мы видим не только самого человека, но и атмосферу вокруг него."
           videoId="VwiTQW1dw-U"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-        />
+        /> */}
+
+        <div className={scss.lesson}>
+          <div className={scss.lesson__title}>
+            УРОК 3.Размеры и расположение фотографий в ленте.
+          </div>
+
+          <div className={`${scss.lesson__content} ${scss.content}`}>
+            <div className={scss.lesson__grid}>
+              <div className={scss.lesson__grid_col}>
+                <div className={scss.video}>
+                  <Video videoId={'VwiTQW1dw-U'} />
+                </div>
+                <div className={scss.lesson__summary}>
+                  <a href="" className="link">
+                    Конспект
+                  </a>
+                </div>
+              </div>
+              <div className={scss.lesson__grid_col}>
+                <div className={scss.lesson__summary}>
+                  <a href="" className="link">
+                    Конспект
+                  </a>
+                </div>
+                <div className={scss.video}>
+                  <Video videoId={'JWdYfHKpDRI'} />
+                </div>
+              </div>
+              <div className={scss.lesson__grid_col}>
+                <div className={scss.lesson__deadline}>
+                  <div>Дедлайны по домашнему заданию к уроку 6:</div>
+                  <div className={scss.lesson__homework}>
+                    <a href="" className="link">
+                      Домашние задание
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <hr />
 
@@ -74,7 +115,7 @@ const ModuleTwo = () => {
           lessonNumber="4"
           lessonDescription="Самый популярный и удобный способ расположения фотографий в ленте: чередуете крупный план - дальний план - детальное фото - фото в полный рост.
 Таким образом, профиль выглядит гармонично и не перегруженно."
-          videoId="JWdYfHKpDRI"
+          videoId="HbTGnKrSvMU"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
         />
 
@@ -135,11 +176,11 @@ const ModuleTwo = () => {
 
         <VideoText
           lessonTitle="Сочетание цветов."
-          lessonNumber="5"
+          lessonNumber="7"
           lessonDescription="Воздух -это чистое пространство на фото. Это может быть простынь, стена, небо, вода - то есть, участки на фото без лишних деталей и объектов.
 Загруженные кадры - где в одном кадре много предметов либо есть шумный фон.
 Шумный фон- когда на фоне в том числе находятся разные и яркие предметы."
-          videoId="HbTGnKrSvMU"
+          videoId="MYaPSU26bWs"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
         />
 

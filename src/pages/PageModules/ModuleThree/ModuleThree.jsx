@@ -46,7 +46,7 @@ const ModuleThree = () => {
         <VideoText
           lessonNumber="1. Сторис."
           lessonDescription="В данном уроке я покажу вам как делать красивые кадры в домашних условиях. Самое важное это – практика! Чем чаще вы фотографируете разные предметы, тем лучше они у вас будут получаться! Более подробная информация будет выслана в презентации!"
-          videoId="bfj4lEyc4w8"
+          videoId="D1xSV7PbYOg"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
         />
 
@@ -172,7 +172,7 @@ const ModuleThree = () => {
         <VideoText
           lessonNumber="6"
           lessonDescription="Тайм-менеджмент."
-          videoId="otccevOOgK0"
+          videoId="Zopud20A7lY"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
         />
       </div>

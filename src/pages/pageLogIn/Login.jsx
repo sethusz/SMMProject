@@ -71,13 +71,17 @@ const Login = () => {
                     message: 'Некорректный Email адрес',
                   },
                 }}
-                render={({ field }) => <input type="text" {...field} className="login__input" />}
+                render={({ field }) => (
+                  <div className="login__input">
+                    <input type="email" {...field} />
+                  </div>
+                )}
               />
               {errors.email && <p className="login__error">{errors.email.message}</p>}
             </div>
             <div>
               <label>Пароль:</label>
-              <div className="login__password">
+              <div className="login__input">
                 <input
                   type={isPasswordVisible ? 'text' : 'password'}
                   id="password"
