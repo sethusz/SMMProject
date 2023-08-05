@@ -5,6 +5,10 @@ body {
 .link {
   color: #fcf7e3;
   transition: color 250ms ease;
+  padding: 20px;
+  background-color: #c19adf;
+  border-radius: 5px;
+  display: block;
   &:hover {
     color: darken(#fcf7e3, 10%);
   }
