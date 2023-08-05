@@ -2,7 +2,7 @@ import React from 'react';
 import scss from './TextVideoHW.module.scss'; // Import the SCSS module
 
 const TextVideoHW = ({
-  lessonNumber,
+
   lessonTitle,
   lessonDescription,
   videoId,
@@ -16,7 +16,7 @@ const TextVideoHW = ({
       <div className={`${scss.lesson__content} lesson`}>
         <div className={scss.content}>
           <div className={scss.lesson__lesson}>
-            Урок {lessonNumber}. {lessonTitle}
+             {lessonTitle}
           </div>
           {/* <div className={scss.lesson__title}>{lessonTitle}</div> */}
           <div className={scss.lesson__descr}>{lessonDescription}</div>

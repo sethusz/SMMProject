@@ -24,13 +24,13 @@ const ModuleFour = () => {
       <Cabinet />
 
       <div className="module__header">
-        <div className="module__title">Модуль 4</div>
+        <div className="module__title">Модуль Четвертый</div>
         <div className="module__topic">СТОРИСМЕЙКИНГ И СММ.</div>
       </div>
 
       <div className="container">
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 1. Что такое рилс и для чего он нам нужен?</div>
+          <div className={scss.lesson__title}>Сторис.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__grid}>
@@ -41,16 +41,8 @@ const ModuleFour = () => {
                 <Video videoId={videoId} height={160} />
                 <Video videoId={videoId} height={160} />
                 <div className={scss.lesson__grid_summary}>
-                  <div className={scss.lesson__summary_action}>
-                    <a href="" className="link">
-                      Конспект Урока
-                    </a>
-                  </div>
-                  <div className={scss.lesson__summary_action}>
-                    <a href="" className="link">
-                      Домашнее задание
-                    </a>
-                  </div>
+                  <div className={scss.lesson__summary_action}>Конспект Урока</div>
+                  <div className={scss.lesson__summary_action}>Домашнее задание</div>
                 </div>
               </div>
               <div className={scss.lesson__grid_col}>
@@ -63,11 +55,7 @@ const ModuleFour = () => {
                   <div className={scss.lesson__summary_text}>
                     Дедлайны по домашнему заданию к уроку 2:
                   </div>
-                  <div className={scss.lesson__summary_action}>
-                    <a href="" className="link">
-                      Домашнее задание
-                    </a>
-                  </div>
+                  <div className={scss.lesson__summary_action}>Домашнее задание</div>
                 </div>
               </div>
             </div>
@@ -76,7 +64,7 @@ const ModuleFour = () => {
         <hr />
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 2. Приложение и основы монтажа видео-рилс.</div>
+          <div className={scss.lesson__title}>Копирайтинг</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__text}>
@@ -94,21 +82,13 @@ const ModuleFour = () => {
             <div className={scss.lesson__footer}>
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>Презентация по теме урока:</div>
-                <div className={scss.lesson__summary_action}>
-                  <a href="https://drive.google.com/file/d/1fEP5VxH5X2__QD1R9BJzYC7HN1RjvPtd/view?usp=sharing" className="link" target='blank'>
-                    Конспект урока
-                  </a>
-                </div>
+                <div className={scss.lesson__summary_action}>Конспект урока</div>
               </div>
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>
                   Дедлайны по домашнему заданию к уроку 2:
                 </div>
-                <div className={scss.lesson__summary_action}>
-                  <a href="" className="link">
-                    Домашнее задание
-                  </a>
-                </div>
+                <div className={scss.lesson__summary_action}>Домашнее задание</div>
               </div>
             </div>
           </div>
@@ -117,13 +97,10 @@ const ModuleFour = () => {
         <hr />
 
         <VideoText
-          lessonNumber="УРОК 3. Цепляющий оффер, который будет использоваться в рилс воронке."
+          lessonTitle="СММ"
           lessonDescription=""
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 3:"
-          link={
-            'https://drive.google.com/file/d/14MHK-k3_0uGWJ-O3XfomXqBKRakMRNXm/view?usp=drive_link'
-          }
         />
 
         <hr />

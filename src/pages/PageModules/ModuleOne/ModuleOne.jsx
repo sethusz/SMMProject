@@ -2,12 +2,14 @@ import React, { useEffect } from 'react';
 
 import './ModuleOne.scss';
 
-import studyImg from '../../../assets/studyImg.jpg';
+// import studyImg from '../../../assets/studyImg.jpg';
+import module1 from '../../../assets/module1.jpg';
 import arrowLeft from '../../../assets/arrowLeft.svg';
 import { Link } from 'react-router-dom';
 
 import TextVideoHW from '../../LessonParts/TextVideoHW/TextVideoHW.jsx';
 import VideoText from './../../LessonParts/VideoText/VideoText.jsx';
+import { Video } from './../../LessonParts/Video/Video.jsx';
 
 import useNoAuth from '../../../hooks/useNoAuth';
 import Cabinet from '../../pageCabinet/Cabinet';
@@ -31,12 +33,19 @@ const ModuleOne = () => {
 
       <div className="module container">
         <div className="module__header">
-          <div className="module__title">Модуль 1</div>
-          <div className="module__topic">Курс о СММ</div>
+          <div className="module__title">Модуль Первый</div>
+          <div className="module__topic">Позиционирование</div>
         </div>
 
         <div className="lesson__content lesson">
-          <div className="module__lesson">Урок 1. Введение. Знакомство</div>
+          <div className="module__lesson">Вводная часть</div>
+          <Video videoId={videoId} height={500} />
+          </div>
+
+          <hr className="hr__black" />
+
+        <div className="lesson__content lesson">
+          <div className="module__lesson">Введение. Знакомство</div>
           <div className="module__content-lesson content">
             <div className="lesson__content">
               <div className="lesson__descr">
@@ -61,7 +70,7 @@ const ModuleOne = () => {
             </div>
 
             <div className="lesson__img">
-              <img src={studyImg} alt="studyImg" />
+              <img src={module1} alt="girls" />
             </div>
           </div>
 
@@ -106,7 +115,7 @@ const ModuleOne = () => {
         <hr />
 
         <TextVideoHW
-          lessonNumber="2"
+    
           lessonTitle="РАСПАКОВКА ЛИЧНОСТИ"
           lessonDescription="Сегодня у нас урок будет посвящён РАСПАКОВКИ ЛИЧНОСТИ.Для чего это нам нужно? Для того, чтобы лучше себя понять и знать о чем вести вашу страницу! Независимо от того,
           какой тип блога вы ведёте: личный, экспертный, коммерческий ( магазины, и т.д.)! Когда мы с вами откроем и пропишем все наши стороны,
@@ -117,8 +126,8 @@ const ModuleOne = () => {
 
         <hr />
 
-        <div className="lesson__content lesson">
-          <div className="module__lesson">УРОК 3. Поиск тематики..</div>
+        {/* <div className="lesson__content lesson">
+          <div className="module__lesson">Поиск тематики..</div>
           <div className="module__content-text content">
             <div className="lesson__text--three">
               <div className="lesson__content--three">
@@ -155,7 +164,7 @@ const ModuleOne = () => {
         <hr />
 
         <VideoText
-          lessonNumber="4"
+
           lessonTitle="Определение концепции блога."
           lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
 
@@ -165,11 +174,13 @@ const ModuleOne = () => {
           link={
             'https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link'
           }
-        />
+        /> */}
+{/* 
+        <hr /> */}
 
-        <hr />
+        
         <VideoText
-          lessonNumber="5"
+
           lessonTitle="Цели, Миссия и позоционирование в блоге"
           lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
 
@@ -184,7 +195,7 @@ const ModuleOne = () => {
         <hr />
 
         <VideoText
-          lessonNumber="6"
+  
           lessonTitle="Насмотренность"
           lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
 

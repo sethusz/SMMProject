@@ -31,7 +31,7 @@
         text-align: center;
         align-items: center;
         justify-content: center;
-
+        padding: 20px 20px;
         background-color: #c19adf;
         color: white;
         border: none;
@@ -67,8 +67,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    padding: 20px;
-
+    padding: 1rem;
     border: rgb(151, 146, 146) 2px solid;
     border-radius: 3px;
     &_action {
@@ -76,7 +75,7 @@
       text-align: center;
       align-items: center;
       justify-content: center;
-      // padding: 20px 20px;
+      padding: 20px 20px;
       background-color: #c19adf;
       color: white;
       border: none;

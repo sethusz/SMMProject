@@ -2,7 +2,6 @@ import React from 'react';
 import scss from './VideoText.module.scss'; // Import the SCSS module
 
 const VideoText = ({
-  lessonNumber,
   lessonTitle,
   lessonDescription,
   videoId,
@@ -15,7 +14,7 @@ const VideoText = ({
     <>
       <div className={`${scss.lesson__content} ${scss.lesson}`}>
         <div className={scss.lesson__lesson}>
-          Урок {lessonNumber}. {lessonTitle}
+     {lessonTitle}
         </div>
         <div className={`${scss.module__content} ${scss.content}`}>
           <div className={scss.module__video}>

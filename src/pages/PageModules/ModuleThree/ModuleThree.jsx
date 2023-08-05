@@ -38,13 +38,13 @@ const ModuleThree = () => {
       <Cabinet />
 
       <div className="module__header">
-        <div className="module__title">Модуль 3</div>
-        <div className="module__topic">Курс о СММ</div>
+        <div className="module__title">Модуль Третий</div>
+        <div className="module__topic">Сторисмейкинг</div>
       </div>
 
       <div className="container">
         <VideoText
-          lessonNumber="1. Сторис."
+          lessonTitle="Как делать фотографии в домашних условиях.."
           lessonDescription="В данном уроке я покажу вам как делать красивые кадры в домашних условиях. Самое важное это – практика! Чем чаще вы фотографируете разные предметы, тем лучше они у вас будут получаться! Более подробная информация будет выслана в презентации!"
           videoId="D1xSV7PbYOg"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
@@ -54,7 +54,7 @@ const ModuleThree = () => {
         <hr />
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 2. Приложение для сторис.</div>
+          <div className={scss.lesson__title}>Основные правила композиции в фотографии.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__text}>
@@ -86,7 +86,7 @@ const ModuleThree = () => {
         /> */}
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 3. Как вести гармонические сторис.</div>
+          <div className={scss.lesson__title}>Фуд съёмка.Предметная съемка</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__video}>
@@ -123,7 +123,7 @@ const ModuleThree = () => {
         <hr />
 
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 4. Копирайтинг.</div>
+          <div className={scss.lesson__title}>Обработка фотографий.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__grid}>
@@ -161,7 +161,7 @@ const ModuleThree = () => {
 
         <hr />
 
-        <VideoText
+        {/* <VideoText
           lessonNumber="5"
           lessonDescription="Контент план."
           videoId="Zopud20A7lY"
@@ -175,7 +175,7 @@ const ModuleThree = () => {
           lessonDescription="Тайм-менеджмент."
           videoId="Zopud20A7lY"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-        />
+        /> */}
       </div>
     </>
   );
