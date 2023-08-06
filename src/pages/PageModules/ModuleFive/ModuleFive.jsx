@@ -25,7 +25,7 @@ const ModuleFive = () => {
 
       <div className="module__header">
         <div className="module__title">Модуль пятый</div>
-        <div className="module__topic">СТОРИСМЕЙКИНГ И СММ.</div>
+        <div className="module__topic">Reels</div>
       </div>
 
       <div className="container">
@@ -35,7 +35,7 @@ const ModuleFive = () => {
           <div className={`${scss.lesson__content} ${scss.content}`}>
 
             <div className={scss.lesson__grid_col}>
-              <Video videoId={videoId} height={315} />
+              <Video videoId={'VRfma4k9gEY'} height={315} />
               <p>
                 В данном уроке мы поговорим о существующих стилях в оформлении сторис через призму
                 искусства.
@@ -51,7 +51,7 @@ const ModuleFive = () => {
           <div className={scss.lesson__title}>Приложение и основы монтажа видео-рилс.</div>
 
           <div className={scss.video__app}>
-            <Video videoId={videoId} height={260} />
+            <Video videoId={'bNVeaLGqigg'} height={260} />
             <Video videoId={videoId} height={260} />
           </div>
         </div>
@@ -99,7 +99,7 @@ const ModuleFive = () => {
           <div className={scss.lesson__title}>Цепляющий оффер, который будет использоваться в рилс воронке</div>
 
           <div className={scss.video__app}>
-            <Video videoId={videoId} height={260} />
+            <Video videoId={'QTSnAdpenGU'} height={260} />
             <Video videoId={videoId} height={260} />
           </div>
 

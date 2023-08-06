@@ -10,6 +10,7 @@ const TextVideoHW = ({
   secondLink,
   secondSummary,
   firstConspect,
+                       homeworkLink
 }) => {
   return (
     <>
@@ -46,7 +47,7 @@ const TextVideoHW = ({
             <div className={scss.module__deadline}>
               <div>{deadline}</div>
               <div className={scss.module__homework}>
-                <a href="" className="link">
+                <a href={homeworkLink} className="link">
                   Домашние задание
                 </a>
               </div>

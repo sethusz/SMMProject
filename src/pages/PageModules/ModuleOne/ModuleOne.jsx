@@ -40,8 +40,8 @@ const ModuleOne = () => {
         <div className="lesson__content lesson">
           <div className="module__lesson">Вводная часть</div>
           <div className='video__app'>
-            <Video videoId={videoId} height={260} />
-            <Video videoId={videoId} height={260} />
+            <Video videoId={'PZovpwEWOog'} height={260} />
+            <Video videoId={'6pXrDm8SvJ8'} height={260} />
           </div>
           </div>
 
@@ -118,13 +118,14 @@ const ModuleOne = () => {
         <hr />
 
         <TextVideoHW
-    
+          homeworkLink={'https://docs.google.com/document/d/1QFjijeNimcYcWwt4z7qg8CYCP2G2xmuu/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
           lessonTitle="РАСПАКОВКА ЛИЧНОСТИ"
           lessonDescription="Сегодня у нас урок будет посвящён РАСПАКОВКИ ЛИЧНОСТИ.Для чего это нам нужно? Для того, чтобы лучше себя понять и знать о чем вести вашу страницу! Независимо от того,
           какой тип блога вы ведёте: личный, экспертный, коммерческий ( магазины, и т.д.)! Когда мы с вами откроем и пропишем все наши стороны,
           тогда нам будет легче знать в каком направлении создавать Визуал и сторис!"
           videoId="zLdHz4WqmuI"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+
         />
 
         <hr />
@@ -183,7 +184,7 @@ const ModuleOne = () => {
 
         
         <VideoText
-
+          homework={'https://docs.google.com/document/d/113myPodONEYHxfcjXuT26X6ttATW2tHQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
           lessonTitle="Цели, Миссия и позоционирование в блоге"
           lessonDescription="Цели, миссия и позиционирование в блоге.
           В  этом уроке поговорим о том, как поставить перед собой главные цели в блоге, декомпозировать их на краткосрочные, как найти свою миссию и выстроить позиционирование.
@@ -198,7 +199,7 @@ const ModuleOne = () => {
         <hr />
 
         <VideoText
-  
+          homework={'https://docs.google.com/document/d/1HE4qPc5BAZI9nHk_TI4Bbj5_1izHo0El/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
           lessonTitle="Насмотренность"
           lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
 

@@ -16,15 +16,12 @@
     .video {
       width: 350px;
     }
-    .video:nth-child(2) {
-      margin-left: auto;
-    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 1rem;
+    gap: 2rem;
 
     &_summary {
       text-align: center;
@@ -118,25 +115,6 @@
 
 .content {
   margin: 0 4rem;
-}
-
-@media (min-width: 1440px) {
-  .lesson__grid > div {
-    &:nth-child(1) {
-      width: 350px;
-    }
-
-    &:nth-child(3) {
-      width: 320px;
-      margin-right: auto;
-    }
-    &:nth-child(4) {
-      width: 315px;
-    }
-    &:nth-child(5) {
-      width: 315px;
-    }
-  }
 }
 
 @media (max-width: 1024px) {

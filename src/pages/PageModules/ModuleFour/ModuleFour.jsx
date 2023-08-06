@@ -36,8 +36,8 @@ const ModuleFour = () => {
           lessonTitle='Сторис'
           lessonDescription='Сторис - это важнейший инструмент для привлечения и вовлечения вашей аудитории.
        Сторис очень важны для развития личного аккаунта и личного бренда.'
-          videoId={videoId}
-          
+          videoId={'D1xSV7PbYOg'}
+          homework={'https://docs.google.com/document/d/1iOeNatWX06HwZh-5pR7q16K8d8Lvibkl/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
         />
 
         {/* <div className={scss.lesson}>
@@ -97,7 +97,7 @@ const ModuleFour = () => {
               </div>
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>
-                  Дедлайны по домашнему заданию к уроку 2:
+                  <a href="https://docs.google.com/document/d/19k3VmTiDAKEyppF8qi3GM9CvxNUBGFlf/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">Дедлайны по домашнему заданию к уроку 2:</a>
                 </div>
                 <div className={scss.lesson__summary_action}>Домашнее задание</div>
               </div>
@@ -111,8 +111,9 @@ const ModuleFour = () => {
           lessonTitle="СММ"
           lessonDescription="Маркетинг в социальных сетях (англ. Social media marketing, SMM) — это полноценный маркетинг, а не только продвижение через различные социальные платформы. Ведение аккаунтов в социальных сетях является частью маркетинговой и коммуникационной стратегии.
           По статистике Marketing Sherpa, 95% людей от 18 до 34 лет удобнее всего следить за брендом и взаимодействовать с ним именно через соцсети. С этим и связан большой спрос на SMM-специалистов: почти каждая компания ведёт соцсети. Для многих брендов это единственный канал продвижения в интернете."
-          videoId="bfj4lEyc4w8"
+          videoId="LjnL3H1Svhg"
           deadline="Дедлайн по домашнему заданию к урокам 3:"
+          homework={'https://docs.google.com/document/d/1IdJhuV1cQ-Hgi2rT_Dq95HqTuHusLT5G/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
         />
 
         {/* <hr /> */}

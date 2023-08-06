@@ -37,6 +37,7 @@ const ModuleSix = () => {
           lessonDescription="Контент план."
           videoId="Zopud20A7lY"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          homework={'https://docs.google.com/document/d/1X1brTqOTG2rnYksGRktGJXXKNGY5QobQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
         />
 
         <hr />

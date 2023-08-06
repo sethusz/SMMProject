@@ -49,6 +49,7 @@ const ModuleThree = () => {
           videoId="D1xSV7PbYOg"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           link="https://drive.google.com/file/d/1I1VLRLRHri_yZTVybQPLSD5p51tK-FIa/view?usp=sharing"
+          homework={'https://docs.google.com/document/d/1qYOrQDALm3cLUGPJ1AHPqSXUKePndY2T/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
         />
 
         <hr />
@@ -68,7 +69,7 @@ const ModuleThree = () => {
             <div className={scss.lesson__deadline}>
               <div>Дедлайны по домашнему заданию к уроку :</div>
               <div className={scss.lesson__homework}>
-                <a href="" className="link">
+                <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">
                   Домашние задание
                 </a>
               </div>
@@ -115,16 +116,16 @@ const ModuleThree = () => {
 
        
 
-              <div className={scss.lesson__deadline}>
-                <div>Дедлайны по домашнему заданию к уроку 3:</div>
-                <div className={scss.lesson__homework}>
-                  <a href="" className="link">
-                    Домашние задание
-                  </a>
-                </div>
+              {/*<div className={scss.lesson__deadline}>*/}
+              {/*  <div>Дедлайны по домашнему заданию к уроку 3:</div>*/}
+              {/*  <div className={scss.lesson__homework}>*/}
+              {/*    <a href="" className="link">*/}
+              {/*      Домашние задание*/}
+              {/*    </a>*/}
+              {/*  </div>*/}
 
-                
-              </div>
+              {/*  */}
+              {/*</div>*/}
             </div>
 
             
@@ -158,14 +159,14 @@ const ModuleThree = () => {
               <div className={scss.video}>
                 <Video videoId={videoId} />
               </div>
-              {/* <div className={scss.lesson__grid_deadline}>
+               <div className={scss.lesson__grid_deadline}>
                 <div>Дедлайны по домашнему заданию к уроку 4:</div>
                 <div className={scss.lesson__homework}>
-                  <a href="" className="link">
+                  <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">
                     Домашние задание
                   </a>
                 </div>
-              </div> */}
+              </div> *
             </div>
           </div>
         </div>
