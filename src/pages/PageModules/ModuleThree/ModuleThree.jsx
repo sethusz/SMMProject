@@ -61,7 +61,7 @@ const ModuleThree = () => {
             <div className={scss.lesson__text}>
               <div className={`${scss.lesson__text_content}`}>{lessonText}</div>
               <div className={scss.lesson__summary}>
-                <a href="https://drive.google.com/file/d/1VanVbfwg4EAXGW10Jncy8mZlzW_owI5O/view?usp=sharing" className="link" target='blank'>
+                <a href="https://drive.google.com/file/d/1VanVbfwg4EAXGW10Jncy8mZlzW_owI5O/view?usp=sharing" className="link" target='blank' rel={'noreferrer'}>
                   Конспект
                 </a>
               </div>
@@ -69,7 +69,7 @@ const ModuleThree = () => {
             <div className={scss.lesson__deadline}>
               <div>Дедлайны по домашнему заданию к уроку :</div>
               <div className={scss.lesson__homework}>
-                <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">
+                <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link" target={'_blank'} rel={'noreferrer'}>
                   Домашние задание
                 </a>
               </div>
@@ -79,12 +79,6 @@ const ModuleThree = () => {
 
         <hr />
 
-        {/* <VideoText
-          lessonNumber="3. Как делать фотографии в домашних условиях."
-          lessonDescription="В данном уроке я покажу вам как делать красивые кадры в домашних условиях. Самое важное это – практика! Чем чаще вы фотографируете разные предметы, тем лучше они у вас будут получаться! Более подробная информация будет выслана в презентации!"
-          videoId="bfj4lEyc4w8"
-          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-        /> */}
 
         <div className={scss.lesson}>
           <div className={scss.lesson__title}>Фуд съёмка.Предметная съемка</div>
@@ -116,16 +110,7 @@ const ModuleThree = () => {
 
        
 
-              {/*<div className={scss.lesson__deadline}>*/}
-              {/*  <div>Дедлайны по домашнему заданию к уроку 3:</div>*/}
-              {/*  <div className={scss.lesson__homework}>*/}
-              {/*    <a href="" className="link">*/}
-              {/*      Домашние задание*/}
-              {/*    </a>*/}
-              {/*  </div>*/}
 
-              {/*  */}
-              {/*</div>*/}
             </div>
 
             
@@ -145,7 +130,7 @@ const ModuleThree = () => {
               <div className={scss.lesson__grid_summary}>
                 <div>Все пресеты вы cможете скачать в телеграмм канале под названием «Файлы»</div>
                 <div className={scss.lesson__homework}>
-                  <a href="" className="link">
+                  <a href="" className="link" rel={'noreferrer'} target={'_blank'} >
                     Файлы
                   </a>
                 </div>
@@ -162,7 +147,7 @@ const ModuleThree = () => {
                <div className={scss.lesson__grid_deadline}>
                 <div>Дедлайны по домашнему заданию к уроку 4:</div>
                 <div className={scss.lesson__homework}>
-                  <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">
+                  <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link" rel={'noreferrer'} target={'_blank'}>
                     Домашние задание
                   </a>
                 </div>
@@ -171,23 +156,7 @@ const ModuleThree = () => {
           </div>
         </div>
 
-        {/* <hr /> */}
 
-        {/* <VideoText
-          lessonNumber="5"
-          lessonDescription="Контент план."
-          videoId="Zopud20A7lY"
-          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-        />
-
-        <hr />
-
-        <VideoText
-          lessonNumber="6"
-          lessonDescription="Тайм-менеджмент."
-          videoId="Zopud20A7lY"
-          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-        /> */}
       </div>
     </>
   );

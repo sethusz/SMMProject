@@ -41,38 +41,7 @@ const ModuleFour = () => {
           link={'https://drive.google.com/file/d/1KLZ-ZM0CV7o2TdKJaQk2cboaNUss9_VH/view?usp=drive_link'}
         />
 
-        {/* <div className={scss.lesson}>
-          <div className={scss.lesson__title}>Сторис.</div>
 
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.lesson__grid}>
-              <div className={scss.lesson__grid_col}>
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <div className={scss.lesson__grid_summary}>
-                  <div className={scss.lesson__summary_action}>Конспект Урока</div>
-                  <div className={scss.lesson__summary_action}>Домашнее задание</div>
-                </div>
-              </div>
-              <div className={scss.lesson__grid_col}>
-                <p>
-                  В данном уроке мы поговорим о существующих стилях в оформлении сторис через призму
-                  искусства.
-                </p>
-                <Video videoId={videoId} height={315} />
-                <div className={scss.lesson__summary}>
-                  <div className={scss.lesson__summary_text}>
-                    Дедлайны по домашнему заданию к уроку 2:
-                  </div>
-                  <div className={scss.lesson__summary_action}>Домашнее задание</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
         <hr />
 
         <div className={scss.lesson}>
@@ -94,13 +63,13 @@ const ModuleFour = () => {
             <div className={scss.lesson__footer}>
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>Презентация по теме урока:</div>
-                <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/1fEP5VxH5X2__QD1R9BJzYC7HN1RjvPtd/view?usp=drive_link" className="link">Конспект урока</a></div>
+                <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/1fEP5VxH5X2__QD1R9BJzYC7HN1RjvPtd/view?usp=drive_link" className="link" target={'_blank'} rel={'noreferrer'}>Конспект урока</a></div>
               </div>
               <div className={scss.lesson__summary}>
                 <div className={scss.lesson__summary_text}>
                   Дедлайны по домашнему заданию к уроку 2:
                 </div>
-                <div className={scss.lesson__summary_action}><a href="https://docs.google.com/document/d/19k3VmTiDAKEyppF8qi3GM9CvxNUBGFlf/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">Домашнее задание</a></div>
+                <div className={scss.lesson__summary_action}><a href="https://docs.google.com/document/d/19k3VmTiDAKEyppF8qi3GM9CvxNUBGFlf/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link" target={'_blank'} rel={'noreferrer'}>Домашнее задание</a></div>
               </div>
             </div>
           </div>

@@ -64,7 +64,7 @@ const ModuleSix = () => {
             <div className={scss.video}>
               <Video videoId="fVfFqkhZVYY" width={520} height={250} />
             </div>
-            <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/13QLj0rJYd6QHCz2CoSLGVwmQ0QJMQ9BJ/view?usp=drive_link" className="link">Конспект</a></div>
+            <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/13QLj0rJYd6QHCz2CoSLGVwmQ0QJMQ9BJ/view?usp=drive_link" className="link" rel={'noreferrer'} target={'_blank'}>Конспект</a></div>
           </div>
 
         </div>
@@ -81,7 +81,7 @@ const ModuleSix = () => {
           </div>
           <div className={scss.lesson__footer}>
             <div className={scss.lesson__summary_action}>
-              <a href="https://drive.google.com/file/d/1IdiETKeRsqf94fpCLLyMNURt77nO7hUJ/view?usp=drive_link" className="link" target="blank">
+              <a href="https://drive.google.com/file/d/1IdiETKeRsqf94fpCLLyMNURt77nO7hUJ/view?usp=drive_link" className="link" target="blank" rel={'noreferrer'}>
                 Конспект урока
               </a>
             </div>
@@ -112,56 +112,7 @@ const ModuleSix = () => {
 
         </div>
 
-        {/* <div className={scss.lesson}>
-          <div className={scss.lesson__title}>Практика. Финал обучения.</div>
 
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.video}>
-              <Video videoId="60RquztpF-I" width={520} height={250} />
-            </div>
-          </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
-                Конспект урока
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={scss.lesson}>
-          <div className={scss.lesson__title}>Фуршет.</div>
-
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.video}>
-              <Video videoId="60RquztpF-I" width={520} height={250} />
-            </div>
-          </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
-                Конспект урока
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={scss.lesson}>
-          <div className={scss.lesson__title}>Вручение сертификатов.</div>
-
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.video}>
-              <Video videoId="60RquztpF-I" width={520} height={250} />
-            </div>
-          </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
-                Конспект урока
-              </a>
-            </div>
-          </div>
-        </div> */}
       </div>
     </>
   );

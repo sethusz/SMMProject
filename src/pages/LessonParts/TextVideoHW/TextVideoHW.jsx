@@ -32,13 +32,13 @@ const TextVideoHW = ({
                 allow="autoplay; encrypted-media"
                 allowFullScreen></iframe>
               <div className={scss.module__summary}>
-                <a href={firstConspect} className="link">
+                <a href={firstConspect} className="link" rel={'noreferrer'} target={'_blank'}>
                   Конспект
                 </a>
               </div>
               {secondSummary && (
                 <div className={scss.module__summary}>
-                  <a href={secondLink} className="link">
+                  <a href={secondLink} className="link" rel={'noreferrer'} target={'_blank'}>
                     {secondSummary}
                   </a>
                 </div>
@@ -47,7 +47,7 @@ const TextVideoHW = ({
             <div className={scss.module__deadline}>
               <div>{deadline}</div>
               <div className={scss.module__homework}>
-                <a href={homeworkLink} className="link">
+                <a href={homeworkLink} className="link" target={'_blank'} rel={'noreferrer'}>
                   Домашние задание
                 </a>
               </div>

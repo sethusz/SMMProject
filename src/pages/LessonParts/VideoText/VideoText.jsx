@@ -28,12 +28,12 @@ const VideoText = ({
               allow="autoplay; encrypted-media"
               allowFullScreen></iframe>
             <div className={scss.module__summary}>
-              <a href={link} className="link" target='blank'>
+              <a href={link} className="link" target='blank' rel={'noreferrer'}>
                 Конспект
               </a>
             </div>
             {secondConspect && <div className={scss.module__summary}>
-              <a href={secondConspect} className="link" target='blank'>
+              <a href={secondConspect} className="link" target='blank' rel={'noreferrer'}>
                 Конспект
               </a>
             </div>}

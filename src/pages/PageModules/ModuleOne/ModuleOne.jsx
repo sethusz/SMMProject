@@ -148,7 +148,7 @@ firstConspect={'https://drive.google.com/file/d/1Gkd89Z9XCL_2tWOml8_KqE3SSPNAqCD
               <div className="deadline">
                 <div className={'lesson__col_text'}>Дедлайны по домашнему заданию к уроку</div>
                 <div className={'lesson__homework'}>
-                  <a href="https://docs.google.com/document/d/113myPodONEYHxfcjXuT26X6ttATW2tHQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">
+                  <a href="https://docs.google.com/document/d/113myPodONEYHxfcjXuT26X6ttATW2tHQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link" target={'_blank'} rel={'noreferrer'}>
                     Домашние задание
                   </a>
                 </div>

@@ -57,40 +57,7 @@ const ModuleFive = () => {
           </div>
         </div>
 
-        {/* <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.lesson__text}>
-              <div className={`${scss.lesson__text_content}`}>
-                <p>
-                  Сегодня нам предстоит обсудить несложный урок по текстам. Просто внимательно
-                  прочитайте все правила и рекомендации.
-                </p>
-                <p>
-                  После них вы уже будете знать как пишутся тексты для инстаграм и оформляются
-                  текстовые блоки.
-                </p>
-              </div>
-            </div>
-            <div className={scss.lesson__footer}>
-              <div className={scss.lesson__summary}>
-                <div className={scss.lesson__summary_text}>Презентация по теме урока:</div>
-                <div className={scss.lesson__summary_action}>
-                  <a href="https://drive.google.com/file/d/1fEP5VxH5X2__QD1R9BJzYC7HN1RjvPtd/view?usp=sharing" className="link" target='blank'>
-                    Конспект урока
-                  </a>
-                </div>
-              </div>
-              <div className={scss.lesson__summary}>
-                <div className={scss.lesson__summary_text}>
-                  Дедлайны по домашнему заданию к уроку 2:
-                </div>
-                <div className={scss.lesson__summary_action}>
-                  <a href="" className="link">
-                    Домашнее задание
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div> */}
+
 
 
         <hr />
@@ -107,17 +74,7 @@ const ModuleFive = () => {
 
         </div>
 
-        {/* <VideoText
-          lessonTitle="Цепляющий оффер, который будет использоваться в рилс воронке."
-          lessonDescription=""
-          videoId="bfj4lEyc4w8"
-          deadline="Дедлайн по домашнему заданию к урокам 3:"
-          link={
-            'https://drive.google.com/file/d/14MHK-k3_0uGWJ-O3XfomXqBKRakMRNXm/view?usp=drive_link'
-          }
-        />
 
-        <hr /> */}
       </div >
     </>
   );

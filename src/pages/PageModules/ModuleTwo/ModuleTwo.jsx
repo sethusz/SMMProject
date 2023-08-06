@@ -59,13 +59,7 @@ const ModuleTwo = () => {
 
         <hr />
 
-        {/* <VideoText
-          lessonTitle="Размеры и расположение фотографий в ленте."
-    
-          lessonDescription="Для того, чтобы ваша лента выглядела гармонично и интересно, не забывайте о разноплановости кадра. Кадр может быть: ближнего, среднего и дальнего плана. Рассмотрим на примере человека - только лицо (сэлфи) = ближний план. Средний план - фото по пояс. Дальний план - человек сфотографирован полностью + мы видим не только самого человека, но и атмосферу вокруг него."
-          videoId="VwiTQW1dw-U"
-          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-        /> */}
+
 
 
 
@@ -79,46 +73,7 @@ const ModuleTwo = () => {
           link={'https://drive.google.com/file/d/1WpqHfWK9xDNNI83utg4Ka2aAavxlBBWy/view?usp=drive_link'}
         />
 
-        {/* <div className={scss.lesson}>
-          <div className={scss.lesson__title}>
-            УРОК 3.Размеры и расположение фотографий в ленте.
-          </div>
 
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.lesson__grid}>
-              <div className={scss.lesson__grid_col}>
-                <div className={scss.video}>
-                  <Video videoId={'VwiTQW1dw-U'} />
-                </div>
-                <div className={scss.lesson__summary}>
-                  <a href="" className="link">
-                    Конспект
-                  </a>
-                </div>
-              </div>
-              <div className={scss.lesson__grid_col}>
-                <div className={scss.lesson__summary}>
-                  <a href="" className="link">
-                    Конспект
-                  </a>
-                </div>
-                <div className={scss.video}>
-                  <Video videoId={'JWdYfHKpDRI'} />
-                </div>
-              </div>
-              <div className={scss.lesson__grid_col}>
-                <div className={scss.lesson__deadline}>
-                  <div>Дедлайны по домашнему заданию к уроку 6:</div>
-                  <div className={scss.lesson__homework}>
-                    <a href="" className="link">
-                      Домашние задание
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
 
         <hr />
 
