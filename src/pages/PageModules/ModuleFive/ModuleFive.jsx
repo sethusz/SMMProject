@@ -33,43 +33,15 @@ const ModuleFive = () => {
           <div className={scss.lesson__title}>Что такое рилс и для чего он нам нужен?</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.lesson__grid}>
-              <div className={scss.lesson__grid_col}>
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <Video videoId={videoId} height={160} />
-                <div className={scss.lesson__grid_summary}>
-                  <div className={scss.lesson__summary_action}>
-                    <a href="" className="link">
-                      Конспект Урока
-                    </a>
-                  </div>
-                  <div className={scss.lesson__summary_action}>
-                    <a href="" className="link">
-                      Домашнее задание
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className={scss.lesson__grid_col}>
-                <p>
-                  В данном уроке мы поговорим о существующих стилях в оформлении сторис через призму
-                  искусства.
-                </p>
-                <Video videoId={videoId} height={315} />
-                <div className={scss.lesson__summary}>
-                  <div className={scss.lesson__summary_text}>
-                    Дедлайны по домашнему заданию к уроку 2:
-                  </div>
-                  <div className={scss.lesson__summary_action}>
-                    <a href="" className="link">
-                      Домашнее задание
-                    </a>
-                  </div>
-                </div>
-              </div>
+
+            <div className={scss.lesson__grid_col}>
+              <Video videoId={videoId} height={315} />
+              <p>
+                В данном уроке мы поговорим о существующих стилях в оформлении сторис через призму
+                искусства.
+              </p>
+
+
             </div>
           </div>
         </div>
@@ -79,10 +51,10 @@ const ModuleFive = () => {
           <div className={scss.lesson__title}>Приложение и основы монтажа видео-рилс.</div>
 
           <div className={scss.video__app}>
-          <Video videoId={videoId} height={260} />
-          <Video videoId={videoId} height={260} />
+            <Video videoId={videoId} height={260} />
+            <Video videoId={videoId} height={260} />
+          </div>
         </div>
-
 
         {/* <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__text}>
@@ -118,22 +90,34 @@ const ModuleFive = () => {
               </div>
             </div>
           </div> */}
-      </div>
 
-      <hr />
 
-      <VideoText
-        lessonTitle="Цепляющий оффер, который будет использоваться в рилс воронке."
-        lessonDescription=""
-        videoId="bfj4lEyc4w8"
-        deadline="Дедлайн по домашнему заданию к урокам 3:"
-        link={
-          'https://drive.google.com/file/d/14MHK-k3_0uGWJ-O3XfomXqBKRakMRNXm/view?usp=drive_link'
-        }
-      />
+        <hr />
 
-      <hr />
-    </div >
+
+        <div className={scss.lesson}>
+          <div className={scss.lesson__title}>Цепляющий оффер, который будет использоваться в рилс воронке</div>
+
+          <div className={scss.video__app}>
+            <Video videoId={videoId} height={260} />
+            <Video videoId={videoId} height={260} />
+          </div>
+
+
+        </div>
+
+        {/* <VideoText
+          lessonTitle="Цепляющий оффер, который будет использоваться в рилс воронке."
+          lessonDescription=""
+          videoId="bfj4lEyc4w8"
+          deadline="Дедлайн по домашнему заданию к урокам 3:"
+          link={
+            'https://drive.google.com/file/d/14MHK-k3_0uGWJ-O3XfomXqBKRakMRNXm/view?usp=drive_link'
+          }
+        />
+
+        <hr /> */}
+      </div >
     </>
   );
 };

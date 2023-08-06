@@ -34,7 +34,7 @@ const SmmModules = () => {
     },
     {
       module: 'Модуль Третий',
-      description: 'Сторисмейкинг',
+      description: 'Предметная съёмка',
       transitionModule: 'Перейти к модулю.',
       moduleList: [
         'Как делать фотографии в домашних условиях',

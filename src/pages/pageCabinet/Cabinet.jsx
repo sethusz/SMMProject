@@ -103,6 +103,9 @@ const Cabinet = () => {
               <li className={scss.module__number}>
                 <Link to="/ModuleFive">Module 5</Link>
               </li>
+              <li className={scss.module__number}>
+                <Link to="/ModuleSix">Module 6</Link>
+              </li>
             </ul>
             {/* </ul> */}
           </div>

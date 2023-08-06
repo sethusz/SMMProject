@@ -31,16 +31,35 @@ const ModuleSix = () => {
       </div>
 
       <div className="container">
+
         <VideoText
-          lessonNumber="1. Личный бренд."
-          lessonDescription=""
+          lessonTitle='Контент план'
+          lessonDescription="Контент план."
+          videoId="Zopud20A7lY"
+          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+        />
+
+        <hr />
+
+        <VideoText
+          lessonTitle='Тайм-менеджмент'
+          lessonDescription="Тайм-менеджмент."
+          videoId="Zopud20A7lY"
+          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+        />
+
+        <hr />
+
+                <VideoText
+          lessonTitle="Личный бренд"
+          lessonDescription="Личный бренд"
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 1:"
           link="https://drive.google.com/file/d/1B9iii_vuYOTEJ1IK9PQ6yBVg9KMel4df/view?usp=sharing"
         />
-        <hr />
+
         <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 2. Монетизация блога.</div>
+          <div className={scss.lesson__title}> Монетизация </div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.video}>
@@ -55,7 +74,9 @@ const ModuleSix = () => {
             </div>
           </div>
         </div>
-        <hr />
+
+        
+        {/* <hr />
         <div className={scss.lesson}>
           <div className={scss.lesson__title}>УРОК 3. Аватар будущих клиентов.</div>
 
@@ -90,7 +111,7 @@ const ModuleSix = () => {
             </div>
           </div>
         </div>
-        <hr />
+        <hr /> */}
         {/* <div className={scss.lesson}>
           <div className={scss.lesson__title}>Экспертный контент.</div>
 
@@ -136,13 +157,7 @@ const ModuleSix = () => {
               <Video videoId="iSmtnP-qErU" width={520} height={250} />
             </div>
           </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
-                Конспект урока
-              </a>
-            </div>
-          </div>
+         
         </div>
 
         <div className={scss.lesson}>
@@ -153,15 +168,7 @@ const ModuleSix = () => {
               <Video videoId="60RquztpF-I" width={520} height={250} />
             </div>
           </div>
-          <div className={scss.lesson__footer}>
 
-            <div className={scss.lesson__summary_action}>
-              <a href="https://drive.google.com/file/d/1TelzugH10-1F6PqXmIQjaRyya6yQ7Lyp/view" className="link" target='blank'>
-                Конспект урока
-              </a>
-            </div>
-
-          </div>
         </div>
 
         {/* <div className={scss.lesson}>

@@ -39,7 +39,7 @@ const ModuleThree = () => {
 
       <div className="module__header">
         <div className="module__title">Модуль Третий</div>
-        <div className="module__topic">Сторисмейкинг</div>
+        <div className="module__topic">Предметная съёмка</div>
       </div>
 
       <div className="container">
@@ -66,7 +66,7 @@ const ModuleThree = () => {
               </div>
             </div>
             <div className={scss.lesson__deadline}>
-              <div>Дедлайны по домашнему заданию к уроку 2:</div>
+              <div>Дедлайны по домашнему заданию к уроку :</div>
               <div className={scss.lesson__homework}>
                 <a href="" className="link">
                   Домашние задание
@@ -96,7 +96,16 @@ const ModuleThree = () => {
               <div className={scss.video}>
                 <Video videoId={videoId} />
               </div>
+
+              <div className={scss.lesson__summary}>
+                <a href="" className="link" target='blank'>
+                  Конспект
+                </a>
+              </div>
             </div>
+
+
+            
             <div className={scss.lesson__text}>
               <div className={`${scss.lesson__text_content}`}>
                 <p>
@@ -107,6 +116,9 @@ const ModuleThree = () => {
                   текстуру еды детальные снимки на 2х зум (приближение)
                 </p>
               </div>
+
+       
+
               <div className={scss.lesson__deadline}>
                 <div>Дедлайны по домашнему заданию к уроку 3:</div>
                 <div className={scss.lesson__homework}>
@@ -114,9 +126,12 @@ const ModuleThree = () => {
                     Домашние задание
                   </a>
                 </div>
+
+                
               </div>
-              {/* <div className={scss.lesson__summary}>Конспект</div> */}
             </div>
+
+            
           </div>
         </div>
 
@@ -159,7 +174,7 @@ const ModuleThree = () => {
           </div>
         </div>
 
-        <hr />
+        {/* <hr /> */}
 
         {/* <VideoText
           lessonNumber="5"

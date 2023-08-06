@@ -29,7 +29,18 @@ const ModuleFour = () => {
       </div>
 
       <div className="container">
-        <div className={scss.lesson}>
+
+
+
+        <VideoText
+          lessonTitle='Сторис'
+          lessonDescription='Сторис - это важнейший инструмент для привлечения и вовлечения вашей аудитории.
+       Сторис очень важны для развития личного аккаунта и личного бренда.'
+          videoId={videoId}
+          
+        />
+
+        {/* <div className={scss.lesson}>
           <div className={scss.lesson__title}>Сторис.</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
@@ -60,7 +71,7 @@ const ModuleFour = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <hr />
 
         <div className={scss.lesson}>
@@ -98,12 +109,13 @@ const ModuleFour = () => {
 
         <VideoText
           lessonTitle="СММ"
-          lessonDescription=""
+          lessonDescription="Маркетинг в социальных сетях (англ. Social media marketing, SMM) — это полноценный маркетинг, а не только продвижение через различные социальные платформы. Ведение аккаунтов в социальных сетях является частью маркетинговой и коммуникационной стратегии.
+          По статистике Marketing Sherpa, 95% людей от 18 до 34 лет удобнее всего следить за брендом и взаимодействовать с ним именно через соцсети. С этим и связан большой спрос на SMM-специалистов: почти каждая компания ведёт соцсети. Для многих брендов это единственный канал продвижения в интернете."
           videoId="bfj4lEyc4w8"
           deadline="Дедлайн по домашнему заданию к урокам 3:"
         />
 
-        <hr />
+        {/* <hr /> */}
       </div>
     </>
   );

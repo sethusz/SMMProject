@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 
 import './PageMain.scss';
-import img_main from '../../assets/T.jpg';
+import img_main from '../../assets/img_main.jpg';
 import checkMark from '../../assets/checkMark.svg';
 import SmmModules from './MainContent';
 import Cabinet from '../pageCabinet/Cabinet';
@@ -15,6 +15,15 @@ const PageMain = () => {
     mainContentRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const image__text = (
+    <>
+      КУРС ПО ВИЗУАЛУ&SMM
+
+      <br />
+      АСЕЛЬ ОРАЗБЕКОВОЙ
+    </>
+  );
+
   useNoAuth();
   return (
     <>
@@ -22,7 +31,7 @@ const PageMain = () => {
       <div className="image__container image">
         <div className="image__content">
           <img src={img_main} alt="" className="image__main" />
-          <div className="image__text">КУРС ПО ВИЗУАЛУ&SMM АСЕЛЬ ОРАЗБЕКОВОЙ.</div>
+          <div className="image__text">{image__text}</div>
           <div className="image__arrow" onClick={scrollToMainContent}></div>
         </div>
       </div>
