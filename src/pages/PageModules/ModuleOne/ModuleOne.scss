@@ -64,7 +64,7 @@ hr {
 
   &__topic {
     color: black;
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: 500;
     margin-top: 10px;
   }
@@ -90,6 +90,25 @@ hr {
       gap: 2rem;
       // margin: 0 4rem;
       // gap: 30px;
+      &_group {
+        display: flex;
+        gap: 8rem;
+      }
+
+    }
+    &__col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.25rem;
+      gap: 2rem;
+      &_text {
+        text-align: center;
+      }
+    }
+
+    &__text_content {
+
     }
 
     &__content--two {
@@ -260,7 +279,25 @@ hr {
         margin-bottom: 1rem;
       }
     }
+    &__content_group {
+      flex-direction: column;
+    }
   }
+}
+
+.deadline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  // margin-bottom: 10%;
+  padding: 1.5rem;
+  // width: 500px;
+  // height: 200px;
+  gap: 2rem;
+  border: rgb(151, 146, 146) 2px solid;
+  border-radius: 3px;
 }
 
 @media (max-width: 576px) {

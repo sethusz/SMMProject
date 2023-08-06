@@ -1,8 +1,8 @@
 import ReactPlayer from 'react-player';
 import scss from './Video.module.scss';
-export const Video = ({ videoId, height = '200' }) => {
+export const Video = ({ videoId, height = '200', width }) => {
   return (
-    <div className={scss.video}>
+    <div className={scss.video} style={{width: `${width}px`}}>
       {/* <ReactPlayer url={`https://www.youtube.com/embed/${videoId}?showinfo=0`} /> */}
       <iframe
         style={{ width: '100%', height: `${height}px` }}

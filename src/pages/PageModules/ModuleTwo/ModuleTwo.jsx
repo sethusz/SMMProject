@@ -76,6 +76,7 @@ const ModuleTwo = () => {
           lessonDescription="Для того, чтобы ваша лента выглядела гармонично и интересно, не забывайте о разноплановости кадра. Кадр может быть: ближнего, среднего и дальнего плана. Рассмотрим на примере человека - только лицо (сэлфи) = ближний план. Средний план - фото по пояс. Дальний план - человек сфотографирован полностью + мы видим не только самого человека, но и атмосферу вокруг него."
           videoId="VwiTQW1dw-U"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link={'https://drive.google.com/file/d/1WpqHfWK9xDNNI83utg4Ka2aAavxlBBWy/view?usp=drive_link'}
         />
 
         {/* <div className={scss.lesson}>
@@ -127,6 +128,7 @@ homework={'https://docs.google.com/document/d/1mOz9JMPYRjBbGFznPSi0EI_9hhUfEaP9/
           lessonDescription="Самый популярный и удобный способ расположения фотографий в ленте: чередуете крупный план - дальний план - детальное фото - фото в полный рост. Таким образом, профиль выглядит гармонично и не перегруженно."
           videoId="JWdYfHKpDRI"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link={'https://drive.google.com/file/d/1s-klPdvkuswL0BqY8ZIVBywJvq4kpMTV/view?usp=drive_link'}
         />
 
         <hr />
@@ -139,50 +141,13 @@ homework={'https://docs.google.com/document/d/1trE6XG-nWnXWxkRA7jj-kM-o2h-HSfhV/
 Шумный фон- когда на фоне в том числе находятся разные и яркие предметы."
           videoId="HbTGnKrSvMU"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link={'https://drive.google.com/file/d/1Cq4YCIXbG7d9wadGB0VfwarR-At4qTHm/view?usp=drive_link'}
+          secondConspect={'https://drive.google.com/file/d/1kLPJ0JCk6Dl4n1FiIZrfA9AY_-OWUXC6/view?usp=drive_link'}
         />
 
         <hr />
 
-        {/* <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 6.Тренды, антитренды визуала.</div>
 
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.lesson__grid}>
-              <div className={scss.lesson__grid_col}>
-                <div className={scss.video}>
-                  <Video videoId={videoId} />
-                </div>
-                <div className={scss.lesson__summary}>
-                  <a href="" className="link">
-                    Конспект
-                  </a>
-                </div>
-              </div>
-              <div className={scss.lesson__grid_col}>
-                <div className={scss.lesson__summary}>
-                  <a href="" className="link">
-                    Конспект
-                  </a>
-                </div>
-                <div className={scss.video}>
-                  <Video videoId={videoId} />
-                </div>
-              </div>
-              <div className={scss.lesson__grid_col}>
-                <div className={scss.lesson__deadline}>
-                  <div>Дедлайны по домашнему заданию к уроку 6:</div>
-                  <div className={scss.lesson__homework}>
-                    <a href="" className="link">
-                      Домашние задание
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <hr /> */}
 
         <VideoText
           lessonTitle="Сочетание цветов. Цветовой круг"
@@ -190,6 +155,8 @@ homework={'https://docs.google.com/document/d/1trE6XG-nWnXWxkRA7jj-kM-o2h-HSfhV/
           lessonDescription="Гармоничная комбинация цветов аккаунта помогает клиенту формировать нужное впечатление о компании, товаре и продукте. Важно правильно подбирать оттенки и полутона, которые будут сочетаться или дополнять друг друга. Когда люди попадают на страницу профиля, первым делом обращают внимание на визуал. Он влияет на доверие и интерес у потенциальных клиентов."
           videoId="MYaPSU26bWs"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+          link={'https://drive.google.com/file/d/1GNCDgAjU-_8eF7mUxvPeZu7J_e8N6O1g/view?usp=drive_link'}
+          secondConspect={'https://drive.google.com/file/d/13-ASip-2vhgsVSWylir1nnmTQiaJctc3/view?usp=drive_link'}
         />
 
         {/* <hr /> */}

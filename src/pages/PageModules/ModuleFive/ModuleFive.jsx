@@ -52,7 +52,8 @@ const ModuleFive = () => {
 
           <div className={scss.video__app}>
             <Video videoId={'bNVeaLGqigg'} height={260} />
-            <Video videoId={videoId} height={260} />
+            <Video videoId={'vjJdRhnAyAk'} height={260} />
+            <Video videoId={'nWClx1Xi-JA'} height={260} />
           </div>
         </div>
 
@@ -100,7 +101,7 @@ const ModuleFive = () => {
 
           <div className={scss.video__app}>
             <Video videoId={'QTSnAdpenGU'} height={260} />
-            <Video videoId={videoId} height={260} />
+            <Video videoId={'nF112UUtD00'} height={260} />
           </div>
 
 

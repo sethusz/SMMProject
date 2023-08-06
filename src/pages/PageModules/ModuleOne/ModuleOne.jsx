@@ -13,10 +13,11 @@ import { Video } from './../../LessonParts/Video/Video.jsx';
 
 import useNoAuth from '../../../hooks/useNoAuth';
 import Cabinet from '../../pageCabinet/Cabinet';
+import scss from "../ModuleThree/ModuleThree.module.scss";
 
 const ModuleOne = () => {
   useNoAuth();
-  const videoId = 'bfj4lEyc4w8';
+  // const videoId = 'bfj4lEyc4w8';
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -125,76 +126,36 @@ const ModuleOne = () => {
           тогда нам будет легче знать в каком направлении создавать Визуал и сторис!"
           videoId="zLdHz4WqmuI"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
+firstConspect={'https://drive.google.com/file/d/1Gkd89Z9XCL_2tWOml8_KqE3SSPNAqCDr/view?usp=drive_link'}
 
         />
 
+
+
         <hr />
-
-        {/* <div className="lesson__content lesson">
-          <div className="module__lesson">Поиск тематики..</div>
-          <div className="module__content-text content">
-            <div className="lesson__text--three">
-              <div className="lesson__content--three">
-                В этом уроке поговорим о том, как поставить перед собой главные цели в блоге,
-                декомпозировать их на краткосрочные, как найти свою миссию и выстроить
-                позиционирование. Вы поймёте, с чего начинать свой путь в мире Инстаграм и какой тип
-                блога выбрать для выстраивания позиционирования в нем.
-              </div>
-
-              <div className="lesson__summary">
-                <a
-                  href="https://drive.google.com/file/d/1dub5cvadWoE4cynkNBwgJFVCdUYV2_Co/view?usp=drive_link"
-                  className="link">
+        <div className={' lesson'}>
+          <div className={'module__lesson'}>Цели, Миссия и позоционирование в блоге</div>
+          <div className={`lesson__content_group content`}>
+            <div className={'lesson__col'}>
+              <div className={`lesson__text_content`}>Цели, миссия и позиционирование в блоге. В этом уроке поговорим о том, как поставить перед собой главные цели в блоге, декомпозировать их на краткосрочные, как найти свою миссию и выстроить позиционирование. Вы поймёте, с чего начинать свой путь в мире Инстаграм и какой тип блога выбрать для выстраивания позиционирования в нем.</div>
+              <div className={'lesson__summary'}>
+                <a href="https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link" className="link" target='blank'>
                   Конспект
                 </a>
               </div>
             </div>
-            <div className="lesson__text--three">
-              <div className="lesson__content--three">
-                Домашним заданием будет воркбук по целям и миссии в блоге. Распечатайте его и
-                заполните. Или сделайте пометки в своём ежедневнике. Неважно как, главное —
-                сделайте.
-              </div>
-
-              <div className="lesson__homework">
-                <a href="" className="link">
-                  Домашние задание
-                </a>
+            <div className={'lesson__col '}>
+              <div className="deadline">
+                <div className={'lesson__col_text'}>Дедлайны по домашнему заданию к уроку</div>
+                <div className={'lesson__homework'}>
+                  <a href="https://docs.google.com/document/d/113myPodONEYHxfcjXuT26X6ttATW2tHQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link">
+                    Домашние задание
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <hr />
-
-        <VideoText
-
-          lessonTitle="Определение концепции блога."
-          lessonDescription="Всё, что мы видим вокруг себя, оставляет отпечатки в виде визуальных образов и влияет на формирование вкуса: архитектура, мода, фильмы, книги, соцсети, реклама и даже место, где мы живём.
-
-          Насмотренность – это визуальный опыт, который создатель получает, просматривая работы других авторов и произведения искусства."
-          videoId="bfj4lEyc4w8"
-          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-          link={
-            'https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link'
-          }
-        /> */}
-{/* 
-        <hr /> */}
-
-        
-        <VideoText
-          homework={'https://docs.google.com/document/d/113myPodONEYHxfcjXuT26X6ttATW2tHQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
-          lessonTitle="Цели, Миссия и позоционирование в блоге"
-          lessonDescription="Цели, миссия и позиционирование в блоге.
-          В  этом уроке поговорим о том, как поставить перед собой главные цели в блоге, декомпозировать их на краткосрочные, как найти свою миссию и выстроить позиционирование.
-          Вы поймёте, с чего начинать свой путь в мире Инстаграм и какой тип блога выбрать для выстраивания позиционирования в нем."
-          videoId="bfj4lEyc4w8"
-          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-          link={
-            'https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link'
-          }
-        />
 
         <hr />
 

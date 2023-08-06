@@ -38,117 +38,57 @@ const ModuleSix = () => {
           videoId="Zopud20A7lY"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           homework={'https://docs.google.com/document/d/1X1brTqOTG2rnYksGRktGJXXKNGY5QobQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
+          link={'https://drive.google.com/file/d/13EDCs1In3xgRrW-HzoS0jSLCXKzEjVQY/view?usp=drive_link'}
         />
 
         <hr />
 
-        <VideoText
-          lessonTitle='Тайм-менеджмент'
-          lessonDescription="Тайм-менеджмент."
-          videoId="Zopud20A7lY"
-          deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-        />
+
+        <div className={scss.lesson}>
+          <div className={scss.lesson__title}>Тайм-менеджмент</div>
+          <div className={`${scss.lesson__content} ${scss.content} ${scss.col}`}>
+            <div className={scss.video}>
+              <Video videoId="otccevOOgK0" width={520} height={250} />
+            </div>
+            <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/1EkwDQyMTpVtFhrxUiDnLP3KyFRm6LBT5/view?usp=drive_link" className="link">Конспект</a></div>
+          </div>
+
+        </div>
 
         <hr />
 
-                <VideoText
-          lessonTitle="Личный бренд"
-          lessonDescription="Личный бренд"
-          videoId="bfj4lEyc4w8"
-          deadline="Дедлайн по домашнему заданию к урокам 1:"
-          link="https://drive.google.com/file/d/1B9iii_vuYOTEJ1IK9PQ6yBVg9KMel4df/view?usp=sharing"
-        />
+
+        <div className={scss.lesson}>
+          <div className={scss.lesson__title}>Личный бренд</div>
+          <div className={`${scss.lesson__content} ${scss.content} ${scss.col}`}>
+            <div className={scss.video}>
+              <Video videoId="fVfFqkhZVYY" width={520} height={250} />
+            </div>
+            <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/13QLj0rJYd6QHCz2CoSLGVwmQ0QJMQ9BJ/view?usp=drive_link" className="link">Конспект</a></div>
+          </div>
+
+        </div>
+
+        <hr />
 
         <div className={scss.lesson}>
           <div className={scss.lesson__title}> Монетизация </div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.video}>
-              <Video videoId={videoId} width={520} height={250} />
+              <Video videoId={'OYLUseCO2dY'} width={520} height={250} />
             </div>
           </div>
           <div className={scss.lesson__footer}>
             <div className={scss.lesson__summary_action}>
-              <a href="https://drive.google.com/file/d/19ifiovHbLV76tURRI4UOdDW7z5fHMXHz/view?usp=sharing" className="link" target="blank">
+              <a href="https://drive.google.com/file/d/1IdiETKeRsqf94fpCLLyMNURt77nO7hUJ/view?usp=drive_link" className="link" target="blank">
                 Конспект урока
               </a>
             </div>
           </div>
         </div>
 
-        
-        {/* <hr />
-        <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 3. Аватар будущих клиентов.</div>
 
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.video}>
-              <Video videoId={videoId} width={520} height={250} />
-            </div>
-          </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="https://drive.google.com/file/d/1zVQp83nUHi9Wrb_7b9zkI3nHZBxFQIa7/view?usp=sharing" className="link" target='blank'>
-                Конспект урока
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-        <div className={scss.lesson}>
-          <div className={scss.lesson__title}>УРОК 4. Продающая упаковка.</div>
-
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.video}>
-              <Video videoId={videoId} width={520} height={250} />
-            </div>
-          </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="https://drive.google.com/file/d/1O5gYUBZ44IL0HL0e1nodAL5_b-LNkMkl/view?usp=sharing" className="link" target='blank'>
-                Конспект урока
-              </a>
-            </div>
-          </div>
-        </div>
-        <hr /> */}
-        {/* <div className={scss.lesson}>
-          <div className={scss.lesson__title}>Экспертный контент.</div>
-
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.video}>
-              <Video videoId={videoId} width={520} height={250} />
-            </div>
-          </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
-                Конспект урока
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={scss.lesson}>
-          <div className={scss.lesson__title}>Поиск и привлечение вашей.</div>
-
-          <div className={`${scss.lesson__content} ${scss.content}`}>
-            <div className={scss.video}>
-              <Video videoId={videoId} width={520} height={250} />
-            </div>
-            <div className={scss.video}>
-              <Video videoId={videoId} width={520} height={250} />
-            </div>
-          </div>
-          <div className={scss.lesson__footer}>
-            <div className={scss.lesson__summary_action}>
-              <a href="" className="link">
-                Конспект урока
-              </a>
-            </div>
-          </div>
-        </div> */}
 
         <div className={scss.lesson}>
           <div className={scss.lesson__title}>Бонусный урок по таргету.</div>

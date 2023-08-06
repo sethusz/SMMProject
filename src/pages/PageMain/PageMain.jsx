@@ -47,8 +47,8 @@ const PageMain = () => {
         <div className="footer__section">
           <div className="footer__contact-title">Контакты</div>
           <ul className="footer__contacts">
-            <li className="footer__contact">instagram: example@example.com</li>
-            <li className="footer__contact">telegram: 123-456-789</li>
+            <li className="footer__contact"><a href="https://instagram.com/asselya_orazbekova?igshid=MzRlODBiNWFlZA==">Instagram</a> </li>
+            <li className="footer__contact"><a href="https://t.me/+4t2FFF5q7Dw0OTYy">Telegram</a> </li>
           </ul>
         </div>
       </div>

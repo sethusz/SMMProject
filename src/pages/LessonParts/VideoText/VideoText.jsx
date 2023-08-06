@@ -9,6 +9,7 @@ const VideoText = ({
   list,
   link,
   homework,
+                     secondConspect
 }) => {
   return (
     <>
@@ -31,6 +32,11 @@ const VideoText = ({
                 Конспект
               </a>
             </div>
+            {secondConspect && <div className={scss.module__summary}>
+              <a href={secondConspect} className="link" target='blank'>
+                Конспект
+              </a>
+            </div>}
           </div>
           <div className={scss.module__contentTwo}>
             <div className={scss.module__descr}>{lessonDescription}</div>
@@ -43,14 +49,14 @@ const VideoText = ({
                 <li> Визуал </li>
               </ol>
             )}
-            <div className={scss.module__deadline}>
+            {deadline && <div className={scss.module__deadline}>
               <div>{deadline}</div>
               <div className={scss.module__homework}>
-                <a href={homework} className="link">
+                <a href={homework} className="link" target={'_blank'} rel={'noreferrer'}>
                   Домашние задание
                 </a>
               </div>
-            </div>
+            </div>}
           </div>
         </div>
       </div>

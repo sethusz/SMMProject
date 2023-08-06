@@ -48,7 +48,7 @@ const SmmModules = () => {
     },
     {
       module: 'Модуль Четвертый',
-      description: 'Сторисмейкинг И СММ',
+      description: 'Сторисмейкинг и СММ',
       transitionModule: 'Перейти к модулю',
       moduleList: [
         'Сторис',
