@@ -67,7 +67,7 @@ const ModuleOne = () => {
               {/* <div className="lesson__skills"></div> */}
 
               <div className="lesson__homework">
-                <a href="https://t.me/+4t2FFF5q7Dw0OTYy" className="link" target="_blank">
+                <a href="https://t.me/clubfreelance" className="link" target="_blank">
                   Чат Вакансий
                 </a>
               </div>
