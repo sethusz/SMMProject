@@ -31,18 +31,20 @@ const ModuleSix = () => {
       </div>
 
       <div className="container">
-
         <VideoText
-          lessonTitle='Контент план'
+          lessonTitle="Контент план"
           lessonDescription="Контент план."
           videoId="Zopud20A7lY"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
-          homework={'https://docs.google.com/document/d/1X1brTqOTG2rnYksGRktGJXXKNGY5QobQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
-          link={'https://drive.google.com/file/d/13EDCs1In3xgRrW-HzoS0jSLCXKzEjVQY/view?usp=drive_link'}
+          homework={
+            'https://docs.google.com/document/d/1X1brTqOTG2rnYksGRktGJXXKNGY5QobQ/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'
+          }
+          link={
+            'https://drive.google.com/file/d/13EDCs1In3xgRrW-HzoS0jSLCXKzEjVQY/view?usp=drive_link'
+          }
         />
 
         <hr />
-
 
         <div className={scss.lesson}>
           <div className={scss.lesson__title}>Тайм-менеджмент</div>
@@ -50,13 +52,17 @@ const ModuleSix = () => {
             <div className={scss.video}>
               <Video videoId="otccevOOgK0" width={520} height={250} />
             </div>
-            <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/1EkwDQyMTpVtFhrxUiDnLP3KyFRm6LBT5/view?usp=drive_link" className="link">Конспект</a></div>
+            <div className={scss.lesson__summary_action}>
+              <a
+                href="https://drive.google.com/file/d/1EkwDQyMTpVtFhrxUiDnLP3KyFRm6LBT5/view?usp=drive_link"
+                className="link">
+                Конспект к уроку
+              </a>
+            </div>
           </div>
-
         </div>
 
         <hr />
-
 
         <div className={scss.lesson}>
           <div className={scss.lesson__title}>Личный бренд</div>
@@ -64,9 +70,16 @@ const ModuleSix = () => {
             <div className={scss.video}>
               <Video videoId="fVfFqkhZVYY" width={520} height={250} />
             </div>
-            <div className={scss.lesson__summary_action}><a href="https://drive.google.com/file/d/13QLj0rJYd6QHCz2CoSLGVwmQ0QJMQ9BJ/view?usp=drive_link" className="link" rel={'noreferrer'} target={'_blank'}>Конспект</a></div>
+            <div className={scss.lesson__summary_action}>
+              <a
+                href="https://drive.google.com/file/d/13QLj0rJYd6QHCz2CoSLGVwmQ0QJMQ9BJ/view?usp=drive_link"
+                className="link"
+                rel={'noreferrer'}
+                target={'_blank'}>
+                Конспект к уроку
+              </a>
+            </div>
           </div>
-
         </div>
 
         <hr />
@@ -81,14 +94,16 @@ const ModuleSix = () => {
           </div>
           <div className={scss.lesson__footer}>
             <div className={scss.lesson__summary_action}>
-              <a href="https://drive.google.com/file/d/1IdiETKeRsqf94fpCLLyMNURt77nO7hUJ/view?usp=drive_link" className="link" target="blank" rel={'noreferrer'}>
-                Конспект урока
+              <a
+                href="https://drive.google.com/file/d/1IdiETKeRsqf94fpCLLyMNURt77nO7hUJ/view?usp=drive_link"
+                className="link"
+                target="blank"
+                rel={'noreferrer'}>
+                Конспект к уроку
               </a>
             </div>
           </div>
         </div>
-
-
 
         <div className={scss.lesson}>
           <div className={scss.lesson__title}>Бонусный урок по таргету.</div>
@@ -98,7 +113,6 @@ const ModuleSix = () => {
               <Video videoId="iSmtnP-qErU" width={520} height={250} />
             </div>
           </div>
-         
         </div>
 
         <div className={scss.lesson}>
@@ -109,10 +123,7 @@ const ModuleSix = () => {
               <Video videoId="60RquztpF-I" width={520} height={250} />
             </div>
           </div>
-
         </div>
-
-
       </div>
     </>
   );

@@ -49,7 +49,9 @@ const ModuleThree = () => {
           videoId="PoYqu8VhyW4"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           link="https://drive.google.com/file/d/1I1VLRLRHri_yZTVybQPLSD5p51tK-FIa/view?usp=sharing"
-          homework={'https://docs.google.com/document/d/1qYOrQDALm3cLUGPJ1AHPqSXUKePndY2T/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'}
+          homework={
+            'https://docs.google.com/document/d/1qYOrQDALm3cLUGPJ1AHPqSXUKePndY2T/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'
+          }
         />
 
         <hr />
@@ -61,15 +63,23 @@ const ModuleThree = () => {
             <div className={scss.lesson__text}>
               <div className={`${scss.lesson__text_content}`}>{lessonText}</div>
               <div className={scss.lesson__summary}>
-                <a href="https://drive.google.com/file/d/1VanVbfwg4EAXGW10Jncy8mZlzW_owI5O/view?usp=sharing" className="link" target='blank' rel={'noreferrer'}>
-                  Конспект
+                <a
+                  href="https://drive.google.com/file/d/1VanVbfwg4EAXGW10Jncy8mZlzW_owI5O/view?usp=sharing"
+                  className="link"
+                  target="blank"
+                  rel={'noreferrer'}>
+                  Конспект к уроку
                 </a>
               </div>
             </div>
             <div className={scss.lesson__deadline}>
               <div>Дедлайны по домашнему заданию к уроку :</div>
               <div className={scss.lesson__homework}>
-                <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link" target={'_blank'} rel={'noreferrer'}>
+                <a
+                  href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true"
+                  className="link"
+                  target={'_blank'}
+                  rel={'noreferrer'}>
                   Домашние задание
                 </a>
               </div>
@@ -78,7 +88,6 @@ const ModuleThree = () => {
         </div>
 
         <hr />
-
 
         <div className={scss.lesson}>
           <div className={scss.lesson__title}>Фуд съёмка.Предметная съемка</div>
@@ -91,12 +100,8 @@ const ModuleThree = () => {
               <div className={scss.video}>
                 <Video videoId="G6cE8_Npw8w" />
               </div>
-
-             
             </div>
 
-
-            
             <div className={scss.lesson__text}>
               <div className={`${scss.lesson__text_content}`}>
                 <p>
@@ -107,13 +112,7 @@ const ModuleThree = () => {
                   текстуру еды детальные снимки на 2х зум (приближение)
                 </p>
               </div>
-
-       
-
-
             </div>
-
-            
           </div>
         </div>
 
@@ -130,7 +129,7 @@ const ModuleThree = () => {
               <div className={scss.lesson__grid_summary}>
                 <div>Все пресеты вы cможете скачать в телеграмм канале под названием «Файлы»</div>
                 <div className={scss.lesson__homework}>
-                  <a href="" className="link" rel={'noreferrer'} target={'_blank'} >
+                  <a href="" className="link" rel={'noreferrer'} target={'_blank'}>
                     Файлы
                   </a>
                 </div>
@@ -150,20 +149,22 @@ const ModuleThree = () => {
               <div className={scss.video}>
                 <Video videoId="euVUujARlMY" />
               </div>
-           
-               <div className={scss.lesson__grid_deadline}>
+
+              <div className={scss.lesson__grid_deadline}>
                 <div>Дедлайны по домашнему заданию к уроку 4:</div>
                 <div className={scss.lesson__homework}>
-                  <a href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true" className="link" rel={'noreferrer'} target={'_blank'}>
+                  <a
+                    href="https://docs.google.com/document/d/1kA8PGC4kC-hmVpw4BWa3k7uGGf66Gbk2/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true"
+                    className="link"
+                    rel={'noreferrer'}
+                    target={'_blank'}>
                     Домашние задание
                   </a>
                 </div>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </>
   );

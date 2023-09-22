@@ -9,14 +9,12 @@ const VideoText = ({
   list,
   link,
   homework,
-                     secondConspect
+  secondConspect,
 }) => {
   return (
     <>
       <div className={`${scss.lesson__content} ${scss.lesson}`}>
-        <div className={scss.lesson__lesson}>
-     {lessonTitle}
-        </div>
+        <div className={scss.lesson__lesson}>{lessonTitle}</div>
         <div className={`${scss.module__content} ${scss.content}`}>
           <div className={scss.module__video}>
             <iframe
@@ -28,15 +26,17 @@ const VideoText = ({
               allow="autoplay; encrypted-media"
               allowFullScreen></iframe>
             <div className={scss.module__summary}>
-              <a href={link} className="link" target='blank' rel={'noreferrer'}>
-                Конспект
+              <a href={link} className="link" target="blank" rel={'noreferrer'}>
+                Конспект к уроку
               </a>
             </div>
-            {secondConspect && <div className={scss.module__summary}>
-              <a href={secondConspect} className="link" target='blank' rel={'noreferrer'}>
-                Конспект
-              </a>
-            </div>}
+            {secondConspect && (
+              <div className={scss.module__summary}>
+                <a href={secondConspect} className="link" target="blank" rel={'noreferrer'}>
+                  Конспект к уроку
+                </a>
+              </div>
+            )}
           </div>
           <div className={scss.module__contentTwo}>
             <div className={scss.module__descr}>{lessonDescription}</div>
@@ -49,14 +49,16 @@ const VideoText = ({
                 <li> Визуал </li>
               </ol>
             )}
-            {deadline && <div className={scss.module__deadline}>
-              <div>{deadline}</div>
-              <div className={scss.module__homework}>
-                <a href={homework} className="link" target={'_blank'} rel={'noreferrer'}>
-                  Домашние задание
-                </a>
+            {deadline && (
+              <div className={scss.module__deadline}>
+                <div>{deadline}</div>
+                <div className={scss.module__homework}>
+                  <a href={homework} className="link" target={'_blank'} rel={'noreferrer'}>
+                    Домашние задание
+                  </a>
+                </div>
               </div>
-            </div>}
+            )}
           </div>
         </div>
       </div>

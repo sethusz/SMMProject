@@ -2,7 +2,6 @@ import React from 'react';
 import scss from './TextVideoHW.module.scss'; // Import the SCSS module
 
 const TextVideoHW = ({
-
   lessonTitle,
   lessonDescription,
   videoId,
@@ -10,15 +9,13 @@ const TextVideoHW = ({
   secondLink,
   secondSummary,
   firstConspect,
-                       homeworkLink
+  homeworkLink,
 }) => {
   return (
     <>
       <div className={`${scss.lesson__content} lesson`}>
         <div className={scss.content}>
-          <div className={scss.lesson__lesson}>
-             {lessonTitle}
-          </div>
+          <div className={scss.lesson__lesson}>{lessonTitle}</div>
           {/* <div className={scss.lesson__title}>{lessonTitle}</div> */}
           <div className={scss.lesson__descr}>{lessonDescription}</div>
           <div className={scss.module__content}>
@@ -33,7 +30,7 @@ const TextVideoHW = ({
                 allowFullScreen></iframe>
               <div className={scss.module__summary}>
                 <a href={firstConspect} className="link" rel={'noreferrer'} target={'_blank'}>
-                  Конспект
+                  Конспект к уроку
                 </a>
               </div>
               {secondSummary && (
