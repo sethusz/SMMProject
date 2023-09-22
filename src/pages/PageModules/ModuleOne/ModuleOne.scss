@@ -94,7 +94,6 @@ hr {
         display: flex;
         gap: 8rem;
       }
-
     }
     &__col {
       flex: 1;
@@ -108,7 +107,6 @@ hr {
     }
 
     &__text_content {
-
     }
 
     &__content--two {
@@ -240,6 +238,19 @@ hr {
   }
 }
 
+.lesson__row {
+  font-size: 1.25rem;
+  display: flex;
+  gap: 2rem;
+  .video {
+    flex: 1;
+  }
+  .description {
+    flex-basis: 50%;
+    flex: 1;
+  }
+}
+
 @media (max-width: 1024px) {
   .module {
     .lesson {
@@ -283,6 +294,9 @@ hr {
       flex-direction: column;
     }
   }
+  .lesson__row {
+    flex-direction: column;
+  }
 }
 
 .deadline {
@@ -315,8 +329,6 @@ hr {
 }
 
 .video__app {
-  display: flex;
-  gap: 15px;
   @media (max-width: 800px) {
     flex-direction: column;
   }
