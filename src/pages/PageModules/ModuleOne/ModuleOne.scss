@@ -241,7 +241,7 @@ hr {
 .lesson__row {
   font-size: 1.25rem;
   display: flex;
-  gap: 2rem;
+  gap: 6rem;
   .video {
     flex: 1;
   }
@@ -331,7 +331,7 @@ hr {
 .video__app {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   @media (max-width: 800px) {
     flex-direction: column;
   }

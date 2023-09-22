@@ -40,10 +40,10 @@ const ModuleOne = () => {
 
         <div className="lesson__content lesson">
           <div className="module__lesson">Вводная часть</div>
-          <div className="video__app">
+          <div className="video__app content">
             <div className="lesson__row">
               <div className="video">
-                <Video videoId={'PZovpwEWOog'} height={260} />
+                <Video videoId={'PZovpwEWOog'} height={315} />
               </div>
               <div className="description">
                 <p>
@@ -53,7 +53,7 @@ const ModuleOne = () => {
             </div>
             <div className="lesson__row">
               <div className="video">
-                <Video videoId={'6pXrDm8SvJ8'} height={260} />
+                <Video videoId={'6pXrDm8SvJ8'} height={315} />
               </div>
               <div className="description">
                 <p>
