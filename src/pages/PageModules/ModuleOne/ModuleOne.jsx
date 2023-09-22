@@ -168,7 +168,7 @@ const ModuleOne = () => {
                   href="https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link"
                   className="link"
                   target="blank">
-                  Конспект к уроку к уроку
+                  Конспект к уроку
                 </a>
               </div>
             </div>
