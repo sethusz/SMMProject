@@ -329,6 +329,9 @@ hr {
 }
 
 .video__app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   @media (max-width: 800px) {
     flex-direction: column;
   }
