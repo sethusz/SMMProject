@@ -46,12 +46,12 @@ const ModuleThree = () => {
         <VideoText
           lessonTitle="Как делать фотографии в домашних условиях.."
           lessonDescription="В данном уроке я покажу вам как делать красивые кадры в домашних условиях. Самое важное это – практика! Чем чаще вы фотографируете разные предметы, тем лучше они у вас будут получаться! Более подробная информация будет выслана в презентации!"
-          videoId="PoYqu8VhyW4"
+          videoId="IF3MeL79iuE"
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           link="https://drive.google.com/file/d/1I1VLRLRHri_yZTVybQPLSD5p51tK-FIa/view?usp=sharing"
           homework={
             'https://docs.google.com/document/d/1qYOrQDALm3cLUGPJ1AHPqSXUKePndY2T/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'
-          }
+          } 
         />
 
         <hr />
