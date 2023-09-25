@@ -127,7 +127,7 @@ const ModuleOne = () => {
                 </p>
               </div>
               <div className="lesson__homework">
-                <a href="https://t.me/+4f_vVAOmtexhYTUy" className="link" target="_blank">
+                <a href="https://t.me/+XM04O6zqjw5lYzNi" className="link" target="_blank">
                   Телеграмм канал файлы
                 </a>
               </div>
