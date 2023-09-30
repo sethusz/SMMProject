@@ -38,7 +38,7 @@ const ModuleTwo = () => {
           deadline="Дедлайн по домашнему заданию к урокам 1 и 2:"
           list="true"
           link={
-            'https://drive.google.com/file/d/1zf5fff-I2zhXGTzJwSY9EqiYd3IjXisE/view?usp=drive_link'
+            'https://drive.google.com/file/d/1Kk_cdzYsWMZTTx-QazZvZdRbnjVLEFo2/view?usp=drive_link'
           }
           homework={
             'https://docs.google.com/document/d/1ROSOVHYoU7aXK4tW6CnidysnHXarFvtf/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'

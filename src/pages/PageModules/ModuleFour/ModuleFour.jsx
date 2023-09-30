@@ -38,7 +38,7 @@ const ModuleFour = () => {
             'https://docs.google.com/document/d/1iOeNatWX06HwZh-5pR7q16K8d8Lvibkl/edit?usp=drive_link&ouid=114783473414938878123&rtpof=true&sd=true'
           }
           link={
-            'https://drive.google.com/file/d/1KLZ-ZM0CV7o2TdKJaQk2cboaNUss9_VH/view?usp=drive_link'
+            'https://drive.google.com/file/d/19JLOWwcLfFK7dqj8AAffCx1E9ZBMJH1Y/view?usp=drive_link'
           }
         />
 

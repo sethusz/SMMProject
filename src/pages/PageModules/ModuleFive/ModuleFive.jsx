@@ -33,14 +33,19 @@ const ModuleFive = () => {
           <div className={scss.lesson__title}>Что такое рилс и для чего он нам нужен?</div>
 
           <div className={`${scss.lesson__content} ${scss.content}`}>
+          <VideoText videoId={'VRfma4k9gEY'} height={315}
+              link={'https://drive.google.com/file/d/1Atiko2IFQ3bPQYxsU_Q4Xy8O0inC_W54/view?usp=drive_link'}
+              lessonDescription='В данном уроке мы поговорим о существующих стилях в оформлении сторис через призму
+              искусства.'
+            
+             />
+              
+              
 
             <div className={scss.lesson__grid_col}>
-              <Video videoId={'VRfma4k9gEY'} height={315} />
-              <p>
-                В данном уроке мы поговорим о существующих стилях в оформлении сторис через призму
-                искусства.
-              </p>
-
+             
+              
+             
 
             </div>
           </div>

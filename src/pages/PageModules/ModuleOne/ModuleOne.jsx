@@ -165,7 +165,7 @@ const ModuleOne = () => {
               </div>
               <div className={'lesson__summary'}>
                 <a
-                  href="https://drive.google.com/file/d/16XKGPxNU8xcCv80WAQfDkSOefqPZh5ob/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1BrdwqXeGeGRbZeZBsKR1RnvxOEHlvacb/view?usp=drive_link"
                   className="link"
                   target="blank">
                   Конспект к уроку

@@ -124,30 +124,30 @@ const ModuleThree = () => {
           <div className={`${scss.lesson__content} ${scss.content}`}>
             <div className={scss.lesson__grid}>
               <div className={scss.video}>
-                <Video videoId="G2aBWiV9NKw" />
+                <Video videoId="iTsih26oyts" />  
               </div>
               <div className={scss.lesson__grid_summary}>
                 <div>Все пресеты вы cможете скачать в телеграмм канале под названием «Файлы»</div>
                 <div className={scss.lesson__homework}>
-                  <a href="" className="link" rel={'noreferrer'} target={'_blank'}>
+                  <a href="https://t.me/+XM04O6zqjw5lYzNi" className="link" rel={'noreferrer'} target={'_blank'}>
                     Файлы
                   </a>
                 </div>
               </div>
               <div className={scss.video}>
-                <Video videoId="2j-kXlzIgM4" />
+                <Video videoId="2j-kXlzIgM4" />   
               </div>
               <div className={scss.video}>
-                <Video videoId="a37dDrw_cgE" />
+                <Video videoId="a37dDrw_cgE" />   
               </div>
               <div className={scss.video}>
-                <Video videoId="yhaIQwQPoCY" />
+                <Video videoId="yhaIQwQPoCY" /> 
               </div>
               <div className={scss.video}>
-                <Video videoId="eIpXZm6vzP0" />
+                <Video videoId="eIpXZm6vzP0" />    
               </div>
               <div className={scss.video}>
-                <Video videoId="euVUujARlMY" />
+                <Video videoId="euVUujARlMY" />  
               </div>
 
               <div className={scss.lesson__grid_deadline}>
